@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "Back2Mettis",
+  "appId": "fr.jcemetz.back2mettis",
+  "appName": "jce-metz-back2mettis",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",

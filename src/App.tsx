@@ -48,6 +48,10 @@ const App: React.FC = () => (
           <Route path="/tab3">
             <Tab3 />
           </Route>
+
+          <Route path="/tab4">
+            <Tab4 />
+          </Route>
           <Route exact path="/">
             <Redirect to="/tab1" />
           </Route>
@@ -66,7 +70,7 @@ const App: React.FC = () => (
             <IonLabel>Succès</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="tab3" href="/tab4">
             <IonIcon icon={settingsOutline} />
             <IonLabel>Autre</IonLabel>
           </IonTabButton>
