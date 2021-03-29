@@ -2,18 +2,18 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
 
-const Tab3: React.FC = () => {
+const Tab4: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Succès</IonTitle>
+          <IonTitle>Autre</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Succès</IonTitle>
+            <IonTitle size="large">Autre</IonTitle>
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name="Tab 3 page" />
@@ -22,4 +22,4 @@ const Tab3: React.FC = () => {
   );
 };
 
-export default Tab3;
+export default Tab4;
