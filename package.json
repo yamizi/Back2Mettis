@@ -4,11 +4,15 @@
   "private": true,
   "dependencies": {
     "@capacitor/core": "^2.4.7",
+    "@ionic-native/android-permissions": "^5.31.1",
+    "@ionic-native/core": "^5.31.1",
     "@ionic-native/geolocation": "^5.31.1",
+    "@ionic-native/location-accuracy": "^5.31.1",
     "@ionic-native/native-geocoder": "^5.31.1",
     "@ionic-native/splash-screen": "^5.31.1",
     "@ionic/react": "^5.5.0",
     "@ionic/react-router": "^5.5.0",
+    "@monogatari/core": "^2.0.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
@@ -26,6 +30,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-google-maps": "^9.4.5",
+    "react-pure-render": "^1.0.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
@@ -45,8 +50,8 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --max_old_space_size=4096 start",
+    "build": "react-scripts --max_old_space_size=4096 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

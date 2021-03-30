@@ -1,7 +1,6 @@
 import { IonContent, IonHeader, IonFooter, IonPage, IonTitle, IonToolbar, IonFab, IonFabButton, IonIcon, IonFabList } from '@ionic/react';
 import{ Component, MouseEvent } from 'react';
 
-import MapContainer from '../components/MapContainer';
 import MapComponent from "../components/MapComponent";
 
 import './Tab1.css';
