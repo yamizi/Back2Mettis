@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import { Component } from 'react';
 import {IonFab, IonFabButton, IonIcon} from "@ionic/react";
 import {hourglassOutline} from "ionicons/icons";
 
@@ -14,6 +14,40 @@ const imageBounds = {
     west: 6.1625,
   };
 
+
+  function initMarkers(map:any){
+      const iconBase ="https://developers.google.com/maps/documentation/javascript/examples/full/images/";
+
+      const icons: Record<string, { icon: string }> = {
+        parking: {
+          icon: iconBase + "parking_lot_maps.png",
+        },
+        library: {
+          icon: iconBase + "library_maps.png",
+        },
+        info: {
+          icon: iconBase + "info-i_maps.png",
+        },
+      };
+
+      const features = [
+        {
+          position: new google.maps.LatLng(49.1152282, 6.179502),
+          type: "info",
+        }
+      ];
+
+      // Create markers.
+      for (let i = 0; i < features.length; i++) {
+        let marker = new google.maps.Marker({
+          position: features[i].position,
+          icon: icons[features[i].type].icon,
+          map: map
+        });
+        markers.push(marker)
+      }
+
+  }
 const handleApiLoaded = (map:any, maps:any) => {
   // use map and maps objects
   console.log(map,maps)
@@ -24,11 +58,14 @@ const handleApiLoaded = (map:any, maps:any) => {
   );
   myMap = map
 
+  initMarkers(map)
+
 };
 
 const _onClick = (map:any) => {
   // use map and maps objects
   console.log(map)
+    markers[0].setPosition({lat:map.lat,lng:map.lng})
 
 };
 
@@ -52,6 +89,7 @@ const _flipOverlay = () => {
 
 }
 
+let markers:google.maps.Marker[] = [];
 let myMap:any;
 let romanOverlay:google.maps.GroundOverlay;
 let currentOverlay:string = "";
@@ -71,7 +109,8 @@ class MapComponent extends Component {
 
 
   render() {
-    return (
+    // @ts-ignore
+      return (
       // Important! Always set the container height explicitly
       <div style={{ height: '100%', width: '100%' }}>
         <GoogleMapReact
@@ -83,7 +122,6 @@ class MapComponent extends Component {
           yesIWantToUseGoogleMapApiInternals
           options={createMapOptions}
         >
-
         </GoogleMapReact>
         <IonFab vertical="bottom" horizontal="end" slot="fixed" style={{"margin-bottom":'50px'}}>
 
