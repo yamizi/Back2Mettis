@@ -1,42 +1,69 @@
 import './MapContainer.css';
 
 import React, {useState, useCallback} from 'react';
-import { Plugins } from '@capacitor/core';
 
+import {GoogleMap, withGoogleMap, withScriptjs, GroundOverlay, Marker } from 'react-google-maps'
+import {IonFabButton, IonIcon} from "@ionic/react";
+import {arrowForwardCircle} from "ionicons/icons";
+
+const someLatLng = {lat: 49.1152282, lng: 6.179302}
+export const googleMapURL = 'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBUrQMoPl1VlDm8QQL4CdqZxZyyP63vW94'
+const url = "https://journals.openedition.org/gallia/docannexe/image/1508/img-9.jpg"
+const imageBounds = {
+    north: 49.127149,
+    south: 49.1073,
+    east: 6.1890,
+    west: 6.1623,
+  };
 
 interface ContainerProps {
   name: string;
 }
 
-const MapContainer: React.FC<ContainerProps> = ({ name }) => {
+const MapContainer: React.FC<ContainerProps> = (myprops) => {
 
-  interface UserData {
-  username: string;
-  password: string;
-  prevState: null
-}
+  type mapProp = { isRomanMap: boolean, isMarkerShown:boolean }
 
+  let state = {isRomanOn: true};
 
-  const [loc, setLoc] = useState<UserData | null>(null);
-  const { Geolocation } = Plugins;
+     const MyGoogleMap = withScriptjs(withGoogleMap((props:mapProp) =>
+        <GoogleMap
+            defaultCenter={someLatLng}
+            defaultZoom={16}
+            options={{disableDefaultUI: true}}>
 
-  const getCurrentPosition = useCallback(async () => {
-    const coordinates = await Geolocation.getCurrentPosition();
-    setLoc(coordinates);
-  }, [coordinates]);
+        {props.isRomanMap && <GroundOverlay
+        url={url}
+        bounds={imageBounds}
+        options={{"opacity":80}}
+        />}
+        {props.isMarkerShown && <Marker position={someLatLng} />}
+        </GoogleMap>))
+
+    const loadingElement = <div/>
+    const containerElement = <div style={{height: '100vh'}}/>
+    const mapElement = <div style={{height: '100vh'}}/>
+    const map = <MyGoogleMap loadingElement={loadingElement}
+                             containerElement={containerElement}
+                             googleMapURL={googleMapURL}
+                             mapElement={mapElement}
+                            isMarkerShown={false}
+                            isRomanMap={state.isRomanOn}
+    />
+
 
   return (
     <div className="container">
-      <strong>{name}</strong>
+      <strong>{myprops.name}</strong>
       <div>
-        <h1>Geolocation</h1>
-        <p>Your location is:</p>
-        <p>Latitude: {loc?.coords.latitude}</p>
-        <p>Longitude: {loc?.coords.longitude}</p>
+        <div style={{height: '100vh'}}>
+            {map}
+        </div>
 
-        <button onClick={getCurrentPosition}>
-          Get Current Location
-        </button>
+        <IonFabButton onClick={() => state.isRomanOn = false}>
+            <IonIcon icon={arrowForwardCircle} />
+          </IonFabButton>
+
       </div>
 
     </div>
