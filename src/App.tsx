@@ -14,6 +14,8 @@ import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
+import TabHome from './pages/TabHome';
+import MissionDetails from './pages/MissionDetails';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -39,12 +41,21 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/tab1">
+
+          <Route exact path="/home">
+            <TabHome />
+          </Route>
+
+          <Route exact path="/map">
             <Tab1 />
           </Route>
-          <Route exact path="/tab2">
+          <Route exact path="/missions">
             <Tab2 />
           </Route>
+
+          <Route exact path="/missions/:id" component={MissionDetails}>
+          </Route>
+
           <Route path="/tab3">
             <Tab3 />
           </Route>
@@ -53,15 +64,15 @@ const App: React.FC = () => (
             <Tab4 />
           </Route>
           <Route exact path="/">
-            <Redirect to="/tab1" />
+            <Redirect to="/home" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="tab1" href="/map">
             <IonIcon icon={mapOutline} />
             <IonLabel>Carte</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="tab2" href="/missions">
             <IonIcon icon={appsOutline} />
             <IonLabel>Missions</IonLabel>
           </IonTabButton>
@@ -70,7 +81,7 @@ const App: React.FC = () => (
             <IonLabel>Succès</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="tab3" href="/tab4">
+          <IonTabButton tab="tab4" href="/tab4">
             <IonIcon icon={settingsOutline} />
             <IonLabel>Autre</IonLabel>
           </IonTabButton>

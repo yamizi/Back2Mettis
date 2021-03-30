@@ -1,5 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import {   IonButton, IonIcon, IonGrid, IonRow, IonCol, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { star } from 'ionicons/icons';
 import './Tab3.css';
 
 const Tab3: React.FC = () => {
@@ -11,12 +11,36 @@ const Tab3: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Succès</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+        <IonGrid>
+          <IonRow>
+            <IonCol >
+                <IonButton>
+                  <IonIcon slot="icon-only" icon={star} />
+                </IonButton>
+            </IonCol>
+            <IonCol>
+                <IonButton fill="outline">
+                  <IonIcon slot="icon-only" icon={star} />
+                </IonButton>
+            </IonCol>
+              <IonCol>
+                <IonButton>
+                  <IonIcon slot="icon-only" icon={star} />
+                </IonButton>
+            </IonCol>
+              <IonCol>
+                <IonButton >
+                  <IonIcon slot="icon-only" icon={star} />
+                </IonButton>
+            </IonCol>
+              <IonCol>
+                <IonButton>
+                  <IonIcon slot="start" icon={star} />
+                  Left Icon
+                </IonButton>
+            </IonCol>
+          </IonRow>
+        </IonGrid>
       </IonContent>
     </IonPage>
   );
