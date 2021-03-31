@@ -245,7 +245,7 @@ class MapComponent extends Component {
         >
 
         </GoogleMapReact>
-        <IonFab vertical="bottom" horizontal="end" slot="fixed" style={{"margin-bottom":'50px'}}>
+        <IonFab vertical="bottom" horizontal="end" slot="fixed" style={{"marginBottom":'50px'}}>
 
             <IonFabButton onClick={() => _flipOverlay()} >
                 <IonIcon icon={hourglassOutline} />
@@ -253,7 +253,7 @@ class MapComponent extends Component {
 
         </IonFab>
 
-          <IonFab vertical="bottom" horizontal="start" slot="fixed" style={{"margin-bottom":'50px'}}>
+          <IonFab vertical="bottom" horizontal="start" slot="fixed" style={{"marginBottom":'50px'}}>
 
             <IonFabButton onClick={!this.state.loading && this.checkPermissions} >
                 {this.state.loading && <IonIcon icon={ellipsisHorizontalOutline} />}

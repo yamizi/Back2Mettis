@@ -9,12 +9,13 @@ import {
   IonTabs,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { mapOutline, appsOutline, trophyOutline, settingsOutline } from 'ionicons/icons';
+import { mapOutline, appsOutline, trophyOutline, settingsOutline, peopleOutline } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
 import TabHome from './pages/TabHome';
+import TabStory from './pages/TabStory';
 import MissionDetails from './pages/MissionDetails';
 
 /* Core CSS required for Ionic components to work properly */
@@ -46,6 +47,12 @@ const App: React.FC = () => (
             <TabHome />
           </Route>
 
+
+          <Route exact path="/story" component={TabStory}>
+
+          </Route>
+
+
           <Route exact path="/map">
             <Tab1 />
           </Route>
@@ -68,10 +75,16 @@ const App: React.FC = () => (
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
+          <IonTabButton tab="tabstory" href="/story">
+            <IonIcon icon={peopleOutline} />
+            <IonLabel>Aventure</IonLabel>
+          </IonTabButton>
+
           <IonTabButton tab="tab1" href="/map">
             <IonIcon icon={mapOutline} />
             <IonLabel>Carte</IonLabel>
           </IonTabButton>
+
           <IonTabButton tab="tab2" href="/missions">
             <IonIcon icon={appsOutline} />
             <IonLabel>Missions</IonLabel>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonSlides, IonSlide, IonContent } from '@ionic/react';
+import { IonSlides, IonSlide, IonContent, IonGrid, IonRow } from '@ionic/react';
 import './TabHome.css';
 
 
@@ -13,8 +13,17 @@ const slideOpts = {
 const TabHome: React.FC = () => {
   return (
     <IonContent>
+       <IonGrid>
+      <IonRow>
+         <div style={{"height":"480px", "overflow":"hidden"}}>
+        <video autoPlay={true} style={{"height":"512px"}} loop={true}>
+          <source src={"assets/stclement.mp4"} type="video/mp4"/>
+        </video>
+        </div>
+      </IonRow>
 
-    <IonSlides pager={true} options={slideOpts}>
+      <IonRow>
+         <IonSlides pager={true} options={slideOpts}>
       <IonSlide>
         <h1>Slide 1</h1>
       </IonSlide>
@@ -24,7 +33,8 @@ const TabHome: React.FC = () => {
       <IonSlide>
       </IonSlide>
     </IonSlides>
-
+      </IonRow>
+   </IonGrid>
 
   </IonContent>
   );
