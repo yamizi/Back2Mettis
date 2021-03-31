@@ -17,6 +17,7 @@ import Tab4 from './pages/Tab4';
 import TabHome from './pages/TabHome';
 import TabStory from './pages/TabStory';
 import MissionDetails from './pages/MissionDetails';
+import { initStore } from './store';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -36,20 +37,32 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import {Provider} from "react-redux";
+import React from "react";
+import { setNovel } from './store/actions/novelActions';
+import { setScene } from './store/actions/sceneActions';
+import novelData from './mocks/novel.json';
+import { NovelType } from './types/types';
+
+
+const { store } = initStore();
+
+const novel: NovelType = novelData;
+
+if (novel) {
+  store.dispatch(setNovel(novel));
+  store.dispatch(setScene(novel.scenes.start))
+}
 
 const App: React.FC = () => (
   <IonApp>
+    <Provider store={store}>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
 
-          <Route exact path="/home">
-            <TabHome />
-          </Route>
-
-
-          <Route exact path="/story" component={TabStory}>
-
+          <Route exact path="/story" >
+            <TabStory></TabStory>
           </Route>
 
 
@@ -71,7 +84,7 @@ const App: React.FC = () => (
             <Tab4 />
           </Route>
           <Route exact path="/">
-            <Redirect to="/home" />
+            <Redirect to="/story" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
@@ -102,6 +115,7 @@ const App: React.FC = () => (
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
+    </Provider>
   </IonApp>
 );
 

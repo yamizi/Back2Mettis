@@ -19,10 +19,10 @@ class Novel extends Component<NovelProps> {
 
   render() {
     const { scene } = this.props;
-    console.log("secen" + this.props)
+
     return (
       <>
-        {scene && <Scene scene={scene} nextScene={this.nextScene} settings={{lazyTexts: true}} />}
+        {scene && <Scene scene={scene} nextScene={this.nextScene} />}
       </>
     );
   }
@@ -36,5 +36,4 @@ const mapDispatchToProps = {
   setScene,
 };
 
-export default Novel;
-//export default connect(mapStateToProps, mapDispatchToProps)(Novel);
+export default connect(mapStateToProps, mapDispatchToProps)(Novel);

@@ -6,9 +6,12 @@ import {hourglassOutline, locateOutline, ellipsisHorizontalOutline} from "ionico
 import { Capacitor, Plugins, CallbackID } from "@capacitor/core";
 import LocationService from '../utils/Location';
 
-const { Geolocation, Toast } = Plugins;
+import { setScene } from '../store/actions/sceneActions';
+import {NovelState, SceneState} from "../store/reducers/reducersTypes";
+import {connect} from "react-redux";
+import {NovelProps} from "../types/types";
 
-//import GeolocationButton from "./GeolocationButton";
+const { Geolocation, Toast } = Plugins;
 
 const AnyReactComponent = () => (
   <div style={{
@@ -84,12 +87,6 @@ const handleApiLoaded = (map:any, maps:any) => {
 
 };
 
-const _onClick = (map:any) => {
-  // use map and maps objects
-    console.log(map)
-    markers[0].setPosition({lat:map.lat,lng:map.lng})
-
-};
 
 const _flipOverlay = () => {
   console.log(currentOverlay)
@@ -128,7 +125,7 @@ const createMapOptions =  (maps:any) => {
     }
   }
 
-class MapComponent extends Component {
+class MapComponent extends Component<NovelProps> {
 
 
     state: any;
@@ -142,7 +139,23 @@ class MapComponent extends Component {
             },
             loading: false
         };
+
     }
+
+    _onClick = (map:any) => {
+          // use map and maps objects
+            console.log(map)
+            markers[0].setPosition({lat:map.lat,lng:map.lng})
+
+        if (this.props.novel){
+            let scenes = Object.keys(this.props.novel.scenes)
+            let scene = scenes[Math.floor(Math.random() * scenes.length)]
+            console.log("scene "+scene)
+            this.props.setScene(this.props.novel.scenes[scene])
+
+
+        }
+        };
 
     checkPermissions = async () => {
         const hasPermission = await LocationService.checkGPSPermission();
@@ -239,7 +252,7 @@ class MapComponent extends Component {
           defaultCenter={this.state.center}
           defaultZoom={defaultZoom}
           onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}
-          onClick={_onClick}
+          onClick={this._onClick}
           yesIWantToUseGoogleMapApiInternals
           options={createMapOptions}
         >
@@ -266,4 +279,12 @@ class MapComponent extends Component {
   }
 }
 
-export default MapComponent;
+const mapStateToProps = (state: { novel: NovelState; scene: SceneState }) => {
+  return { novel: state.novel.current, scene: state.scene.current || state.novel.current?.scenes.start };
+};
+
+const mapDispatchToProps = {
+  setScene,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(MapComponent);

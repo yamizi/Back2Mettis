@@ -22,6 +22,7 @@ export type ScenePropsType = {
   scene: SceneType;
   nextScene: (id: string) => void;
   settings: SettingsState;
+  addSave: (scene: Save) => void;
 };
 
 export type SceneStateType = {

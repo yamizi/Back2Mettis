@@ -10,7 +10,7 @@ import styles from './styles.module.scss';
 let wordsInterval: number;
 let wordsIntervalIndex: number = 0;
 
-function Scene({ scene, nextScene, settings }: ScenePropsType) {
+function Scene({ scene, nextScene, settings, addSave }: ScenePropsType) {
   const [words, setWords] = useState(['']);
   const [isButtonsVisible, setButtonsVisible] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
@@ -148,6 +148,4 @@ const mapDispatchToProps = {
   addSave,
 };
 
-export default Scene;
-
-//export default connect(mapStateToProps, mapDispatchToProps)(Scene);
+export default connect(mapStateToProps, mapDispatchToProps)(Scene);
