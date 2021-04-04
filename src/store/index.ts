@@ -21,7 +21,7 @@ const reducer = combineReducers({
 });
 
 const persistConfig = {
-  key: 'visual-novel',
+  key: 'visual-novel'+Date.now(),
   whitelist: ['settings', 'saves'],
   storage,
 };

@@ -1,4 +1,10 @@
-import { SettingsState, Saves, Save } from './../store/reducers/reducersTypes';
+import {SettingsState, Saves, Save, SavesState} from './../store/reducers/reducersTypes';
+
+
+export type GameType = {
+  type: string;
+  correctAnswer: string;
+};
 
 export type ButtonType = {
   text: string;
@@ -14,6 +20,7 @@ export type TextsType = {
 export type SceneType = {
   id: string;
   image: string;
+  game?:GameType;
   texts: TextsType[];
   buttons: ButtonType[];
 };
@@ -21,6 +28,7 @@ export type SceneType = {
 export type ScenePropsType = {
   scene: SceneType;
   nextScene: (id: string) => void;
+  saves: SavesState;
   settings: SettingsState;
   addSave: (scene: Save) => void;
 };
@@ -37,6 +45,8 @@ export type NovelType = {
   name: string;
   scenes: { [key: string]: SceneType };
 };
+
+export type MapProps = { novel?: NovelType; scene?: SceneType; setScene: Function, saves: SavesState, history:any};
 
 export type NovelProps = { novel?: NovelType; scene?: SceneType; setScene: Function };
 
@@ -73,3 +83,23 @@ export type MenuSavesProps = {
   removeSaveByTime: (id: number) => void;
   loadScene: (id: string) => void;
 };
+
+
+
+export type MarkerDataType= {
+  id: string;
+  name: string;
+  markers: { [key: string]: MarkerType };
+
+}
+
+export type MarkerType= {
+  type: 'optional' | 'main';
+  label: string;
+  id:string;
+  scene:string;
+  lat: number;
+  lng: number;
+  time: 'rome' | 'medieval' | 'moderne';
+  gmarker?:google.maps.Marker;
+}

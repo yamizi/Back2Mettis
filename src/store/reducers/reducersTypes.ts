@@ -25,7 +25,7 @@ export type SettingsState = {
   lazyTexts: boolean;
 };
 
-export type SettingsPayload = {};
+export type SettingsPayload = {visitedScenes:{}};
 
 export type Save = {
   time: number;

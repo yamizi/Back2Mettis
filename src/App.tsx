@@ -41,12 +41,12 @@ import {Provider} from "react-redux";
 import React from "react";
 import { setNovel } from './store/actions/novelActions';
 import { setScene } from './store/actions/sceneActions';
-import novelData from './mocks/novel.json';
+import novelData from './data/novel.json';
+
 import { NovelType } from './types/types';
 
 
 const { store } = initStore();
-
 const novel: NovelType = novelData;
 
 if (novel) {

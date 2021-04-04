@@ -3,19 +3,21 @@ import { connect } from 'react-redux';
 import { ScenePropsType } from '../../types/types';
 import SceneTexts from '../SceneTexts';
 import SceneButton from '../SceneButton';
-import { SettingsState } from '../../store/reducers/reducersTypes';
+import {Saves, SettingsState} from '../../store/reducers/reducersTypes';
 import { addSave } from '../../store/actions/savesActions';
 import styles from './styles.module.scss';
 
 let wordsInterval: number;
 let wordsIntervalIndex: number = 0;
 
-function Scene({ scene, nextScene, settings, addSave }: ScenePropsType) {
+function Scene({ scene, nextScene, saves, settings, addSave }: ScenePropsType) {
   const [words, setWords] = useState(['']);
   const [isButtonsVisible, setButtonsVisible] = useState(false);
+  const [isGameVisible, setGameVisible] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
   const [backgroundImage, setBackgroundImage] = useState('');
-  const { image, texts, buttons } = scene;
+  const { image, texts, buttons, game } = scene;
+
 
   const handleClick = (id: string) => () => {
     clearScene();
@@ -34,6 +36,9 @@ function Scene({ scene, nextScene, settings, addSave }: ScenePropsType) {
           clearInterval(wordsInterval);
           if (textIndex === texts.length - 1) {
             setButtonsVisible(true);
+
+            //addSave({ time: Date.now(), name: scene.id+'#'+textIndex, id: scene.id, isAutoSave: false });
+
           }
         }
       }, 100);
@@ -138,8 +143,9 @@ function Scene({ scene, nextScene, settings, addSave }: ScenePropsType) {
   );
 }
 
-const mapStateToProps = (state: { settings: SettingsState }) => {
+const mapStateToProps = (state: { saves: Saves;settings: SettingsState }) => {
   return {
+    saves: state.saves,
     settings: state.settings,
   };
 };

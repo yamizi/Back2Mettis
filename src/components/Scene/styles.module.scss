@@ -8,13 +8,13 @@
 }
 
 .background {
-  max-height: 92vh;
-  height: 92vh;
+  max-height: 90vh;
+  height: 90vh;
   overflow: hidden;
   /*background-repeat: no-repeat;*/
   width: 100vw;
   background-position: center center;
-  /*background-size: cover;*/
+  background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
