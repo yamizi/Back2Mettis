@@ -1,1 +1,210 @@
-{"id":"demo","name":"Demo Novel","scenes":{"start":{"id":"start","image":"https://images.unsplash.com/photo-1560972550-aba3456b5564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc5NjV9&auto=format&fit=crop&w=1350&q=80","texts":[{"text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."}],"buttons":[{"text":"Next scene","redirectId":"scene1"}]},"scene1":{"id":"scene1","image":"https://images.unsplash.com/photo-1519949387774-80d5c79b8a8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80","texts":[{"text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit"},{"text":"Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.","nickname":"Test NickName","updatedImage":"https://images.unsplash.com/photo-1593664320009-4201fdaecff6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"}],"buttons":[{"text":"First choice","redirectId":"scene2"},{"text":"Second choice","redirectId":"final"}]},"scene2":{"id":"scene2","image":"https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80","texts":[{"text":"Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."}],"buttons":[{"text":"Do it!","redirectId":"final"}]},"final":{"id":"final","image":"https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80","texts":[{"text":"Its final scene"}],"buttons":[{"text":"Go Back","redirectId":"scene2"},{"text":"Go to Start","redirectId":"start"}]}}}
+{
+  "id": "demo",
+  "name": "Metz - L'aventure Temporelle",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "image": "http://jcemetz.fr/wp-content/uploads/2019/02/signature-mail-2019.jpg",
+      "texts": [
+        {
+          "text2": "Ceci est un jeu avec quelques incohérences historiques, elles sont volontaires pour vous faire découvrir le maximum de personnages et lieux marquants de la ville de Metz.",
+          "text": "Bonjour, bienvenue dans le parcours \"Visiter Metz autrement - L'Aventure Temporelle\"  proposé par la JCE de Metz ! Ce parcours devrait durer 1h30. Si vous connaissez le principe, cliquez sur le bouton 'Démarrer l'aventure', sinon, nous allons vous expliquer comment utiliser cette application."
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Demarrer l'aventure",
+          "redirectId": "scene1"
+        },
+        {
+          "text": "M'expliquer comment jouer",
+          "redirectId": "scene_explain"
+        }
+      ]
+    },
+    "scene_explain": {
+      "id": "scene_explain",
+      "image": "http://jcemetz.fr/wp-content/uploads/2019/02/signature-mail-2019.jpg",
+      "texts": [
+        {
+          "text": "L'application se compose de 4 parties auquelles vous accédez par le menu inférieur. Vous pouvez naviguer librement d'un écran à un autre sans perdre votre avancement."
+        },
+        {
+          "text": "C'est là où vous êtes. C'est celui qui vous donnera les instructions, les énigmes et les informations de la visite.",
+          "nickname": "L'écran 'Aventure'"
+        },
+        {
+          "text": "En cliquant sur le bouton carte, vous accédez à une carte Metz. Sur cette vue, utilisez vos 2 doigts pour glisser la carte",
+          "nickname": "L'écran 'Carte'"
+        }
+        ,
+        {
+          "text": "Vous pouvez aussi cliquer sur le bouton 'sablier' à droite pour alterner entre les cartes des différentes époques, l'époque romaine, le moyen âge, et l'époque contemporaine. Vous en aurez besoin pour résoudre des énigmes et trouver votre chemin ;-)",
+          "nickname": "L'écran 'Carte'"
+        }
+        ,
+        {
+          "text": "Le bouton à gauche vous permet de vous géolocaliser et centrer la carte autour de vous.",
+          "nickname": "L'écran 'Carte'"
+        }
+        ,
+        {
+          "text": "En cliquant sur un lieu de la carte, vous allez poser un petit symbole 'i'. C'est ainsi que vous allez répondre à des énigmes ou indiquer à l'application où vous êtes pour lancer des activités",
+          "nickname": "L'écran 'Carte'"
+        },
+        {
+          "text": "Cet écran vous permet de sauter directement d'une mission à une autre, sans avoir à faire tous les dialogues. Il vous permettra aussi de retrouver les anciennes réponses données par les personnages que vous rencontrer pour vous aider dans la suite",
+          "nickname": "L'écran 'Missions'"
+        },
+        {
+          "text": "Sur cet écran, vous allez retrouver tous les objets que vous avez collectés pendant cette aventure. Ils vous seront utiles dans certaines énigmes.",
+          "nickname": "L'écran 'Inventaire'"
+        }
+        ,
+        {
+          "text": "Essayez maintenant tout ça, et quand vous êtes prets, cliquez sur le bouton 'Démarrer'.",
+          "nickname": "L'écran 'Carte'",
+          "updatedImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Démarrer l'aventure",
+          "redirectId": "scene1"
+        }
+      ]
+    },
+    "scene1": {
+      "id": "scene1",
+      "image2": "http://www.centre-bethanie.org/images/0_clement_plus.jpg | http://hellboy57.e-monsite.com/medias/images/p12807.jpg",
+      "image": "https://images6.livreshebdo.fr/sites/default/files/assets/images/tourdegaule.jpg",
+      "texts": [
+        {
+          "text": "Gaulle romaine. 3ème Siècle après JC."
+        }
+        ,
+        {
+          "text": "Les orties hautement reconnus pour leurs bénéfices médicinaux, ont été à l’origine d’un phénomène extraordinaire: alors que le bouillon de la ménagère était prêt et chaud sur le feu, le cri assourdissant du Monstre la fit sursauter. Dans son effroi, les différentes plantes qu’elle avait pu recueillir le matin même furent bousculé et quelques feuilles d’orties et d'autres herbes sont tombés dans le bouillon. Ne s’en apercevant pas, elle laisse son fils, Obé pour les intimes, en boire quelques gorgées."
+        }
+        ,
+        {
+          "text": "Ce monstre, c'est le Graoully, qui cherchait des plantes magiques capables de le rendre immortel avant d'attaquer la ville de Divodurum Mediomatricorum. malheureusement, c'est ce bébé gaulois qui a bu la dernière feuille de cette plante magique.",
+          "updatedImage": "http://hellboy57.e-monsite.com/medias/images/p12807.jpg"
+        }
+        ,
+        {
+          "nickname": "Le saviez-vous?",
+          "text": "La région mosellanne possède deux plantes endémiques: la Salicorne de Vic et l'Iberis de Viollet.",
+          "updatedImage": "./assets/riddles/plants.png"
+        },
+        {
+          "text": "Le graoully s'est de nouveau échappé de la Seille et menace de ravager la ville de Metz. Votre objectif est de l'arrêter avant qu'il ne devienne trop fort! Rendez vous à la porte de la Cathédrale de Metz pour discuter avec Saint Clément.",
+          "updatedImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "C'est bon, j'ai trouvé Saint Clément!",
+          "redirectId": "scene1_stclement"
+        }
+      ]
+    },
+    "scene1_stclement": {
+      "id": "scene1_stclement",
+      "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
+      "texts": [
+        {
+          "nickname": "Saint-clément",
+          "text": "Je suis Saint-clément! Le fondateur de la Cathédrale de Metz [bla bla bla]. Je sens qu'un grand danger menace notre ville! Le démon! Le Graoully s'est échappé! Voulez vous que je vous raconte comment je l'avais capturé?"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Oui! Racontez moi!",
+          "redirectId": "scene1_stclement_story"
+        },
+        {
+          "text": "Non, je suis pressé! Dites moi comment l'arreter!",
+          "redirectId": "scene1_stclement_how"
+        }
+      ]
+    },
+    "scene1_stclement_story": {
+      "id": "scene1_stclement_story",
+      "image": "https://www.blelorraine.fr/wp-content/uploads/2020/12/procession-Graoully.jpg",
+      "texts": [
+        {
+          "nickname": "Saint-clément",
+          "text": "L'histoire de la capture du Graoully [bla bla bla]."
+        }
+      ],
+      "buttons": [
+
+        {
+          "text": "Dites moi comment l'arreter!",
+          "redirectId": "scene1_stclement_how"
+        }
+      ]
+    },
+    "scene1_stclement_how": {
+      "id": "scene1_stclement_how",
+      "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
+      "texts": [
+        {
+          "nickname": "Saint-clément",
+          "text": "Vous aurez besoin de 3 objets pour l'arreter: La Gourde du Guerrier, la Plume de l'Erudit et le Cristal de l'Artiste. Chacun de ces objets est caché dans une époque différente."
+        },{
+          "nickname": "Saint-clément",
+          "text": "Vous pouvez les chercher un par un ou en parallèle. "
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Dites m'en plus sur la Gourde!",
+          "redirectId": "scene_rome_0"
+        },
+        {
+          "text": "Que savez vous sur la plume?",
+          "redirectId": "scene_medieval_0"
+        },
+        {
+          "text": "Aidez moi à trouver le Cristal!",
+          "redirectId": "scene_contemporain_0"
+        }
+      ]
+    },"scene2": {
+      "id": "scene2",
+      "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "texts": [
+        {
+          "text": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Do it!",
+          "redirectId": "final"
+        }
+      ]
+    },
+    "final": {
+      "id": "final",
+      "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80",
+      "texts": [
+        {
+          "text": "Its final scene"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Go Back",
+          "redirectId": "scene2"
+        },
+        {
+          "text": "Go to Start",
+          "redirectId": "start"
+        }
+      ]
+    }
+  }
+}

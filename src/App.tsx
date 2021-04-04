@@ -104,12 +104,12 @@ const App: React.FC = () => (
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon icon={trophyOutline} />
-            <IonLabel>Succès</IonLabel>
+            <IonLabel>Inventaire</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="tab4" href="/tab4">
+          <IonTabButton tab="tab4" href="/tab4" disabled={true}>
             <IonIcon icon={settingsOutline} />
-            <IonLabel>Autre</IonLabel>
+            <IonLabel>Réglages</IonLabel>
           </IonTabButton>
 
         </IonTabBar>
