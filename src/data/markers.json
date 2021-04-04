@@ -1,0 +1,60 @@
+{
+  "id": "",
+  "name": "",
+  "markers":
+[
+{
+    "label": "(0) Mission principale",
+    "lat": 49.119899,
+    "lng":6.1750728,
+    "type": "main",
+    "time": "rome",
+    "id": "rome_main",
+    "scene": "scene_rome_main"
+
+  },
+  {
+    "label": "(1) Tour de Mutte",
+    "lat": 49.120401,
+    "lng":6.1754971,
+    "type": "optional",
+    "time": "rome",
+    "id": "rome_mute",
+    "scene": "scene_rome_mute"
+
+  },
+  {
+    "label": "(2) Marché Couvert",
+    "lat": 49.1198332,
+    "lng":6.1740245,
+    "type": "optional",
+    "time": "rome",
+    "id": "rome_market",
+    "scene": "scene_rome_market"
+  }
+
+  ,
+  {
+    "label": "(2) Kawa Tea",
+    "lat": 49.120426,
+    "lng":6.1735626,
+    "type": "optional",
+    "time": "rome",
+    "id": "rome_kawa",
+    "scene": "scene_rome_kawa"
+  }
+  ,
+  {
+    "label": "(1) Maison Paul Verlaine",
+    "lat": 49.1172294,
+    "lng":6.1717513,
+    "type": "optional",
+    "time": "moderne",
+    "id": "rome_verlaine",
+    "scene": "scene_moderne_verlaine"
+  }
+
+
+]
+}
+

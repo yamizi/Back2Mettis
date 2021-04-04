@@ -172,7 +172,139 @@
           "redirectId": "scene_contemporain_0"
         }
       ]
-    },"scene2": {
+    },
+
+    "scene_rome_0": {
+      "id": "scene_rome_0",
+      "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
+      "texts": [
+        {
+          "nickname": "Saint-clément",
+          "text": "Il y a très longtemps, un dragon monstrueux terrorisait notre ville, j'ai donc fait appel aux meilleurs guerriers de toute la Gaulle pour m'en débarasser. Tous ont eu peur... sauf Un!"
+        },{
+          "nickname": "Saint-clément",
+          "text": "Obelix Le gaulois! Il voulait savoir si le Graoully avait le même goût que le sanglier fumé, et c'est donc lui qui m'a aidé à me débarasser du monstre. Une fois le monstre capturé, j'ai eu pitié de la bête, et j'ai interdit à Obé de le déguster.... Quelle erreur!",
+          "updatedImage": "https://pbs.twimg.com/media/Dxqek8OXQAAD80g?format=jpg&name=large"
+        },{
+          "nickname": "Saint-clément",
+          "text": "Obelix savait que le monstre reviendrait, et il a caché une Gourde de potion magique dans l'ancienne ville de Divodurum. Il vous faut retracer les pas d'Obelix dans la Metz romaine pour la retrouver!",
+          "updatedImage": "https://pbs.twimg.com/media/Dxqek8NXcAAorJ6?format=jpg&name=large"
+        },
+        {
+          "nickname": "Saint-clément",
+          "text": "Allez vers l'onglet Carte, de nouvelles missions vous sont proposés pour vous aider à le retrouver",
+          "updatedImage": "https://pbs.twimg.com/media/Dxqek8OXQAAD80g?format=jpg&name=large"
+        }
+      ],
+      "buttons": [
+
+      ]
+    },
+
+    "scene_rome_main": {
+      "id": "scene_rome_main",
+      "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
+      "texts": [
+        {
+          "nickname": "Saint-clément",
+          "text": "Avez vous retrouvé la Gourde d'Obélix?"
+        }
+      ],
+      "buttons": [
+       {
+          "text": "Oui!",
+          "redirectId": "scene_rome_main1"
+        },{
+          "text": "Non, j'ai besoin de plus d'indices",
+          "redirectId": "scene_rome_main2"
+        }
+      ]
+    },
+
+    "scene_rome_main1": {
+      "id": "scene_rome_main1",
+      "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
+      "texts": [
+        {
+          "nickname": "Saint-clément",
+          "text": "Où est-elle cachée?"
+        }
+      ],
+      "buttons": [
+      ]
+    },
+
+    "scene_rome_main2": {
+      "id": "scene_rome_main2",
+      "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
+      "texts": [
+        {
+          "nickname": "Saint-clément",
+          "text": "Complétez les missions indiques par un petit bonhomme orange sur la carte pour avoir plus d'indices!"
+        }
+      ],
+      "buttons": [
+      ]
+    },
+
+    "scene_rome_mute": {
+      "id": "scene_rome_mute",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg",
+      "texts": [
+        {
+          "text": "Comment s'appelle la tour qui renferme une cloche civile de Metz?"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "La Tour des Esprits",
+          "redirectId": "scene_rome_mute1"
+        },{
+          "text": "La Tour de Mutte",
+          "redirectId": "scene_rome_mute2"
+        },{
+          "text": "la Tour au Diable",
+          "redirectId": "scene_rome_mute1"
+        }
+      ]
+    },
+
+    "scene_rome_mute1": {
+      "id": "scene_rome_mute1",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg",
+      "texts": [
+        {
+          "text": "Non, ce n'est pas ça! La tour qu'on cherche se trouve là où vous êtes, à la Cathédrale de Saint Etienne."
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Réessayer!",
+          "redirectId": "scene_rome_mute"
+        }
+      ]
+    },
+
+    "scene_rome_mute2": {
+      "id": "scene_rome_mute2",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg",
+      "texts": [
+        {
+          "nickname": "Indice",
+          "text": "Bien joué! Obelix n'est pas loin"
+        },
+        {
+          "nickname": "Le saviez-vous?",
+          "text": "La Tour de Mutte avec une cloche civile qui servait à prévenir les citadins de potentielles attaques (88m de hauteur, 93m de hauteur avec la flèche) "
+        }
+
+      ],
+      "buttons": [
+
+      ]
+    },
+
+    "scene2": {
       "id": "scene2",
       "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
       "texts": [
