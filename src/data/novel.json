@@ -95,7 +95,7 @@
         {
           "nickname": "Le saviez-vous?",
           "text": "La région mosellanne possède deux plantes endémiques: la Salicorne de Vic et l'Iberis de Viollet.",
-          "updatedImage": "./assets/riddles/plants.png"
+          "updatedImage": "../../assets/locations/plants.png"
         },
         {
           "text": "Le graoully s'est de nouveau échappé de la Seille et menace de ravager la ville de Metz. Votre objectif est de l'arrêter avant qu'il ne devienne trop fort! Rendez vous à la porte de la Cathédrale de Metz pour discuter avec Saint Clément.",
