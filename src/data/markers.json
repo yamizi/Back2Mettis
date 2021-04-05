@@ -45,6 +45,26 @@
   }
   ,
   {
+    "label": "(3) Grenier de Chèvrement",
+    "lat": 49.1221268,
+    "lng":6.1786622,
+    "type": "optional",
+    "time": "rome",
+    "id": "rome_chevrement",
+    "scene": "scene_rome_chevrement"
+  },
+
+  {
+    "label": "(4) Temple Neuf",
+    "lat": 49.1205855,
+    "lng":6.1719095,
+    "type": "optional",
+    "time": "rome",
+    "id": "rome_temple",
+    "scene": "scene_rome_temple"
+  }
+  ,
+  {
     "label": "(1) Maison Paul Verlaine",
     "lat": 49.1172294,
     "lng":6.1717513,

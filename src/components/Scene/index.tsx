@@ -1,4 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { IonContent, IonInput, IonItem } from '@ionic/react';
+
+
 import { connect } from 'react-redux';
 import { ScenePropsType } from '../../types/types';
 import SceneTexts from '../SceneTexts';
@@ -13,15 +16,16 @@ let wordsIntervalIndex: number = 0;
 function Scene({ scene, nextScene, saves, settings, addSave }: ScenePropsType) {
   const [words, setWords] = useState(['']);
   const [isButtonsVisible, setButtonsVisible] = useState(false);
-  const [isGameVisible, setGameVisible] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
   const [backgroundImage, setBackgroundImage] = useState('');
   const { image, texts, buttons, game } = scene;
-
+  const [answer, setText] = useState<string>('');
 
   const handleClick = (id: string) => () => {
-    clearScene();
-    nextScene(id);
+    if(id !=""){
+      clearScene();
+      nextScene(id);
+    }
   };
 
   const lazyWords = useCallback(() => {
@@ -81,8 +85,11 @@ function Scene({ scene, nextScene, saves, settings, addSave }: ScenePropsType) {
     if (textIndex + 1 < texts.length - 1) {
       setTextIndex((textIndex) => (textIndex += 1));
     } else if (textIndex + 1 === texts.length - 1) {
-      setTextIndex((textIndex) => (textIndex += 1));
-      setButtonsVisible(true);
+
+      if(! game || (game && answer!="" && answer==game.correctAnswer)){
+        setTextIndex((textIndex) => (textIndex += 1));
+        setButtonsVisible(true);
+      }
     }
   };
 
@@ -119,7 +126,7 @@ function Scene({ scene, nextScene, saves, settings, addSave }: ScenePropsType) {
     <div className={styles.background} style={{ backgroundImage: `url(${backgroundImage || image})` }}>
       <div className={styles.content}>
         <div className={styles.buttons}>
-          {isButtonsVisible &&
+          {isButtonsVisible && (! game || textIndex == texts.length - 1) &&
             buttons.map((button) => (
               <SceneButton
                 key={`${button.text}${button.redirectId}`}
@@ -127,6 +134,15 @@ function Scene({ scene, nextScene, saves, settings, addSave }: ScenePropsType) {
                 text={button.text}
               />
             ))}
+          {
+            game && (textIndex == texts.length - 2) &&
+
+                  <IonItem>
+                    <IonInput placeholder="Votre réponse" onIonChange={e => setText(e.detail.value!)}></IonInput>
+                  </IonItem>
+
+
+          }
         </div>
         {texts[textIndex]?.nickname && <div className={styles.nickname}>{texts[textIndex].nickname}</div>}
         {texts.length > 0 && (

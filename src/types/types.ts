@@ -89,17 +89,17 @@ export type MenuSavesProps = {
 export type MarkerDataType= {
   id: string;
   name: string;
-  markers: { [key: string]: MarkerType };
+  markers: MarkerType[];
 
 }
 
 export type MarkerType= {
-  type: 'optional' | 'main';
+  type: string; //'optional' | 'main';
   label: string;
   id:string;
   scene:string;
   lat: number;
   lng: number;
-  time: 'rome' | 'medieval' | 'moderne';
+  time: string; //'rome' | 'medieval' | 'moderne';
   gmarker?:google.maps.Marker;
 }

@@ -8,7 +8,8 @@ const MarkersServices = {
 
     getMarkerByLocation:(markers:MarkerDataType, lat:number,lng:number) =>{
         let m:MarkerType;
-        for (m of markers.markers) {
+        for (let ms in markers.markers) {
+            m = markers.markers[ms];
             if (m.lat == lat && m.lng == lng) {
                 return m
             }
@@ -50,8 +51,8 @@ const MarkersServices = {
         let lat:number, lng:number;
         let m:MarkerType;
 
-
-        for (m of markers.markers){
+        for (let ms in markers.markers) {
+            m = markers.markers[ms];
             lat = m.lat;
             lng = m.lng;
 
@@ -59,7 +60,7 @@ const MarkersServices = {
               position: new google.maps.LatLng(lat, lng),
               icon: icons[m.type].icon,
               map: map,
-              label:m.label
+              //label:m.label
             });
             marker.addListener("click", clicFunction)
             m.gmarker = marker;

@@ -192,7 +192,7 @@
         },
         {
           "nickname": "Saint-clément",
-          "text": "Allez vers l'onglet Carte, de nouvelles missions vous sont proposés pour vous aider à le retrouver",
+          "text": "Allez vers l'onglet Carte, de nouvelles missions vous sont proposés pour vous aider à le retrouver. N'oubliez pas d'activer la carte 'romaine' pour que les indices apparaissent",
           "updatedImage": "https://pbs.twimg.com/media/Dxqek8OXQAAD80g?format=jpg&name=large"
         }
       ],
@@ -227,11 +227,19 @@
       "texts": [
         {
           "nickname": "Saint-clément",
-          "text": "Où est-elle cachée?"
+          "text": "Où est-elle cachée? Complétez le numéro et la rue puis cliquez sur la flèche!"
+        },{
+          "nickname": "Saint-clément",
+          "text": "Bravo! Vous avez retrouvé la Gourde de potion magique!",
+          "updatedImage": "https://i.mmo.cm/is/image/mmoimg/mw-product-max/gourde-de-potion-magique-avec-passant-de-ceinture--mw-133537-1.jpg"
         }
       ],
       "buttons": [
-      ]
+      ],
+      "game": {
+        "type": "input",
+        "correctAnswer": "Saint Louis"
+      }
     },
 
     "scene_rome_main2": {
@@ -291,7 +299,7 @@
       "texts": [
         {
           "nickname": "Indice",
-          "text": "Bien joué! Obelix n'est pas loin"
+          "text": "Bien joué! Obelix n'est pas loin  [Il est directement au sud des Thermes]"
         },
         {
           "nickname": "Le saviez-vous?",
@@ -304,21 +312,253 @@
       ]
     },
 
-    "scene2": {
-      "id": "scene2",
-      "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+
+    "scene_rome_market": {
+      "id": "scene_rome_market",
+      "image": "../../assets/locations/mauricette.jpg",
       "texts": [
         {
-          "text": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+          "text": "Bienvenue au marché couvert! Obelix est certainement passé par ici! Il doit être attablé à l'échoppe qui porte cette fresque murale."
+        },{
+          "text": "Saurez-vous la retrouver? Complétez le texte puis appuyez sur la flèche pour continuer."
+        },{
+          "text": "Bien joué! Chez Mauricette est l'une échoppes de produits lorrains les plus connues de Metz. N'hésitez pas à discuter avec les commerçants pour répondre à la prochaine question",
+          "updatedImage": "../../assets/locations/mauricette2.jpg"
+        }
+      ],
+      "buttons": [
+{
+          "text": "C'est bon, je suis prêt!",
+          "redirectId": "scene_rome_market1"
+        }
+      ],
+      "game": {
+        "type": "input",
+        "correctAnswer": "Chez Mauricette"
+      }
+    },
+
+    "scene_rome_market1": {
+      "id": "scene_rome_market1",
+      "image": "../../assets/locations/mauricette2.jpg",
+      "texts": [
+        {
+          "text": "Qu'est ce que le Fuseau Lorrain?"
         }
       ],
       "buttons": [
         {
-          "text": "Do it!",
-          "redirectId": "final"
+          "text": "Un saucisson fumé",
+          "redirectId": "scene_rome_market2"
+        },
+        {
+          "text": "Un petit fromage de lait de vache",
+          "redirectId": ""
         }
       ]
     },
+
+
+
+    "scene_rome_market2": {
+      "id": "scene_rome_market2",
+      "image": "http://charculor.fr/wp-content/uploads/2015/09/Fuseau-Lorrain-a-lancienne-PES.jpg",
+      "texts": [
+        {
+          "nickname": "Indice",
+          "text": "Bien joué! Obelix n'est pas loin [Il est près de l'ancien cours de la Seille]"
+        },
+        {
+          "nickname": "Le saviez-vous?",
+          "text": "Le fuseau lorrain est un saucisson moelleux et maigre embossé dans un boyau naturel et délicatement fumé au sapin. "
+        }
+
+      ],
+      "buttons": [
+
+      ]
+    },
+
+  "scene_rome_chevrement": {
+      "id": "scene_rome_chevrement",
+      "image": "https://cdn-s-www.republicain-lorrain.fr/images/66B31536-785B-4495-8783-BE2B5B15C848/NW_raw/photo-dr-thomas-wilwert-1604075475.jpg",
+      "texts": [
+        {
+          "text": "Obelix est probablement en quetes de provisions! Rendez-vous rue de Chèvrement. Au deuxième étage d'un des batiments, vous pouvez retrouver cette sculpture du Graoully. A quel numéro correspond cette maison, dite 'au serpent'?"
+        },
+        {
+          "text": "Bien joué! Continuez sur la rue de Chèvrement. Au bout, tournez à droite vers la rue de la Boucherie Saint Georges. Vous arrivez devant le 'Grenier de Chèvremont'. Savez vous à quoi servait ce batiment crénelé?",
+          "updatedImage": "../../assets/locations/cheverement.png"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "A stocker des provisons",
+          "redirectId": "scene_rome_chevrement1"
+        },
+        {
+          "text": "A vendre des chèvres",
+          "redirectId": ""
+        },
+        {
+          "text": "A protéger la cité",
+          "redirectId": ""
+        }
+      ],
+      "game": {
+        "type": "input",
+        "correctAnswer": "10"
+      }
+    },
+    "scene_rome_chevrement1": {
+      "id": "scene_rome_chevrement1",
+      "image": "../../assets/locations/cheverement.png",
+      "texts": [
+        {
+          "nickname": "Indice",
+          "text": "Tout à fait! Mais Obelix est déjà loin d'ici. [Il est probablement en train de se goinfrer de spécialités lorraines]."
+        },
+
+        {
+          "nickname": "Le saviez-vous?",
+          "text": "3 fragments de l'Enceine Romaine sont encore conservés aujourd'hui à Metz. L'un se trouve derrière le Grenier de Chèvrement, le second dans les jardins du Palais du Gouverneur et le dernier sur la façade de l'Eglise Saint-Martin.",
+          "updatedImage": "../../assets/locations/cheverement2.png"
+        }
+
+      ],
+      "buttons": [
+      ]
+    },
+
+    "scene_rome_kawa": {
+      "id": "scene_rome_kawa",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Place_de_Chambre_-_Metz_57.JPG/1920px-Place_de_Chambre_-_Metz_57.JPG",
+      "texts": [
+        {
+          "text": "Obelix est un grand amateur de boissons chaudes. On vous invite à descendre le long de la Cathédrale jusqu'à la Place de Chambre en quête d’une boutique de thé/café. On dit en plus qu’Obé raffole d’une spécialité quelque peu déroutante au nom exotique. Saurez-vous deviner quelle est-elle?"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Je sais!",
+          "redirectId": "scene_rome_kawa1"
+        },
+        {
+          "text": "J'ai besoin d'un autre indice",
+          "redirectId": "scene_rome_kawa2"
+        }
+      ]
+    },
+
+    "scene_rome_kawa2": {
+      "id": "scene_rome_kawa2",
+      "image": "../../assets/locations/kawa-tea.png",
+      "texts": [
+        {
+          "text": "Petit indice, c’est a priori le nom du café Robusta le plus cher au monde, demandez à la gérante du Kawa-Tea, gardienne de la réponse et de ses explications!"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Je sais maintenant!",
+          "redirectId": "scene_rome_kawa1"
+        }
+      ]
+    },
+
+    "scene_rome_kawa1": {
+      "id": "scene_rome_kawa1",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Place_de_Chambre_-_Metz_57.JPG/1920px-Place_de_Chambre_-_Metz_57.JPG",
+      "texts": [
+        {
+          "text": "De quoi Obelix raffole-t-il?"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Kopi Luwak",
+          "redirectId": "scene_rome_kawa3"
+        },
+        {
+          "text": "Pacamara",
+          "redirectId": "scene_rome_kawa2"
+        },
+        {
+          "text": "Peaberry",
+          "redirectId": "scene_rome_kawa2"
+        }
+      ]
+    },
+
+    "scene_rome_kawa3": {
+      "id": "scene_rome_kawa3",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Place_de_Chambre_-_Metz_57.JPG/1920px-Place_de_Chambre_-_Metz_57.JPG",
+      "texts": [
+        {
+          "nickname": "Le saviez-vous?",
+          "text": "Bien joué! Le nom de la Place de Chambre provient des chambres particulières édifiées par les chanoines de la cathédrale au XIe siècle, dès lors la place sera vite appelée Ad Cameras, qui sera plus tard traduit en français par en Chambres. Pendant l'annexion allemande de 1870, on la nomme Kammerplatz (\"place de Chambre\") et Fischmarkplatz (\"place du marché au poisson\") pendant celle de 1940. "
+        },
+        {
+
+          "text": "Obélix avait souvent l’habitude de se reposer au pied du 3e arbre de la Place de Chambre. En sortant de la Boutique de Café/Thé, tournez à droite et rendez-vous au 3e arbre de la Place. Vous y trouverez une plaque ! ]"
+        }
+
+      ],
+      "buttons": [
+{
+          "text": "J'y suis",
+          "redirectId": "scene_rome_kawa4"
+        }
+      ]
+    },
+
+    "scene_rome_kawa4": {
+      "id": "scene_rome_kawa4",
+      "image": "../../assets/locations/plaque_chambre_cache.jpg",
+      "texts": [
+        {
+          "text": "Tiens, c’est étonnant que sous cette plaque se trouve quelque chose de vital pour l’homme. Mais à quoi correspond cette plaque ? Trouvez le mot qui a été caché sur cette image (en majuscules)?"
+        },{
+          "nickname": "Indice",
+          "text": "Bien joué! Obelix n'est pas loin  [Il est dans une épicerie fine!]",
+          "updatedImage": "../../assets/locations/plaque_chambre.jpg"
+        }
+      ],
+      "buttons": [
+
+      ],
+      "game": {
+        "type": "input",
+        "correctAnswer": "PUITS"
+      }
+    },
+
+
+    "scene_rome_temple": {
+      "id": "scene_rome_temple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "texts": [
+        {
+          "nickname": "Saint-Clément",
+          "text": "J'ai entendu parler d’un endroit où Obé a fait la rencontre d’une jolie demoiselle : cadre idylique pour un premier baiser avec la douce Falbala. Rendez-vous à l'interieur pour la suite de l'énigme"
+        },
+        {
+          "text": "Vous êtes au Temple Neuf. Ce batiment construit en 1901 abrite un orgue entièrement mécanique. Cet orgue d’Ernest Mühleisen est le meilleur instrument néoclassique de la ville, régulièrement utilisé pour les concours du Conservatoire national de région et pour de nombreux récitals, donnés par des organistes réputés. Combien de jeux possède cet orgue?",
+          "updatedImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg"
+        },
+        {
+          "nickname": "Indice",
+          "text": "Bien joué! Obelix est de l'autre côté de la vieille ville, au Sud Est des remparts romains!",
+          "updatedImage": "http://temples.free.fr/photos_orgues/metz_org.jpg"
+        }
+      ],
+      "game": {
+        "type": "input",
+        "correctAnswer": "52"
+      },
+      "buttons": []
+    },
+
     "final": {
       "id": "final",
       "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80",
