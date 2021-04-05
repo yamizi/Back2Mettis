@@ -13,10 +13,11 @@ import {connect} from "react-redux";
 import {MapProps, MarkerDataType, MarkerType} from "../types/types";
 
 import MarkersServices from "../utils/Markers"
+import keys from '../data/keys.json';
 
 const { Geolocation, Toast } = Plugins;
 
-const APIKEY = { key: "AIzaSyBUrQMoPl1VlDm8QQL4CdqZxZyyP63vW94" }
+const APIKEY = { key: keys.MAP }
 const initialLatLng = {lat: 49.1152282, lng: 6.179302}
 const defaultZoom = 16
 const url = "https://journals.openedition.org/gallia/docannexe/image/1508/img-9.jpg"
