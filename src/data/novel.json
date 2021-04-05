@@ -95,7 +95,7 @@
         {
           "nickname": "Le saviez-vous?",
           "text": "La région mosellanne possède deux plantes endémiques: la Salicorne de Vic et l'Iberis de Viollet.",
-          "updatedImage": "../../assets/locations/plants.png"
+          "updatedImage": "../../assets/locations/plants.PNG"
         },
         {
           "text": "Le graoully s'est de nouveau échappé de la Seille et menace de ravager la ville de Metz. Votre objectif est de l'arrêter avant qu'il ne devienne trop fort! Rendez vous à la porte de la Cathédrale de Metz pour discuter avec Saint Clément.",
@@ -388,7 +388,7 @@
         },
         {
           "text": "Bien joué! Continuez sur la rue de Chèvrement. Au bout, tournez à droite vers la rue de la Boucherie Saint Georges. Vous arrivez devant le 'Grenier de Chèvremont'. Savez vous à quoi servait ce batiment crénelé?",
-          "updatedImage": "../../assets/locations/cheverement.png"
+          "updatedImage": "../../assets/locations/cheverement.PNG"
         }
       ],
       "buttons": [
@@ -412,7 +412,7 @@
     },
     "scene_rome_chevrement1": {
       "id": "scene_rome_chevrement1",
-      "image": "../../assets/locations/cheverement.png",
+      "image": "../../assets/locations/cheverement.PNG",
       "texts": [
         {
           "nickname": "Indice",
@@ -422,7 +422,7 @@
         {
           "nickname": "Le saviez-vous?",
           "text": "3 fragments de l'Enceine Romaine sont encore conservés aujourd'hui à Metz. L'un se trouve derrière le Grenier de Chèvrement, le second dans les jardins du Palais du Gouverneur et le dernier sur la façade de l'Eglise Saint-Martin.",
-          "updatedImage": "../../assets/locations/cheverement2.png"
+          "updatedImage": "../../assets/locations/cheverement2.PNG"
         }
 
       ],
@@ -452,7 +452,7 @@
 
     "scene_rome_kawa2": {
       "id": "scene_rome_kawa2",
-      "image": "../../assets/locations/kawa-tea.png",
+      "image": "../../assets/locations/kawa-tea.PNG",
       "texts": [
         {
           "text": "Petit indice, c’est a priori le nom du café Robusta le plus cher au monde, demandez à la gérante du Kawa-Tea, gardienne de la réponse et de ses explications!"
