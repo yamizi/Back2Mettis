@@ -1,8 +1,10 @@
+import './MapComponent.css';
 import GoogleMapReact from 'google-map-react';
 import { Component } from 'react';
 import {withRouter} from "react-router";
-import {IonFab, IonFabButton, IonIcon} from "@ionic/react";
+import {IonFab, IonFabButton, IonIcon, IonFabList} from "@ionic/react";
 import {hourglassOutline, locateOutline, ellipsisHorizontalOutline} from "ionicons/icons";
+import { logoFacebook, logoTwitter, logoYoutube, logoPwa, logoNpm, logoIonic, logoGithub, logoJavascript, logoAngular, logoVimeo, logoChrome, logoReact } from 'ionicons/icons';
 
 import { Capacitor, Plugins, CallbackID } from "@capacitor/core";
 import LocationService from '../utils/Location';
@@ -39,8 +41,6 @@ let questMarkers:MarkerDataType;
 
 
 
-
-
 class MapComponent extends Component<MapProps> {
 
 
@@ -58,7 +58,7 @@ class MapComponent extends Component<MapProps> {
 
     }
 
-    _onClick = (map:any) => {
+    mapClick = (map:any) => {
           // use map and maps objects
 
             markers[0].setPosition({lat:map.lat,lng:map.lng})
@@ -68,7 +68,7 @@ class MapComponent extends Component<MapProps> {
             let scene = scenes[Math.floor(Math.random() * scenes.length)]
 
         }
-        };
+    };
 
     checkPermissions = async () => {
         const hasPermission = await LocationService.checkGPSPermission();
@@ -193,27 +193,44 @@ class MapComponent extends Component<MapProps> {
       myMap = map
 
       this.initMarkers(map);
-      this.flipOverlay()
+      this.flipOverlay("rome")
 
     };
 
 
-    flipOverlay = () => {
+    flipOverlay = (val) => {
+        if (val==""){
+            if (currentOverlay =="rome"){
+                romeOverlay.setMap(null);
+                //medievalOverlay.setMap(myMap);
+                currentOverlay = "medieval"
+              }
 
-      if (currentOverlay =="rome"){
-        romeOverlay.setMap(null);
-        //medievalOverlay.setMap(myMap);
-        currentOverlay = "medieval"
-      }
+              else if (currentOverlay =="medieval"){
+                //medievalOverlay.setMap(null);
+                currentOverlay = "moderne"
+              }
+              else{
+                romeOverlay.setMap(myMap);
+                currentOverlay = "rome"
+              }
+        }
+        else{
+            currentOverlay = val
+            if (val=="rome"){
+                romeOverlay.setMap(myMap);
+                //medievalOverlay.setMap(null);
+            }
+            else if (val=="medival"){
+                romeOverlay.setMap(null);
+                //medievalOverlay.setMap(myMap);
+            }
+            else{
+                romeOverlay.setMap(null);
+                //medievalOverlay.setMap(null);
+            }
+        }
 
-      else if (currentOverlay =="medieval"){
-        //medievalOverlay.setMap(null);
-        currentOverlay = "moderne"
-      }
-      else{
-        romeOverlay.setMap(myMap);
-        currentOverlay = "rome"
-      }
 
       MarkersServices.showMarkers(questMarkers,currentOverlay)
 
@@ -242,7 +259,7 @@ class MapComponent extends Component<MapProps> {
           defaultCenter={this.state.center}
           defaultZoom={defaultZoom}
           onGoogleApiLoaded={({ map, maps }) => this.handleApiLoaded(map, maps)}
-          onClick={this._onClick}
+          onClick={this.mapClick}
           yesIWantToUseGoogleMapApiInternals
           options={this.createMapOptions}
         >
@@ -250,7 +267,19 @@ class MapComponent extends Component<MapProps> {
         </GoogleMapReact>
         <IonFab vertical="bottom" horizontal="end" slot="fixed" style={{"marginBottom":'50px'}}>
 
-            <IonFabButton onClick={() => this.flipOverlay()} >
+            <IonFabList side="top">
+                <IonFabButton onClick={() => this.flipOverlay("rome")} data-desc="Epoque romaine">
+                  <IonIcon icon={logoVimeo} />
+
+                </IonFabButton>
+                <IonFabButton onClick={() => this.flipOverlay("medieval")}  data-desc="Epoque medievale">
+                  <IonIcon icon={logoChrome} />
+                </IonFabButton>
+                <IonFabButton onClick={() => this.flipOverlay("moderne")}  data-desc="Epoque moderne">
+                  <IonIcon icon={logoReact} />
+                </IonFabButton>
+              </IonFabList>
+                <IonFabButton >
                 <IonIcon icon={hourglassOutline} />
               </IonFabButton>
 

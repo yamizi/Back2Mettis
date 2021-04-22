@@ -98,11 +98,11 @@ const App: React.FC = () => (
             <IonLabel>Carte</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="tab2" href="/missions">
+          <IonTabButton tab="tab2" href="/missions" disabled={true}>
             <IonIcon icon={appsOutline} />
             <IonLabel>Missions</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="tab3" href="/tab3" disabled={true}>
             <IonIcon icon={trophyOutline} />
             <IonLabel>Inventaire</IonLabel>
           </IonTabButton>
