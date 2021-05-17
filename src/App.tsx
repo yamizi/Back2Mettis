@@ -10,8 +10,8 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { mapOutline, appsOutline, trophyOutline, settingsOutline, peopleOutline } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
+import TabMap from './pages/TabMap';
+import TabMissions from './pages/TabMissions';
 import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
 import TabHome from './pages/TabHome';
@@ -47,7 +47,16 @@ import { NovelType } from './types/types';
 
 
 const { store } = initStore();
-const novel: NovelType = novelData;
+
+var novel: NovelType = novelData;
+
+for (var sceneId of Object.keys(novel.scenes)){
+  let scene = novel.scenes[sceneId]
+  if (scene.visible == undefined){
+    novel.scenes[sceneId].visible = 1
+  }
+  novel.scenes[sceneId].userId = 0
+}
 
 if (novel) {
   store.dispatch(setNovel(novel));
@@ -67,10 +76,10 @@ const App: React.FC = () => (
 
 
           <Route exact path="/map">
-            <Tab1 />
+            <TabMap />
           </Route>
           <Route exact path="/missions">
-            <Tab2 />
+            <TabMissions />
           </Route>
 
           <Route exact path="/missions/:id" component={MissionDetails}>
@@ -98,7 +107,7 @@ const App: React.FC = () => (
             <IonLabel>Carte</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="tab2" href="/missions" disabled={true}>
+          <IonTabButton tab="tab2" href="/missions">
             <IonIcon icon={appsOutline} />
             <IonLabel>Missions</IonLabel>
           </IonTabButton>

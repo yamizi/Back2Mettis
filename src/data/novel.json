@@ -3,6 +3,7 @@
   "name": "Metz - L'aventure Temporelle",
   "scenes": {
     "start": {
+      "name": "Explications",
       "id": "start",
       "image": "http://jcemetz.fr/wp-content/uploads/2019/02/signature-mail-2019.jpg",
       "texts": [
@@ -24,6 +25,7 @@
     },
     "scene_explain": {
       "id": "scene_explain",
+      "visible": 0,
       "image": "http://jcemetz.fr/wp-content/uploads/2019/02/signature-mail-2019.jpg",
       "texts": [
         {
@@ -76,6 +78,7 @@
     },
     "scene1": {
       "id": "scene1",
+      "name": "Début du jeu",
       "image2": "http://www.centre-bethanie.org/images/0_clement_plus.jpg | http://hellboy57.e-monsite.com/medias/images/p12807.jpg",
       "image": "https://images6.livreshebdo.fr/sites/default/files/assets/images/tourdegaule.jpg",
       "texts": [
@@ -110,6 +113,7 @@
       ]
     },
     "scene1_stclement": {
+      "visible": 0,
       "id": "scene1_stclement",
       "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
       "texts": [
@@ -130,6 +134,7 @@
       ]
     },
     "scene1_stclement_story": {
+      "visible": 0,
       "id": "scene1_stclement_story",
       "image": "https://www.blelorraine.fr/wp-content/uploads/2020/12/procession-Graoully.jpg",
       "texts": [
@@ -147,6 +152,7 @@
       ]
     },
     "scene1_stclement_how": {
+      "visible": 0,
       "id": "scene1_stclement_how",
       "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
       "texts": [
@@ -176,6 +182,7 @@
 
     "scene_rome_0": {
       "id": "scene_rome_0",
+      "name": "Intro Epoque Romaine",
       "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
       "texts": [
         {
@@ -203,6 +210,7 @@
 
     "scene_rome_main": {
       "id": "scene_rome_main",
+      "name": "Quête principale - Epoque Romaine",
       "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
       "texts": [
         {
@@ -223,6 +231,7 @@
 
     "scene_rome_main1": {
       "id": "scene_rome_main1",
+      "visible": 0,
       "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
       "texts": [
         {
@@ -244,6 +253,7 @@
 
     "scene_rome_main2": {
       "id": "scene_rome_main2",
+      "visible": 0,
       "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
       "texts": [
         {
@@ -257,6 +267,7 @@
 
     "scene_rome_mute": {
       "id": "scene_rome_mute",
+      "name": "Cloche Civile de Metz",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg",
       "texts": [
         {
@@ -278,6 +289,7 @@
     },
 
     "scene_rome_mute1": {
+      "visible": 0,
       "id": "scene_rome_mute1",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg",
       "texts": [
@@ -295,6 +307,7 @@
 
     "scene_rome_mute2": {
       "id": "scene_rome_mute2",
+      "visible": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg",
       "texts": [
         {
@@ -315,6 +328,7 @@
 
     "scene_rome_market": {
       "id": "scene_rome_market",
+      "name": "Marché couvert",
       "image": "../../assets/locations/mauricette.jpg",
       "texts": [
         {
@@ -339,6 +353,7 @@
     },
 
     "scene_rome_market1": {
+      "visible": 0,
       "id": "scene_rome_market1",
       "image": "../../assets/locations/mauricette2.jpg",
       "texts": [
@@ -361,6 +376,7 @@
 
 
     "scene_rome_market2": {
+      "visible": 0,
       "id": "scene_rome_market2",
       "image": "http://charculor.fr/wp-content/uploads/2015/09/Fuseau-Lorrain-a-lancienne-PES.jpg",
       "texts": [
@@ -380,6 +396,7 @@
     },
 
   "scene_rome_chevrement": {
+      "name": "Rue du Chèvrement",
       "id": "scene_rome_chevrement",
       "image": "https://cdn-s-www.republicain-lorrain.fr/images/66B31536-785B-4495-8783-BE2B5B15C848/NW_raw/photo-dr-thomas-wilwert-1604075475.jpg",
       "texts": [
@@ -411,6 +428,7 @@
       }
     },
     "scene_rome_chevrement1": {
+      "visible": 0,
       "id": "scene_rome_chevrement1",
       "image": "../../assets/locations/cheverement.PNG",
       "texts": [
@@ -431,6 +449,7 @@
     },
 
     "scene_rome_kawa": {
+      "name": "Place de Chambre",
       "id": "scene_rome_kawa",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Place_de_Chambre_-_Metz_57.JPG/1920px-Place_de_Chambre_-_Metz_57.JPG",
       "texts": [
@@ -451,6 +470,7 @@
     },
 
     "scene_rome_kawa2": {
+      "visible": 0,
       "id": "scene_rome_kawa2",
       "image": "../../assets/locations/kawa-tea.PNG",
       "texts": [
@@ -467,6 +487,7 @@
     },
 
     "scene_rome_kawa1": {
+      "visible": 0,
       "id": "scene_rome_kawa1",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Place_de_Chambre_-_Metz_57.JPG/1920px-Place_de_Chambre_-_Metz_57.JPG",
       "texts": [
@@ -491,6 +512,7 @@
     },
 
     "scene_rome_kawa3": {
+      "visible": 0,
       "id": "scene_rome_kawa3",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Place_de_Chambre_-_Metz_57.JPG/1920px-Place_de_Chambre_-_Metz_57.JPG",
       "texts": [
@@ -513,6 +535,7 @@
     },
 
     "scene_rome_kawa4": {
+      "visible": 0,
       "id": "scene_rome_kawa4",
       "image": "../../assets/locations/plaque_chambre_cache.jpg",
       "texts": [
@@ -535,6 +558,7 @@
 
 
     "scene_rome_temple": {
+      "name": "Temple Neuf",
       "id": "scene_rome_temple",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
       "texts": [
@@ -560,6 +584,7 @@
     },
 
     "scene_moderne_cathedrale": {
+      "name": "Cathédrale",
       "id": "scene_moderne_cathedrale",
       "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
       "texts": [
@@ -590,6 +615,7 @@
     },
 
     "scene_moderne_cathedrale2": {
+      "visible": 0,
       "id": "scene_moderne_cathedrale2",
       "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
       "texts": [
@@ -625,6 +651,7 @@
     },
 
     "scene_moderne_verlaine": {
+      "name": "Maison Paul Verlaine",
       "id": "scene_moderne_verlaine",
       "image": "../../assets/locations/poemes_saturniens.jpg",
       "texts": [
@@ -648,6 +675,7 @@
     },
 
     "scene_moderne_verlaine2": {
+      "visible": 0,
       "id": "scene_moderne_verlaine2",
       "image": "https://img-4.linternaute.com/_8mi-u4VF8TK4UO94hNZBwyjcxs=/1240x/smart/c2d147ca8eb44b8cb637cd345c82dfd2/ccmcms-linternaute/10994886.jpg",
       "texts": [
@@ -675,6 +703,7 @@
       ]
     },
     "scene_moderne_verlaine3": {
+      "visible": 0,
       "id": "scene_moderne_verlaine3",
       "image": "../../assets/locations/maison_verlaine.png",
       "texts": [
@@ -689,6 +718,7 @@
     },
 
     "scene_moderne_esplanade": {
+      "name": "Esplanade",
       "id": "scene_moderne_esplanade",
       "image": "https://www.tourisme-lorraine.fr/sitlorimg/1920/0/aHR0cHM6Ly93d3cuc2l0bG9yLmZyL3Bob3Rvcy84MzgvODM4MTYyMjUyXzEuSlBH.jpg",
       "texts": [
@@ -710,6 +740,7 @@
 
 
     "scene_moderne_stpierre": {
+      "name": "Saint Pierre aux Nonnais",
       "id": "scene_moderne_stpierre",
       "image": "../../assets/locations/saint_maximin.png",
       "texts": [
@@ -738,6 +769,7 @@
     },
 
     "scene_moderne_stpierre2": {
+      "visible": 0,
       "id": "scene_moderne_stpierre2",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Metz_Saint_Pierre_R02.jpg/1024px-Metz_Saint_Pierre_R02.jpg",
       "texts": [
@@ -756,6 +788,7 @@
     },
 
     "scene_moderne_gouverneur": {
+      "name": "Palais du Gouverneur",
       "id": "scene_moderne_gouverneur",
       "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Palais_du_Gouverneur_Metz_08.JPG",
       "texts": [
@@ -787,6 +820,7 @@
     },
 
     "scene_moderne_gouverneur2": {
+      "visible": 0,
       "id": "scene_moderne_gouverneur2",
       "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Palais_du_Gouverneur_Metz_08.JPG",
       "texts": [
@@ -812,6 +846,7 @@
       }
     },
     "scene_moderne_serpennoise": {
+      "name": "Porte Serpennoise",
       "id": "scene_moderne_serpennoise",
       "image": "../../assets/locations/portes.png",
       "texts": [
@@ -835,6 +870,7 @@
 
 
     "scene_moderne_gare": {
+      "name": "Gare de Metz",
       "id": "scene_moderne_gare",
       "image": "../../assets/locations/gare.PNG",
       "texts": [
@@ -858,6 +894,7 @@
 
 
     "scene_moderne_maximin": {
+      "name": "Eglise Saint Maximin",
       "id": "scene_moderne_maximin",
       "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80",
       "texts": [
@@ -882,6 +919,7 @@
 
 
     "scene_medieval_arsenal": {
+      "name": "Arsenal",
       "id": "scene_medieval_arsenal",
       "image": "../../assets/locations/arsenal.PNG",
       "texts": [
@@ -907,6 +945,7 @@
     },
 
     "scene_medieval_arsenal2": {
+      "visible": 0,
       "id": "scene_medieval_arsenal2",
       "image": "../../assets/locations/puzzle.png",
       "texts": [
@@ -928,6 +967,7 @@
     },
 
     "scene_medieval_gouverneur": {
+      "name": "Palais du Gouverneur",
       "id": "scene_medieval_gouverneur",
       "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Palais_du_Gouverneur_Metz_08.JPG",
       "texts": [
@@ -951,6 +991,7 @@
     },
 
     "scene_medieval_camoufle": {
+      "name": "Tour Camoufle",
       "id": "scene_medieval_camoufle",
       "image": "https://www.tourisme-lorraine.fr/sitlorimg/1920/0/aHR0cHM6Ly93d3cuc2l0bG9yLmZyL3Bob3Rvcy84MzgvODM4MTQwMTYzXzQuanBn.jpg",
       "texts": [

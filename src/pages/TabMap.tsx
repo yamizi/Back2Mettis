@@ -3,9 +3,9 @@ import{ Component, MouseEvent } from 'react';
 
 import MapComponent from "../components/MapComponent";
 
-import './Tab1.css';
+import './TabMap.css';
 
-const Tab1: React.FC = (myprops) => {
+const TabMap: React.FC = (myprops) => {
 
 
 
@@ -18,13 +18,11 @@ const Tab1: React.FC = (myprops) => {
             <MapComponent></MapComponent>
         </div>
 
-          <IonFab vertical="bottom" horizontal="end" slot="fixed">
 
-        </IonFab>
 
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab1;
+export default TabMap;

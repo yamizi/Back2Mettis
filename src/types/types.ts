@@ -20,9 +20,13 @@ export type TextsType = {
 export type SceneType = {
   id: string;
   image: string;
+  name?:string;
   game?:GameType;
   texts: TextsType[];
   buttons: ButtonType[];
+  visible?: number;
+  userId?:number;
+
 };
 
 export type ScenePropsType = {

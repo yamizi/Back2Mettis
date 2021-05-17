@@ -64,8 +64,8 @@ class MapComponent extends Component<MapProps> {
             markers[0].setPosition({lat:map.lat,lng:map.lng})
 
         if (this.props.novel){
-            let scenes = Object.keys(this.props.novel.scenes)
-            let scene = scenes[Math.floor(Math.random() * scenes.length)]
+            //let scenes = Object.keys(this.props.novel.scenes)
+            //let scene = scenes[Math.floor(Math.random() * scenes.length)]
 
         }
     };
