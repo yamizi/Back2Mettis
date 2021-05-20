@@ -227,7 +227,28 @@ class MissionComponent extends Component<MapProps> {
                             <IonCheckbox checked={this.state.new_buttons.length >0} onIonChange={e => this.setButtonsChecked(e.detail.checked)} />
                           </IonItem>
 
+                        {
+                        this.state.new_buttons.length >0 &&
+                        <IonItem>
+                                <IonGrid>
 
+                                  <IonRow>
+                                    <IonCol size="6"><IonInput placeholder="Texte du bouton" onIonChange={e => this.setText("buttons_text","0###"+e.detail.value!)}></IonInput></IonCol>
+                                    <IonCol size="6"><IonInput placeholder="Mission en cas de clic" onIonChange={e => this.setText("buttons_link","0###"+e.detail.value!)}></IonInput></IonCol>
+                                  </IonRow>
+
+                                <IonRow>
+                                    <IonCol size="6"><IonInput placeholder="Texte du bouton" onIonChange={e => this.setText("buttons_text","1###"+e.detail.value!)}></IonInput></IonCol>
+                                    <IonCol size="6"><IonInput placeholder="Mission en cas de clic" onIonChange={e => this.setText("buttons_link","1###"+e.detail.value!)}></IonInput></IonCol>
+                                  </IonRow>
+
+                                <IonRow>
+                                    <IonCol size="6"><IonInput placeholder="Texte du bouton" onIonChange={e => this.setText("buttons_text","1###"+e.detail.value!)}></IonInput></IonCol>
+                                    <IonCol size="6"><IonInput placeholder="Mission en cas de clic" onIonChange={e => this.setText("buttons_link","1###"+e.detail.value!)}></IonInput></IonCol>
+                                </IonRow>
+                                </IonGrid>
+                        </IonItem>
+                        }
                         <IonItem>
                             <IonLabel>Scanner un QR Code</IonLabel>
                             <IonCheckbox checked={this.state.new_game.type=="qrcode"} onIonChange={e => this.setQRCodeChecked(e.detail.checked)} />
