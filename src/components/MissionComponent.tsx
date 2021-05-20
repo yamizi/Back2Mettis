@@ -21,9 +21,12 @@ import {
 
 import {addOutline, closeOutline, checkmarkOutline } from "ionicons/icons";
 import { IonModal, IonButton, IonCheckbox, IonFab, IonIcon, IonFabButton  } from '@ionic/react';
+import firebase from "../utils/Firebase";
+require("firebase/firestore");
+var db = firebase.firestore();
 
 
-
+//const dbref = firebase.database().ref('adventure/')
 
 class MissionComponent extends Component<MapProps> {
     state: any;
@@ -35,13 +38,48 @@ class MissionComponent extends Component<MapProps> {
             showModal: false,
             new_scenes:[],
             new_buttons:[],
-            new_game:{type:undefined, correctAnswer:"", question:""},
+            new_game:{type:undefined, correctAnswer:"", question:"", successMessage:""},
             new_name:"",
+            community_missions:[]
         };
 
-        console.log(props.novel.scenes)
+        let community_missions = []
+        db.collection("missions").get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                console.log(`${doc.id}`,doc.data());
+                let mission:SceneType = {id:doc.data().id, name:doc.data().id, image:doc.data().image,texts:doc.data().texts,buttons:doc.data().buttons,game:doc.data().game}
+            });
+        });
+        /*
+
+        db.collection("adventure").add({
+            first: "Ada",
+            last: "Lovelace",
+            born: 1815
+        })
+        .then((docRef) => {
+            console.log("Document written with ID: ", docRef.id);
+        })
+        .catch((error) => {
+            console.error("Error adding document: ", error);
+        });
+         */
+
+
 
     }
+
+    submitMission = () => {
+        let mission:SceneType = {id:"",image:"",texts:[],name:"",buttons:[]}
+        let id = this.state.new_name.replace(/[^\w\s]/gi, '').trim().toLowerCase()+Date.now()
+        mission.id =id
+        mission.name = this.state.new_name
+        mission.image = this.state.new_scenes[0].updatedImage
+        mission.texts = []
+        this.state.new_scenes.forEach((scene) => {
+
+        })
+    };
 
     newBtnClick = () => {
         this.setShowModal(true, false)
@@ -55,10 +93,8 @@ class MissionComponent extends Component<MapProps> {
 
     setShowModal = (visible:boolean, save:boolean) => {
 
-
         if(save) {
-            console.log(this.state)
-            return
+            this.submitMission()
         }
         else{
             this.setState({"new_scenes":[{"updatedImage":"","text":""}]})
@@ -87,7 +123,7 @@ class MissionComponent extends Component<MapProps> {
                 this.setState({"new_scenes":scenes})
                 break;
             }
-            case "qrcode_answer":{
+            case "game_answer":{
                 let game = this.state.new_game
                 game.correctAnswer = txt
                 this.setState({"new_game":game})
@@ -99,9 +135,9 @@ class MissionComponent extends Component<MapProps> {
                 this.setState({"new_game":game})
                 break;
             }
-            case "riddle_answer":{
+            case "game_success":{
                 let game = this.state.new_game
-                game.correctAnswer = txt
+                game.successMessage = txt
                 this.setState({"new_game":game})
                 break;
             }
@@ -149,7 +185,7 @@ class MissionComponent extends Component<MapProps> {
 
     render() {
         const {center, loading} = this.state
-        const scenes = this.props.novel.scenes
+        const missions = this.props.novel.scenes
 
         return (
 
@@ -191,19 +227,7 @@ class MissionComponent extends Component<MapProps> {
                             <IonCheckbox checked={this.state.new_buttons.length >0} onIonChange={e => this.setButtonsChecked(e.detail.checked)} />
                           </IonItem>
 
-                        {
-                        this.state.new_buttons.length >0 &&
-                        <IonItem>
-                                <IonGrid>
 
-                                  <IonRow>
-                                    <IonCol size="6">ion-col size="6"</IonCol>
-                                    <IonCol>ion-col</IonCol>
-                                    <IonCol>ion-col</IonCol>
-                                  </IonRow>
-                                </IonGrid>
-                        </IonItem>
-                        }
                         <IonItem>
                             <IonLabel>Scanner un QR Code</IonLabel>
                             <IonCheckbox checked={this.state.new_game.type=="qrcode"} onIonChange={e => this.setQRCodeChecked(e.detail.checked)} />
@@ -211,7 +235,7 @@ class MissionComponent extends Component<MapProps> {
                         {
                         this.state.new_game.type=="qrcode" &&
                         <IonItem>
-                            <IonInput value={""} placeholder="Message du QR Code" onIonChange={e => this.setText("qrcode_answer",e.detail.value!)}></IonInput>
+                            <IonInput placeholder="Message caché dans le QR Code" onIonChange={e => this.setText("game_answer",e.detail.value!)}></IonInput>
                         </IonItem>
                         }
 
@@ -225,7 +249,14 @@ class MissionComponent extends Component<MapProps> {
                         </IonItem>}
                         {this.state.new_game.type=="input" &&
                         <IonItem>
-                            <IonInput placeholder="Réponse à la question / devinette" onIonChange={e => this.setText("riddle_answer",e.detail.value!)}></IonInput>
+                            <IonInput placeholder="Réponse à la question / devinette" onIonChange={e => this.setText("game_answer",e.detail.value!)}></IonInput>
+                        </IonItem>
+                        }
+
+
+                        {(this.state.new_game.type == "input" || this.state.new_game.type == "qrcode") &&
+                        <IonItem>
+                            <IonTextarea placeholder="Message en cas de succès" onIonChange={e => this.setText("game_success",e.detail.value!)}></IonTextarea>
                         </IonItem>
                         }
 
@@ -234,7 +265,7 @@ class MissionComponent extends Component<MapProps> {
                     <div style={{"alignContent":"center", "marginLeft":'10px'}}>
 
                         <IonButton color="success" onClick={() => this.setShowModal(false, true)} >Sauvegarder</IonButton>
-                        <IonButton color="danger" onClick={() => this.setShowModal(false, false)} >Réinitialiser</IonButton>
+                        <IonButton color="danger" onClick={() => this.setShowModal(false, false)} >Fermer sans sauvegarder</IonButton>
                     </div>
                 </IonContent>
                   </IonModal>
@@ -244,12 +275,33 @@ class MissionComponent extends Component<MapProps> {
                     <div>
                         <IonHeader>
                         <IonToolbar>
-                          <IonTitle >Missions pré-enregistrées</IonTitle>
+                          <IonTitle >Missions communautaires</IonTitle>
                         </IonToolbar>
                       </IonHeader>
 
                       <IonList>
-                         {Object.values(scenes).map((item) =>
+                         {Object.values(this.state.community_missions).map((item:SceneType) =>
+                             <div>
+                         {item.visible==1 && item.userId==0 &&
+                            <IonItem key={item.id} href={"javascript: void(0)"}>
+                                <IonLabel>{item.name?item.name:item.id}</IonLabel>
+                            </IonItem>
+                        }
+                        </div>
+
+                    )}
+                      </IonList>
+                    </div>
+
+                    <div>
+                        <IonHeader>
+                        <IonToolbar>
+                          <IonTitle >Missions jouables</IonTitle>
+                        </IonToolbar>
+                      </IonHeader>
+
+                      <IonList>
+                         {Object.values(missions).map((item:SceneType) =>
                              <div>
                          {item.visible==1 && item.userId==0 &&
                             <IonItem key={item.id} onClick={() => this.handleSceneClic(item)} href={"javascript: void(0)"}>
