@@ -26,6 +26,7 @@ export type SceneType = {
   buttons: ButtonType[];
   visible?: number;
   userId?:number;
+  status?:number
 
 };
 

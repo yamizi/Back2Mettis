@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {MapProps, MarkerType, SceneType} from "../types/types";
+import {ButtonType, MapProps, MarkerType, SceneType, TextsType} from "../types/types";
 import {NovelState, Saves, SceneState} from "../store/reducers/reducersTypes";
 import {setScene} from "../store/actions/sceneActions";
 import {connect} from "react-redux";
@@ -77,8 +77,40 @@ class MissionComponent extends Component<MapProps> {
         mission.image = this.state.new_scenes[0].updatedImage
         mission.texts = []
         this.state.new_scenes.forEach((scene) => {
+            let text_:TextsType = {text:scene.text,updatedImage:scene.updatedImage}
+            mission.texts.push(text_)
+        })
+
+        mission.buttons = []
+        this.state.new_buttons.forEach((button) => {
+            if(button.text != ""){
+                let btn:ButtonType = {text:button.text,redirectId:button.redirectId}
+                mission.buttons.push(btn)
+            }
 
         })
+
+        mission.game = {type:this.state.new_game.type, correctAnswer:this.state.new_game.correctAnswer}
+        if(this.state.new_game.type=="qrcode"){
+            mission.texts.push({text:"Scanner le code QR code pour continuer",updatedImage:""})
+            mission.texts.push({text:this.state.new_game.successMessage,updatedImage:""})
+        }
+        else if(this.state.new_game.type=="input"){
+            mission.texts.push({text:this.state.new_game.question,updatedImage:""})
+            mission.texts.push({text:this.state.new_game.successMessage,updatedImage:""})
+        }
+
+        mission.status = 0
+        mission.status = 0
+        console.log(mission)
+
+        db.collection("missions").add(mission).then((docRef) => {
+            console.log("Document written with ID: ", docRef.id);
+        })
+        .catch((error) => {
+            console.error("Error adding document: ", error);
+        });
+
     };
 
     newBtnClick = () => {
@@ -203,9 +235,8 @@ class MissionComponent extends Component<MapProps> {
                       </IonHeader>
                     <IonList>
 
-                        <IonItemDivider>Titre de la mission</IonItemDivider>
                         <IonItem>
-                            <IonInput placeholder="Texte ici" onIonChange={e => this.setText("new_name",e.detail.value!)}></IonInput>
+                            <IonInput placeholder="Titre de la mission" onIonChange={e => this.setText("new_name",e.detail.value!)}></IonInput>
                           </IonItem>
 
 
@@ -220,7 +251,7 @@ class MissionComponent extends Component<MapProps> {
                                 </IonItem>
                              </div>
                          )}
-                         <IonButton color="primary" expand="full" onClick={this.newSceneBtnClick} >Ajouter une scène</IonButton>
+                         <IonButton color="primary" expand="full" onClick={this.newSceneBtnClick} >Ajouter plus de scènes</IonButton>
                         <IonItemDivider>Pour continuer</IonItemDivider>
                           <IonItem>
                             <IonLabel>Cliquer sur un bouton</IonLabel>
@@ -305,7 +336,7 @@ class MissionComponent extends Component<MapProps> {
                              <div>
                          {item.visible==1 && item.userId==0 &&
                             <IonItem key={item.id} href={"javascript: void(0)"}>
-                                <IonLabel>{item.name?item.name:item.id}</IonLabel>
+                                <IonLabel>{item.name?item.name+" ("+item.id+")":item.id}</IonLabel>
                             </IonItem>
                         }
                         </div>
@@ -326,7 +357,7 @@ class MissionComponent extends Component<MapProps> {
                              <div>
                          {item.visible==1 && item.userId==0 &&
                             <IonItem key={item.id} onClick={() => this.handleSceneClic(item)} href={"javascript: void(0)"}>
-                                <IonLabel>{item.name?item.name:item.id}</IonLabel>
+                                <IonLabel>{item.name?item.name+" ("+item.id+")":item.id}</IonLabel>
                             </IonItem>
                         }
                         </div>
