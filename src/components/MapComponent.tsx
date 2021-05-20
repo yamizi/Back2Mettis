@@ -249,7 +249,6 @@ class MapComponent extends Component<MapProps> {
       }
 
   render() {
-    const { center, loading } = this.state
 
       return (
       // Important! Always set the container height explicitly

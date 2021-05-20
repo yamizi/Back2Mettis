@@ -47,7 +47,6 @@ import { NovelType } from './types/types';
 
 
 const { store } = initStore();
-
 var novel: NovelType = novelData;
 
 for (var sceneId of Object.keys(novel.scenes)){
@@ -60,6 +59,8 @@ for (var sceneId of Object.keys(novel.scenes)){
 
 if (novel) {
   store.dispatch(setNovel(novel));
+
+
   store.dispatch(setScene(novel.scenes.start))
 }
 
