@@ -43,32 +43,22 @@ class MissionComponent extends Component<MapProps> {
             community_missions:[]
         };
 
+
+        this.loadCommunityMissions()
+
+    }
+
+    loadCommunityMissions = () => {
         let community_missions = []
         db.collection("missions").get().then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                 console.log(`${doc.id}`,doc.data());
-                let mission:SceneType = {id:doc.data().id, name:doc.data().id, image:doc.data().image,texts:doc.data().texts,buttons:doc.data().buttons,game:doc.data().game}
+                let mission:SceneType = {id:doc.data().id, name:doc.data().name, image:doc.data().image,texts:doc.data().texts,buttons:doc.data().buttons,game:doc.data().game, visible:1, userId:0}
+                community_missions.push(mission)
             });
+            this.setState({"community_missions":community_missions})
         });
-        /*
-
-        db.collection("adventure").add({
-            first: "Ada",
-            last: "Lovelace",
-            born: 1815
-        })
-        .then((docRef) => {
-            console.log("Document written with ID: ", docRef.id);
-        })
-        .catch((error) => {
-            console.error("Error adding document: ", error);
-        });
-         */
-
-
-
     }
-
     submitMission = () => {
         let mission:SceneType = {id:"",image:"",texts:[],name:"",buttons:[]}
         let id = this.state.new_name.replace(/[^\w\s]/gi, '').trim().toLowerCase()+Date.now()
@@ -101,11 +91,12 @@ class MissionComponent extends Component<MapProps> {
         }
 
         mission.status = 0
-        mission.status = 0
+        mission.userId = 0
         console.log(mission)
 
         db.collection("missions").add(mission).then((docRef) => {
             console.log("Document written with ID: ", docRef.id);
+            this.loadCommunityMissions()
         })
         .catch((error) => {
             console.error("Error adding document: ", error);
@@ -333,9 +324,9 @@ class MissionComponent extends Component<MapProps> {
 
                       <IonList>
                          {Object.values(this.state.community_missions).map((item:SceneType) =>
-                             <div>
+                             <div key={item.id} >
                          {item.visible==1 && item.userId==0 &&
-                            <IonItem key={item.id} href={"javascript: void(0)"}>
+                            <IonItem href={"javascript: void(0)"}>
                                 <IonLabel>{item.name?item.name+" ("+item.id+")":item.id}</IonLabel>
                             </IonItem>
                         }
@@ -354,9 +345,9 @@ class MissionComponent extends Component<MapProps> {
 
                       <IonList>
                          {Object.values(missions).map((item:SceneType) =>
-                             <div>
+                             <div key={item.id} >
                          {item.visible==1 && item.userId==0 &&
-                            <IonItem key={item.id} onClick={() => this.handleSceneClic(item)} href={"javascript: void(0)"}>
+                            <IonItem onClick={() => this.handleSceneClic(item)} href={"javascript: void(0)"}>
                                 <IonLabel>{item.name?item.name+" ("+item.id+")":item.id}</IonLabel>
                             </IonItem>
                         }
