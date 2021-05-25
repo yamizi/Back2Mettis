@@ -103,6 +103,7 @@ class MissionComponent extends Component<MapProps> {
         mission.userId = this.state.userId
         console.log(mission)
 
+
         db.collection("missions").add(mission).then((docRef) => {
             console.log("Document written with ID: ", docRef.id);
             this.loadCommunityMissions()
@@ -183,6 +184,20 @@ class MissionComponent extends Component<MapProps> {
                 this.setState({"new_game":game})
                 break;
             }
+
+            case "buttons_text":{
+                let buttons = this.state.new_buttons
+                let indices = txt.split("###")
+                buttons[indices[0]].text =indices[1]
+                break;
+            }
+
+            case "buttons_link":{
+                let buttons = this.state.new_buttons
+                let indices = txt.split("###")
+                buttons[indices[0]].redirectId =indices[1]
+                break;
+            }
         }
     };
 
@@ -224,8 +239,9 @@ class MissionComponent extends Component<MapProps> {
 
     };
 
-    displayCommunityMission = (id:string) => {
-        this.setState({"detailMission:":id})
+    displayCommunityMission = (scene:SceneType) => {
+        this.setState({"detailMission:":scene.id})
+        alert(JSON.stringify(scene))
 
     }
 
@@ -296,7 +312,7 @@ class MissionComponent extends Component<MapProps> {
                                   </IonRow>
 
                                 <IonRow>
-                                    <IonCol size="6"><IonInput placeholder="Texte du bouton" onIonChange={e => this.setText("buttons_text","1###"+e.detail.value!)}></IonInput></IonCol>
+                                    <IonCol size="6"><IonInput placeholder="Texte du bouton" onIonChange={e => this.setText("buttons_text","2###"+e.detail.value!)}></IonInput></IonCol>
                                     <IonCol size="6"><IonInput placeholder="Mission en cas de clic" onIonChange={e => this.setText("buttons_link","1###"+e.detail.value!)}></IonInput></IonCol>
                                 </IonRow>
                                 </IonGrid>
@@ -357,7 +373,7 @@ class MissionComponent extends Component<MapProps> {
                          {Object.values(this.state.community_missions).map((item:SceneType) =>
                              <div key={item.id} >
                          {item.visible==1 && item.userId==0 &&
-                            <IonItem href={"javascript: void(0)"} onClick={() => this.displayCommunityMission(item.id)}>
+                            <IonItem href={"javascript: void(0)"} onClick={() => this.displayCommunityMission(item)}>
                                 <IonLabel>{item.name?item.name+" ("+item.id+")":item.id} {this.state.detailMission}</IonLabel>
                                 {this.state.detailMission==item.id &&
                                 <span>{item}</span>
