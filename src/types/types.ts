@@ -26,7 +26,9 @@ export type SceneType = {
   buttons: ButtonType[];
   visible?: number;
   userId?:number;
-  status?:number
+  status?:number;
+  lat?:number;
+  lon?:number;
 
 };
 

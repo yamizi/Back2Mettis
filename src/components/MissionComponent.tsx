@@ -40,7 +40,11 @@ class MissionComponent extends Component<MapProps> {
             new_buttons:[],
             new_game:{type:undefined, correctAnswer:"", question:"", successMessage:""},
             new_name:"",
-            community_missions:[]
+            new_lat:"",
+            new_lon:"",
+            community_missions:[],
+            userId:0,
+            detailMission:"",
         };
 
 
@@ -53,7 +57,9 @@ class MissionComponent extends Component<MapProps> {
         db.collection("missions").get().then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                 console.log(`${doc.id}`,doc.data());
-                let mission:SceneType = {id:doc.data().id, name:doc.data().name, image:doc.data().image,texts:doc.data().texts,buttons:doc.data().buttons,game:doc.data().game, visible:1, userId:0}
+                let mission:SceneType = {id:doc.data().id, name:doc.data().name, image:doc.data().image,
+                    texts:doc.data().texts,buttons:doc.data().buttons,game:doc.data().game, visible:1, userId:0,
+                lat:doc.data().lat, lon:doc.data().lon}
                 community_missions.push(mission)
             });
             this.setState({"community_missions":community_missions})
@@ -66,6 +72,9 @@ class MissionComponent extends Component<MapProps> {
         mission.name = this.state.new_name
         mission.image = this.state.new_scenes[0].updatedImage
         mission.texts = []
+        mission.lat = this.state.new_lat
+        mission.lon = this.state.new_lon
+
         this.state.new_scenes.forEach((scene) => {
             let text_:TextsType = {text:scene.text,updatedImage:scene.updatedImage}
             mission.texts.push(text_)
@@ -91,7 +100,7 @@ class MissionComponent extends Component<MapProps> {
         }
 
         mission.status = 0
-        mission.userId = 0
+        mission.userId = this.state.userId
         console.log(mission)
 
         db.collection("missions").add(mission).then((docRef) => {
@@ -130,6 +139,16 @@ class MissionComponent extends Component<MapProps> {
         switch(label){
             case "new_name":{
                 this.setState({"new_name":txt})
+                break;
+            }
+
+            case "new_lat":{
+                this.setState({"new_lat":txt})
+                break;
+            }
+
+            case "new_lon":{
+                this.setState({"new_lon":txt})
                 break;
             }
             case "updated_image":{
@@ -205,6 +224,10 @@ class MissionComponent extends Component<MapProps> {
 
     };
 
+    displayCommunityMission = (id:string) => {
+        this.setState({"detailMission:":id})
+
+    }
 
     render() {
         const {center, loading} = this.state
@@ -228,11 +251,19 @@ class MissionComponent extends Component<MapProps> {
 
                         <IonItem>
                             <IonInput placeholder="Titre de la mission" onIonChange={e => this.setText("new_name",e.detail.value!)}></IonInput>
-                          </IonItem>
+                        </IonItem>
+
+                        <IonItem>
+                            <IonInput placeholder="Coordonnées: latitude" onIonChange={e => this.setText("new_lat",e.detail.value!)}></IonInput>
+                        </IonItem>
+
+                        <IonItem>
+                            <IonInput placeholder="Coordonnées: longitude" onIonChange={e => this.setText("new_lon",e.detail.value!)}></IonInput>
+                        </IonItem>
 
 
                         {this.state.new_scenes.map((scene, index ) =>
-                             <div>
+                             <div key={index}>
                                  <IonItemDivider>Scène {index+1}</IonItemDivider>
                                  <IonItem>
                                     <IonInput placeholder="Image d'arrière plan (url du site web)" onIonChange={e => this.setText("updated_image",index+"###"+e.detail.value!)}></IonInput>
@@ -326,8 +357,12 @@ class MissionComponent extends Component<MapProps> {
                          {Object.values(this.state.community_missions).map((item:SceneType) =>
                              <div key={item.id} >
                          {item.visible==1 && item.userId==0 &&
-                            <IonItem href={"javascript: void(0)"}>
-                                <IonLabel>{item.name?item.name+" ("+item.id+")":item.id}</IonLabel>
+                            <IonItem href={"javascript: void(0)"} onClick={() => this.displayCommunityMission(item.id)}>
+                                <IonLabel>{item.name?item.name+" ("+item.id+")":item.id} {this.state.detailMission}</IonLabel>
+                                {this.state.detailMission==item.id &&
+                                <span>{item}</span>
+
+                                }
                             </IonItem>
                         }
                         </div>
