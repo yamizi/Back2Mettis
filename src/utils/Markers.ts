@@ -60,7 +60,10 @@ const MarkersServices = {
               position: new google.maps.LatLng(lat, lng),
               icon: icons[m.type].icon,
               map: map,
-              //label:m.label
+              label:{text: m.label.substring(0,4)+"\r\n", color: "black", fontSize: '14px', fontWeight:"bold",
+                  className:"markerLabels"},
+
+
             });
             marker.addListener("click", clicFunction)
             m.gmarker = marker;

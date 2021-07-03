@@ -188,7 +188,7 @@ class MapComponent extends Component<MapProps> {
 
        romeOverlay = new google.maps.GroundOverlay(
         url,
-        imageBounds,{opacity:0.5}
+        imageBounds,{opacity:0.0}
       );
       myMap = map
 

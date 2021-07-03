@@ -50,8 +50,14 @@ function Scene({ scene, nextScene, saves, settings, addSave }: ScenePropsType) {
    }
   const handleClick = (id: string) => () => {
     if(id !=""){
+
+      if (id.startsWith("http")){
+        window.open(id, '_blank');
+      }
+      else{
       clearScene();
       nextScene(id);
+      }
     }
   };
 
@@ -113,7 +119,6 @@ function Scene({ scene, nextScene, saves, settings, addSave }: ScenePropsType) {
       setTextIndex((textIndex) => (textIndex += 1));
     } else if (textIndex + 1 === texts.length - 1) {
 
-
       if(! game || (game && answer!="" && answer==game.correctAnswer) || (game && val!="" && val==game.correctAnswer)){
         setTextIndex((textIndex) => (textIndex += 1));
         setButtonsVisible(true);
@@ -154,7 +159,7 @@ function Scene({ scene, nextScene, saves, settings, addSave }: ScenePropsType) {
     <div className={styles.background} style={{ backgroundImage: `url(${backgroundImage || image})` }}>
       <div className={styles.content}>
         <div className={styles.buttons}>
-          {isButtonsVisible && (! game || textIndex == texts.length - 1) &&
+          {isButtonsVisible && (! game && textIndex == texts.length - 1) &&
             buttons.map((button) => (
               <SceneButton
                 key={`${button.text}${button.redirectId}`}
