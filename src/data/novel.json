@@ -8,7 +8,7 @@
       "image": "http://jcemetz.fr/wp-content/uploads/2019/02/signature-mail-2019.jpg",
       "texts": [
         {
-          "text": "Bonjour, bienvenue dans le parcours \"Visiter Metz autrement - L'Aventure Temporelle\"  proposé par la JCE de Metz !"
+          "text": "Bonjour, bienvenue dans le parcours Visiter Metz autrement - L'Aventure Temporelle  proposé par la JCE de Metz!"
         },
          {
           "text": "Ce parcours devrait durer 1h30. Si vous connaissez le principe, cliquez sur le bouton 'Démarrer l'aventure', sinon, nous allons vous expliquer."
@@ -33,7 +33,7 @@
       "image": "http://jcemetz.fr/wp-content/uploads/2019/02/signature-mail-2019.jpg",
       "texts": [
         {
-          "text": "Nous vous proposons 3 parcours:."
+          "text": "Nous vous proposons 3 parcours:"
         }
       ],
       "buttons": [
@@ -1098,7 +1098,7 @@
     "scene1_modern": {
       "name": "Cathédrale",
       "id": "scene1_modern",
-      "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
+      "image": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Saint-%C3%89tienne_de_Metz#/media/Fichier:Metz_March_2019_(32509957637).jpg",
       "texts": [
         {
           "text": "Janvier 1942. François Mitterrand réussi à s’évader des camps nazis et est toujours en cavale, son seul espoir de Fuite : L’Espoir Français, le mouvement de résistance lorrain face à l’occupant nazi."
@@ -1124,7 +1124,7 @@
     "scene_moderne_cathedrale": {
       "name": "Cathédrale",
       "id": "scene_moderne_cathedrale",
-      "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
+      "image": "https://fr.wikipedia.org/wiki/H%C3%A9l%C3%A8ne_Studler#/media/Fichier:H%C3%A9l%C3%A8ne_Studler_1944.jpg",
       "texts": [
         {
           "text": "A l’intérieur de la cathédrale, vous rencontrer Sœur Hélène, qui veut d’abord s’assurer que vous êtes bien un vrai messin et pas un espion de la Gestapo.  Répondez à l'énigme pour prouver votre innocence et continuer l'aventure. "
@@ -1201,6 +1201,7 @@
     "scene_moderne_cathedrale3": {
       "name": "Cathédrale",
       "visible": 0,
+      "image": "https://fr.wikipedia.org/wiki/H%C3%A9l%C3%A8ne_Studler#/media/Fichier:H%C3%A9l%C3%A8ne_Studler_1944.jpg",
       "id": "scene_moderne_cathedrale3",
       "texts": [
         {"nickname": "Sœur Hélène",
@@ -1672,7 +1673,7 @@
 
     "scene_moderne_ruemazelle1": {
       "name": "Rue Mazelle",
-      "visible": 0
+      "visible": 0,
       "id": "scene_moderne_ruemazelle1",
       "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80",
       "texts": [
