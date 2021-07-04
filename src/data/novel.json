@@ -8,8 +8,32 @@
       "image": "http://jcemetz.fr/wp-content/uploads/2019/02/signature-mail-2019.jpg",
       "texts": [
         {
-          "text2": "Ceci est un jeu avec quelques incohérences historiques, elles sont volontaires pour vous faire découvrir le maximum de personnages et lieux marquants de la ville de Metz.",
-          "text": "Bonjour, bienvenue dans le parcours \"Visiter Metz autrement - L'Aventure Temporelle\"  proposé par la JCE de Metz ! Ce parcours devrait durer 1h30. Si vous connaissez le principe, cliquez sur le bouton 'Démarrer l'aventure', sinon, nous allons vous expliquer comment utiliser cette application."
+          "text": "Bonjour, bienvenue dans le parcours \"Visiter Metz autrement - L'Aventure Temporelle\"  proposé par la JCE de Metz !"
+        },
+         {
+          "text": "Ce parcours devrait durer 1h30. Si vous connaissez le principe, cliquez sur le bouton 'Démarrer l'aventure', sinon, nous allons vous expliquer."
+        }
+      ],
+      "buttons": [
+        {
+          "text": "M'expliquer comment jouer",
+          "redirectId": "scene_explain"
+        },
+        {
+          "text": "Demarrer l'aventure",
+          "redirectId": "start2"
+        }
+      ]
+    },
+
+    "start2": {
+      "name": "Explications",
+      "visible": 0,
+      "id": "start2",
+      "image": "http://jcemetz.fr/wp-content/uploads/2019/02/signature-mail-2019.jpg",
+      "texts": [
+        {
+          "text": "Nous vous proposons 3 parcours:."
         }
       ],
       "buttons": [
@@ -24,10 +48,6 @@
         {
           "text": "Demarrer l'aventure Moderne",
           "redirectId": "scene1_modern"
-        },
-        {
-          "text": "M'expliquer comment jouer",
-          "redirectId": "scene_explain"
         }
       ]
     },
@@ -778,7 +798,7 @@
       "buttons": [
         {
           "text": "J'y suis!",
-          "redirectId": "scene_rome_fournirue"
+          "redirectId": "scene_medieval_stpierre"
         }
       ]
     },
@@ -788,10 +808,9 @@
       "id": "scene_medieval_stpierre",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Metz_Saint_Pierre_R02.jpg/1024px-Metz_Saint_Pierre_R02.jpg",
       "texts": [
-        {"text": "Vous êtes devant l’église Saint-Pierre-aux-Nonnains.Cette église de la fin du 4 ieme siècle est une des plus vielle du monde et la plus vielle de France"},
+        {"text": "Vous êtes devant l’église Saint-Pierre-aux-Nonnains. Cette église de la fin du 4 ieme siècle est une des plus vielle du monde et la plus vielle de France"},
         {"text": "Profitez de ce cadre magnifique pour résoudre cette ce puzzle."},
         {
-          "nickname": "Le saviez-vous?",
           "text": "Bien joué! Vous êtes face au dernier vestige de la commanderie des Templiers de Metz. Sa forme octogonale est caractéristique des édifices des Templiers. Puis sera finalement détruite en 1904 par le maréchal de Vieilleville afin de laisser place à la construction d'une citadelle. Seul la chapelle subsistera jusqu'à nos jours."
         }
       ],
@@ -804,6 +823,26 @@
         },
         {
           "text": "C'est bon j'ai fini.",
+          "redirectId": "scene_medieval_stpierre2"
+        }
+      ]
+    },
+
+    "scene_medieval_stpierre2": {
+      "name": "Saint-Pierre-aux-Nonnains",
+      "visible": 0,
+      "id": "scene_medieval_stpierre2",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Metz_Saint_Pierre_R02.jpg/1024px-Metz_Saint_Pierre_R02.jpg",
+      "texts": [
+        {
+          "text": "Bien joué! Vous êtes face au dernier vestige de la commanderie des Templiers de Metz. Sa forme octogonale est caractéristique des édifices des Templiers. Puis sera finalement détruite en 1904 par le maréchal de Vieilleville afin de laisser place à la construction d'une citadelle. Seul la chapelle subsistera jusqu'à nos jours."
+        }
+      ],
+
+
+      "buttons": [
+        {
+          "text": "Continuer!",
           "redirectId": "scene_medieval_gouverneur"
         }
       ]
@@ -818,7 +857,7 @@
             {"text": "La beauté d'une cité attire forcement les convoitises. Mais, les habitants surveillent leur magnifique cité. Comme ce matin de 1473 ou un boulanger sauva la ville."},
             {"text": "Fatigué d'un long siège, le duc de Lorraine fait cacher ses hommes dans des tonneaux afin de les faire entrer dans la ville sur la charrette d'un marchand."},
             {"text": "Ils bloquent la porte Serpenoise. Le boulanger Harrelle, témoin de la scène vous envoie écrire un message pour alerter les gardes et protéger la ville."},
-            {"text": "Il vous charge de transmettre ."}
+            {"text": "Il vous charge de le transmettre."}
           ],
 
 
@@ -1720,10 +1759,53 @@
         "correctAnswer": "jean cocteau"
       },
       "buttons": [
+        {
+          "text": "J'ai trouvé ses vitraux!",
+          "redirectId": "scene_moderne_maximin2"
+        }
+      ]
+    },
 
+     "scene_moderne_maximin2": {
+      "name": "Eglise Saint Maximin",
+      "id": "scene_moderne_maximin2",
+      "image": "http://www.etpourquoipasmetz.com/wp-content/uploads/2015/02/IMG_9150-750x375.jpg",
+      "texts": [
+        {
+          "text": "Magnifiques !"
+        },
+        {
+          "text": "Oui ce sont parmi les plus beaux vitraux de France. Et ils sont à Saint Maximin ! "
+        }
+        ,
+        {
+          "nickname": "...",
+          "text": "Bonsoir messieux, je vous attendais!"
+        }
+        ,
+        {
+          "text": "Jean Cocteau!"
+        }
+        ,
+        {
+          "nickname": "Jean Cocteau",
+          "text": "Pour vous servir! Je vous attendais M.Mitterand. Je peux vous aider à quitter la ville, mais avez vous collecté les vitraux que j'ai demandé?"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Gothique",
+          "redirectId": ""
+        },
+        {
+          "text": "Classique",
+          "redirectId": ""
+        },
+        {
+          "text": "Baroque",
+          "redirectId": "scene_moderne_maximin1"
+        }
       ]
     }
-
-
   }
 }

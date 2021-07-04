@@ -275,25 +275,7 @@
     "id": "moderne_maximin",
     "scene": "scene_moderne_maximin"
   }
-  ,
-  {
-    "label": "(11) Pop White Store",
-    "lat": 49.11802957285351,
-    "lng":6.178835944115205,
-    "type": "optional",
-    "time": "moderne",
-    "id": "moderne_popwhite",
-    "scene": "scene_moderne_popwhite"
-  },
-  {
-    "label": "(12) Maison des têtes",
-    "lat": 49.11815904181836,
-    "lng": 6.178091631112652,
-    "type": "optional",
-    "time": "moderne",
-    "id": "moderne_maisontete",
-    "scene": "scene_maisontete"
-  }
+
 
 
 ]
