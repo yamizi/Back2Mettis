@@ -215,7 +215,17 @@
 
   ,
   {
-    "label": "(5) Ameublement Saint Louis",
+    "label": "(5) Epicerie Fine Saint Louis",
+    "lat": 49.11675187838378,
+    "lng": 6.1792950346979785,
+    "type": "optional",
+    "time": "moderne",
+    "id": "moderne_epiceriestlouis",
+    "scene": "scene_moderne_epiceriestlouis"
+  }
+  ,
+  {
+    "label": "(6) Ameublement Saint Louis",
     "lat": 49.116828634111535,
     "lng":6.180276084911461,
     "type": "optional",
@@ -225,7 +235,7 @@
   }
 ,
   {
-    "label": "(6) Haute Seille",
+    "label": "(7) Haute Seille",
     "lat": 49.11601997682804,
     "lng":6.181077397319243,
     "type": "optional",
@@ -236,7 +246,7 @@
 
 
   {
-    "label": "(7) Place des Charons",
+    "label": "(8) Place des Charons",
     "lat": 49.115853144415595,
     "lng": 6.182015984867629,
     "type": "optional",
@@ -247,7 +257,7 @@
 
 
   {
-    "label": "(8) Rue Mazelle",
+    "label": "(9) Rue Mazelle",
     "lat": 49.11625359212925,
     "lng":6.183036566589921,
     "type": "optional",
@@ -257,7 +267,7 @@
   },
 
   {
-    "label": "(9) Eglise Saint Maximin",
+    "label": "(10) Eglise Saint Maximin",
     "lat": 49.1157743337876,
     "lng":6.18367133430020,
     "type": "main",
@@ -267,7 +277,7 @@
   }
   ,
   {
-    "label": "(10) Pop White Store",
+    "label": "(11) Pop White Store",
     "lat": 49.11802957285351,
     "lng":6.178835944115205,
     "type": "optional",
@@ -276,7 +286,7 @@
     "scene": "scene_moderne_popwhite"
   },
   {
-    "label": "(11) Maison des têtes",
+    "label": "(12) Maison des têtes",
     "lat": 49.11815904181836,
     "lng": 6.178091631112652,
     "type": "optional",

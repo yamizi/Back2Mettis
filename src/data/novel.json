@@ -1056,6 +1056,31 @@
 
     },
 
+    "scene1_modern": {
+      "name": "Cathédrale",
+      "id": "scene1_modern",
+      "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
+      "texts": [
+        {
+          "text": "Janvier 1942. François Mitterrand réussi à s’évader des camps nazis et est toujours en cavale, son seul espoir de Fuite : L’Espoir Français, le mouvement de résistance lorrain face à l’occupant nazi."
+        },
+        {
+          "text": "Votre mission, si vous l’accepter : incarnez Jean Geiger (illustre cheminot et résistant messin) est évitez à tout prix que Mitterrand ne soit capturé par la Gestap"
+        },
+        {
+          "text": "Rendez-vous d’abord à l’intérieur de Cathédrale Saint Etienne pour rencontrer le chef des passeurs de l’Espoir Français. "
+        }
+      ],
+      "buttons": [
+
+        {
+          "text": "Je suis à l'interieur!",
+          "redirectId": "scene_moderne_cathedrale"
+        }
+      ]
+    },
+
+
 
     "scene_moderne_cathedrale": {
       "name": "Cathédrale",
@@ -1063,13 +1088,12 @@
       "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
       "texts": [
         {
-          "nickname": "Saint-Clément",
-          "text": "Je pense pouvoir vous aider à retrouver le Cristal de l'Artiste. Je sais que son créateur a un lien fort avec les Eglises de Metz. Mais avant de vous aider, je dois savoir si vous êtes bien l'Elu(e) de la Légende!"
+          "text": "A l’intérieur de la cathédrale, vous rencontrer Sœur Hélène, qui veut d’abord s’assurer que vous êtes bien un vrai messin et pas un espion de la Gestapo.  Répondez à l'énigme pour prouver votre innocence et continuer l'aventure. "
         },
         {
-          "nickname": "Saint-Clément",
+          "nickname": "Sœur Hélène",
           "updatedImage": "../../assets/locations/autel.png",
-          "text": "Pour me prouver votre valeur, retrouvez cet autel dans ma Cathédrale. Il vous indiquera qui sont les deux saints qui protègent la ville et la Cathédrale!"
+          "text": "Qui sont les deux saints qui protègent la ville et la Cathédrale? \n\nPour trouver la réponse,, retrouvez cet autel dans ma Cathédrale. Il vous indiquera qui sont les deux saints qui protègent la ville et la Cathédrale!"
         }
       ],
       "buttons": [
@@ -1094,28 +1118,39 @@
       "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
       "texts": [
         {
-          "nickname": "Saint-Clément",
-          "text": "Bien joué! C'est bien 'Saint Etienne & Saint Paul'! Vous avez l'etoffe d'un Héros! Mais avez vous le Sens Artistique suffisant pour résoudre la prochaine énigme?"
+          "nickname": "Sœur Hélène",
+          "text": "Bien joué! Laissez-moi me présenter l'ami. Je suis Hélène Studler, née en 1891 à Amiens et venue après l’armistice à l’hospice Saint-Nicolas de Metz. A la veille de la guerre, j'étais déjà très populaire à Metz."
+        },{
+          "nickname": "Sœur Hélène",
+          "text": "Pendant les combats, en juin 1940, J'ai apporté soins, nourriture et réconfort aux prisonniers français cachés à Metz. Puis dès juillet de la même année, J'ai mis en place une des plus importantes filières de passage d’évadés et de réfractaires lorrains."
         },
         {
-          "nickname": "Saint-Clément",
+          "nickname": "Sœur Hélène",
+          "text": "Camarade Geiger. Vous êtes bien des nôtres. Mais êtes-vous assez habile et rusé pour réussir la mission ? Prouvez-moi votre valeur en résolvant la prochaine énigme » Vous répond Sœur Hélène."
+        },
+
+        {
+          "nickname": "Sœur Hélène",
           "updatedImage": "../../assets/locations/vitrail.png",
           "text": "Dirigez vous près du Coeur et montez les marches. Observez les vitraux aux tons bleus de Marc Chagall, à l’entrée du déambulatoire. Ce sont là différentes scènes de l'Ancien Testament"
         },
         {
-          "nickname": "Saint-Clément",
+          "nickname": "Sœur Hélène",
           "updatedImage": "../../assets/locations/vitrail.png",
           "text": "Il vous faut les remettre dans l'ordre de gauche à droite. Le numéro 1 est le vitrail le plus à gauche et le numéro 7 le plus à droite. Rentrez le code à 7 chiffre puis cliquez sur la flèche pour continuer"
         }
         ,
         {
-          "nickname": "Indice!",
+          "nickname": "Sœur Hélène",
           "updatedImage": "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNTgzNDQwMzk3/marc-chagall-9243488-2-402.jpg",
-          "text": "Bravo Bien joué! Le Cristal que vous recherchez est dans un lieu de culte! Et l'Artiste qui l'a conçu est né seulement 2 ans après Marc Chagall, à qui l'on doit les vitraux de la Cathédrale Saint Etienne!"
+          "text": "« Tout à fait, retenez bien ce code, il vous sera très utile par la suite » Nous annonce Sœur Hélène."
         }
       ],
       "buttons": [
-
+      {
+          "text": "C'est noté! Je vous écoute!",
+          "redirectId": "scene_moderne_cathedrale3"
+        }
 
       ],
       "game": {
@@ -1124,9 +1159,102 @@
       }
     },
 
-    "scene_moderne_verlaine": {
+    "scene_moderne_cathedrale3": {
+      "name": "Cathédrale",
+      "visible": 0,
+      "id": "scene_moderne_cathedrale3",
+      "texts": [
+        {"nickname": "Sœur Hélène",
+          "text": "« François, tu peux sortir de ta cachette, M. Geiger a l’air fiable » "
+        },
+        {
+          "text": "Un jeune homme dans les 25 ans et emmitouflé dans une cape sombre sort d’une alcove. Son visage était un peu émacié, mais son regard était vif, perçant. Il devait être un bel homme avant que les bosch ne l’enferment. 18 mois dans un camp, ça laisse des traces. "
+        },
+        {"nickname": "Sœur Hélène",
+          "text": "Jean Geiger, voici François Mitterand. Il est dorénavent sous votre responsabilité et vous devez le faire sortir de la ville sans que les agents de la Gestappo ne l’intercepte."
+        },
+        {"nickname": "François Mitterand",
+          "text": "« Quoi ? Ma vie dépend de ce gringalet ? »"
+        },
+        {
+          "nickname": "Sœur Hélène",
+          "updatedImage": "../../assets/locations/rue_ours.PNG",
+          "text": "Ne vous inquiétez pas, nous avons des renforts dans toute la ville. M. Geiger, vous n’êtes pas seul. Nos agents vous attendent dans cette maison située sur la Rue aux Ours."
+        },
+        {
+          "nickname": "Sœur Hélène",
+          "updatedImage": "../../assets/locations/rue_ours.PNG",
+          "text": "Votre première étape est donc de retrouver le numéro de ce batiment, rue aux Ourses. Il doit être pas loin du marqueur (2) sur la carte."
+        }
+      ],
+      "buttons": [
+        {
+          "text": "J'y suis! Numéro 4",
+          "redirectId": ""
+        },
+
+        {
+          "text": "J'y suis! Numéro 6",
+          "redirectId": "scene_moderne_ours"
+        },
+
+        {
+          "text": "J'y suis! Numéro 8",
+          "redirectId": ""
+        }
+      ]
+    },
+
+
+    "scene_moderne_ours": {
+      "id": "scene_moderne_ours",
+      "image": "../../assets/locations/rue_ours.PNG",
+      "texts": [
+
+        {
+          "nickname": "Le saviez-vous ?",
+        "text": "La forme « ours » est une altération de l'ancien mot oues, c'est-à-dire « oies », qui est dû aux nombreux rôtisseurs installés autrefois dans cette rue."
+        }
+        ,
+        {
+        "text": "Malheureusement la maison est dans un état déplorable. La porte est défoncée et des agents de la Gestapo rodent autour. Ils semblent attendre qqun. La mission aurait-elle déjà fuitée ?"
+        }
+        ,
+        {
+          "text": "Vous remarquez pas loin du batiment une affiche de l’Espoir Français. Approchez vous de l'affiche!"
+        },
+        {
+          "text": "C'est probablement un indice laissé par nos agents! Il faut aller à l'endroit caché dans le message. "
+        },
+        {
+          "text": "Scannez le QR code à côté pour retrouver la cache secondaire!"
+        },
+        {
+          "text": "'L’Espoir demeure dans la maison natale du poète le plus célèbre de Metz' A qui se refère cette énigme?"
+        }
+      ],
+      "buttons": [
+      {
+          "text": "Je sais de qui on parle!",
+          "redirectId": "scene_moderne_verlaine"
+        },
+        {
+          "text": "Non, j'ai besoin de plus d'indices?",
+          "redirectId": "scene_moderne_verlaine1"
+        }
+
+
+      ],
+      "game": {
+        "type": "qrcode",
+        "correctAnswer": "L’Espoir demeure dans la maison natale du poète le plus célèbre de Metz"
+      }
+    },
+
+    "scene_moderne_verlaine1": {
+      "visible": 0,
       "name": "Maison Paul Verlaine",
-      "id": "scene_moderne_verlaine",
+      "id": "scene_moderne_verlaine1",
       "image": "../../assets/locations/poemes_saturniens.jpg",
       "texts": [
         {
@@ -1136,7 +1264,7 @@
       "buttons": [
         {
           "text": "Paul Verlaine",
-          "redirectId": "scene_moderne_verlaine2"
+          "redirectId": "scene_moderne_verlaine"
         },{
           "text": "Victor Hugo",
           "redirectId": ""
@@ -1148,15 +1276,19 @@
       ]
     },
 
-    "scene_moderne_verlaine2": {
-      "visible": 0,
-      "id": "scene_moderne_verlaine2",
+    "scene_moderne_verlaine": {
+      "id": "scene_moderne_verlaine",
       "image": "https://img-4.linternaute.com/_8mi-u4VF8TK4UO94hNZBwyjcxs=/1240x/smart/c2d147ca8eb44b8cb637cd345c82dfd2/ccmcms-linternaute/10994886.jpg",
       "texts": [
+
+        {
+          "text": "Vous arrivez à la maison de Paul Verlaine (point 3)!"
+        },
         {
           "nickname": "Le saviez-vous?",
           "text": "Paul Verlaine est un écrivain et poète français né à Metz le 30 mars 18443 et mort à Paris le 8 janvier 1896. Sa maison natale est toujours accesible Rue Haute Pierre."
         },
+
         {
           "text": "Qu'est il accroché au dessus de la porte de cette maison?"
         }
@@ -1179,11 +1311,39 @@
     "scene_moderne_verlaine3": {
       "visible": 0,
       "id": "scene_moderne_verlaine3",
-      "image": "../../assets/locations/maison_verlaine.png",
+      "image": "../../assets/locations/maison_verlaine.PNG",
       "texts": [
         {
-          "nickname": "Indice!",
-          "text": "Bien joué! Vous avez trouvé! Le cristal que vous recherchez n'est pas loin d'une des portes de Metz!"
+          "nickname": "François Mitterand",
+          "text": "Bien joué! Vous avez trouvé! Nous sommes maintenant en lieu sûr."
+        },
+        {
+          "nickname": "François Mitterand",
+          "text": "Aucun Allemand en vue, cette zone est encore préservée. Mais il faut nous presser à l’interieur pour discter en sureté ."
+        }
+        ,
+        {
+          "updatedImage": "../../assets/locations/mosaique1.PNG",
+          "text": "Vous trouvez cette mosaique dans la maison! Prenez une photo ou une capture d'écran. Elle vous sera utile plus tard!"
+        },
+        {
+          "text": "« Et je dois faire quoi ? » Vous demandez poliment. François vous regarde ahuri et répond « ah lala, il faut tout leur expliquer à ces jeunes. Je dois m’évader, j’ai donc besoin de …. »  "
+        },
+        {
+          "text": "-D’un déquisement !"
+        },
+        {
+          "nickname": "François Mitterand",
+          "text": "Tout à fait, d’un déguisement, et… "
+        },
+        {
+          "text": "Des provisions !"
+        },{
+          "nickname": "François Mitterand",
+          "text": "C’est ça. Nous devons donc passer par une Epicerie, une boutique de vêtements, et bien sûr notre passeur. Le passeur est à l’Eglise Saint Maximin. "
+        },
+        {
+          "text": "Parfait ! Allons y alors ! Je connais des gens à la Place Saint Louis. [RDV Place Saint Louis, point (4) sur la carte]"
         }
       ],
       "buttons": [
@@ -1191,53 +1351,378 @@
       ]
     },
 
-    "scene_moderne_esplanade": {
-      "name": "Esplanade",
-      "id": "scene_moderne_esplanade",
-      "image": "https://www.tourisme-lorraine.fr/sitlorimg/1920/0/aHR0cHM6Ly93d3cuc2l0bG9yLmZyL3Bob3Rvcy84MzgvODM4MTYyMjUyXzEuSlBH.jpg",
+    "scene_moderne_stlouis": {
+      "name": "Place Saint Louis",
+      "id": "scene_moderne_stlouis",
+      "image": "https://metz.fr/lieux/images/gr_placestlouis.jpg",
       "texts": [
         {
-          "text": "Vous trouverez dans cet esplanade une statue liée à la poésie saturnienne. Flashez le QR code qui y est associé"
+          "text": "On se passe des messages au numéro 31. C'est là qu'on en saura plus."
         },
         {
-          "text": "Bien joué! Rendez-vous à sa maison natale pour trouver un indice important pour votre quête du Cristal!"
+          "text": "Une main se trouve au numéro 31? Est ce la gauche ou la droite!"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Droite",
+          "redirectId": ""
+        },
+        {
+          "text": "Gauche",
+          "redirectId": "scene_moderne_stloui1"
+        }
+      ]
+    },
+
+    "scene_moderne_stlouis1": {
+      "name": "Place Saint Louis",
+      "visible": 0,
+      "id": "scene_moderne_stlouis1",
+      "image": "https://metz.fr/lieux/images/gr_placestlouis.jpg",
+      "texts": [
+        {
+          "nickname": "Le saviez-vous ? ",
+          "text": "Cette curieuse main gauche, située au numéro 31, raconte l’histoire de Monsieur Maillard, un négociant. Pendant l’annexion, il aurait mis une gifle à un fonctionnaire allemand, lors d’une réunion électorale, à cause de leur divergence d’opinion. "
+        },
+        {
+          "text": "Cette main vous indique une petite ruelle sombre, vous vous y engoufrez et retrouvez une gamine avec un beret qui sifflote. Elle vous annonce « Mot de passe ? » "
+        },{
+          "text": "Quoi mot de passe ? Tu me reonnais bien Camille, c’est moi Jean ! "
+        },{
+          "nickname": "Camille",
+          "text": "Mot de passe ? repete elle intransigeante"
+        },{
+          "text": "on ça va bien tout ça on est pressé. C’est la vielle de la Cathédrale qui m’envoit."
+        },{
+          "nickname": "Camille",
+          "text": "Eh bien si c’est vraiment la vieille, elle t’a donné un code à 7 chiffres, non ? "
+        },
+        {
+          "updatedImage": "../../assets/locations/mosaique2.PNG",
+          "text": "Camille vous remet cette mosaique. Prenez une photo ou une capture d'écran. Elle vous sera utile plus tard!"
+        }
+      ],
+      "game": {
+        "type": "input",
+        "correctAnswer": "1537264"
+      },
+      "buttons": [
+        {
+          "text": "Merci pour le cadeau! Par où dois je aller?",
+          "redirectId": "scene_moderne_epiceriestlouis"
+        }
+      ]
+    },
+
+
+    "scene_moderne_epiceriestlouis": {
+      "name": "Epicerie Fine de Saint Louis",
+      "id": "scene_moderne_epiceriestlouis",
+      "image": "https://i0.wp.com/metz-metropolitain.fr/wp-content/uploads/2020/02/epicerie-fine-saint-louis-metz.jpg?w=1200&ssl=1",
+      "texts": [
+        {
+          "text": "Continuons sur une nouvelle pépite du secteur de la place saint Louis ! Rendez-vous au point (5) de la carte"
+        },
+        {"nickname": "François Mitterand",
+          "text": "Monsieur Vatry, le gérant de la boutique, est un ami! Il pourra nous fournir en provisions d'excellente qualité!"},
+
+        {"updatedImage": "../../assets/locations/epicerie.jpg",
+          "text": "Quel est le nom de la friandise cachée par '?' Fouillez le magasin pour la trouver! (_ _ _ _ _ _ _ _ _ # _ _ _ _ _ _ _ _)"},
+
+        {
+          "nickname": "François Mitterand",
+          "text": "C'est tout bon! J'ai ce qu'il me faut! Et vous?"
+        }
+      ],
+      "game": {
+        "type": "input",
+        "correctAnswer": "briquette lorraine"
+      },
+      "buttons": [
+
+        {
+          "text": "C'est bon pour moi aussi!",
+          "redirectId": "scene_moderne_ameublementstlouis"
+        }
+      ]
+    },
+  "scene_moderne_ameublementstlouis": {
+      "name": "Ameublement Saint Louis",
+      "id": "scene_moderne_ameublementstlouis",
+      "image": "https://www.geant-du-meuble.com/img/magasin/33-79-store_block.jpg",
+      "texts": [
+
+        {"text": "Traversez la place, un peu à gauche et avancez, le long des petites fontaines, 50 mètres tout droit : vous ne pouvez le louper : Ameublement Saint Louis"},
+        {"text": "Un emplacement historique et majestueux, nous pouvons même ajouter que ce dernier à vu se développer le quartier car ce magasin existe depuis 1868, rien que ça "},
+        {
+          "nickname": "François Mitterand",
+          "text": "Ce fournisseur a bcp aidé l'Espoir Français! Je pense qu'il peut nous cacher au dernier étape quelques temps."
+        },
+        {
+          "nickname": "François Mitterand",
+          "text": "Mais en fait, de combien d’étages se composent les expositions de ce magasin?"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "2",
+          "redirectId": ""
+        },
+        {
+          "text": "7",
+          "redirectId": "scene_moderne_ameublementstlouis1"
+        },
+        {
+          "text": "16",
+          "redirectId": ""
+        }
+      ]
+    },
+
+    "scene_moderne_ameublementstlouis1": {
+      "name": "Ameublement Saint Louis",
+      "id": "scene_moderne_ameublementstlouis1",
+      "visible": 0,
+      "image": "https://www.geant-du-meuble.com/img/magasin/33-79-store_block.jpg",
+      "texts": [
+        {
+          "text": "Alors Francois, On n'est pas bien là? Je sais que c’est majestueux, mais faudrait pas trop trainer!"
+        },
+        {
+          "nickname": "François Mitterand",
+          "text": "Vous avez raison! La mission."
+        },
+        {
+          "nickname": "François Mitterand",
+          "text": "Continuons sans plus attendre, vous avez la boutique d'ameublement Saint Louis en face de vous ? Alors continuez à droite, suivez la rue Haute Seille sur quelques metres."
+        },
+
+        {
+          "nickname": "François Mitterand",
+          "text": "Ralentissons un peu dans la rue des hautes seilles et ouvrez l’oeil pour répondre à la prochaine énigme! Nous allons au point (6) sur la carte."
         }
       ],
       "buttons": [
 
+        {
+          "text": "J'y suis",
+          "redirectId": "scene_moderne_hauteseille"
+        }
+      ]
+    },
+
+ "scene_moderne_hauteseille": {
+      "name": "Rue Haute Seille",
+      "id": "scene_moderne_hauteseille",
+      "image": "https://cdn-s-www.republicain-lorrain.fr/images/3C31652A-02E3-4E6B-B3EA-21895E8AA77D/NW_detail/title-1556009342.jpg",
+      "texts": [
+        {
+          "text": "Saurez vous retrouver la boutique qui vient de donner à sa gérante la médaille d’honneur car elle est la doyenne des commerçants Messins?"
+        },
+        {"text": "Un indice ? son nom, qui est également le nom de l’enseigne commence par un W. (_ _ _ _ _ _ # _ _ _ _ _)"},
+        {"text": "Bien joué! Ce magasin est une institution : voilà bientôt 90 ans que la boutique des Cycles Walas répare les vélos des Messins. Derrière le comptoir, Marianne Walas et sa fille Simone assurent la pérennité du magasin, chaleureuses et généreuses."}
       ],
+
       "game": {
-        "type": "qrcode",
-        "correctAnswer": "Statue de Paul Verlaine"
-      }
+        "type": "input",
+        "correctAnswer": "cycles walas"
+      },
+      "buttons": [
+        {
+          "text": "Continuer Place des Charons",
+          "redirectId": "scene_moderne_hauteseille1"
+        }
+      ]
+    },
+
+    "scene_moderne_hauteseille1": {
+      "name": "Rue Haute Seille",
+      "id": "scene_moderne_hauteseille1",
+      "visible": 0,
+      "image": "https://cdn-s-www.republicain-lorrain.fr/images/3C31652A-02E3-4E6B-B3EA-21895E8AA77D/NW_detail/title-1556009342.jpg",
+      "texts": [
+        {
+          "text": "Les cycles walas en face de vous ? Alors continuez à gauche, suivez la rue Haute Seille sur quelques metres jusqu’à la première à gauche : Place des charrons. C'est le point (7)"
+        }
+        ],
+
+      "buttons": [
+        {
+          "text": "J'y suis!",
+          "redirectId": "scene_moderne_placecharons"
+        }
+      ]
+    },
+
+    "scene_moderne_placecharons": {
+      "name": "Place des Charons",
+      "id": "scene_moderne_placecharons",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Place_des_Charrons_-_Metz_57.JPG/1280px-Place_des_Charrons_-_Metz_57.JPG",
+      "texts": [
+        {
+          "text": "Il s’agissait initialement d’une rue agrandie en place au milieu du XVIII e siècle. La place des charrons s’est appelée tout d’abord Neuverue au xiiie siècle1, puis rue des Charriers, et place des Sans-culottes en 1793."
+        },
+        {"text": "Jusqu’en 1906, date où son lit fut comblé, la place était bordée par la Seille, et reliée au reste de la ville par le pont-à-Seille."},
+        {"text": "Dirigez vous au numéro 4, où se trouve l’hôtel de Burtaigne, très belle maison du début du xvie siècle ayant appartenu à Michel de Gournay."},
+        {"text": "Retrouvez la plaque descriptive et retrouvez la date de création de cet hotel particulier."}
+      ],
+
+      "buttons": [
+        {
+          "text": "1502",
+          "redirectId": ""
+        },
+        {
+          "text": "1520",
+          "redirectId": ""
+        },
+        {
+          "text": "1531",
+          "redirectId": "scene_moderne_placecharons1"
+        }
+      ]
     },
 
 
+    "scene_moderne_placecharons1": {
+      "name": "Place des charons",
+      "visible": 0,
+      "id": "scene_moderne_placecharons1",
+      "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80",
+      "texts": [
+        {
+          "text": "Assez! ça suffit! Nous avons assez fait de tourisme comme ça. Concentrons nous sur votre déguisement!"
+        },{
+          "nickname": "François Mitterand",
+          "text": "Vous avez raison! Je sais qu'un Dressing rue Mazelle soutient L'Espoir Français. On y trouvera d'excellents déguisements!"
+        }
+      ],
+      "buttons": [
 
+        {
+          "text": "Je suis Rue Mazelle (point 9)",
+          "redirectId": "scene_moderne_ruemazelle"
+        }
+      ]
+    },
+
+    "scene_moderne_ruemazelle": {
+      "name": "Rue Mazelle",
+      "id": "scene_moderne_ruemazelle",
+      "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80",
+      "texts": [
+        {
+          "text": "Au croisement de la place des Charrons, de la rue Mazelle et en face de vous la rue du grand Wad?"
+        },
+        {
+          "text": "Parfait ne bougez plus. Cette rue a une particularité... pour les agents de la Poste ! Saurez-vous la retrouvez ?"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Les addresses paires et impaires sont du même côté",
+          "redirectId": ""
+        },
+        {
+          "text": "On trouve un numéro 0 et un 0Bis",
+          "redirectId": "scene_moderne_ruemazelle1"
+        }
+      ]
+    },
+
+    "scene_moderne_ruemazelle1": {
+      "name": "Rue Mazelle",
+      "visible": 0
+      "id": "scene_moderne_ruemazelle1",
+      "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80",
+      "texts": [
+        {
+          "text": "Oh non, ça grouille de Boshs! Nous risquons d'être repérés, Vite, de nouveaux habits nous attendent à deux pas d'ici : allons-y ! Rendez vous au 52 rue Mazelle."
+        },
+        {
+          "text": "Quel est le prénom de la propriétaire du dressing ? (_ _ _)"
+        },
+        {
+          "text": "La boutique “Le dressing de Léa” fonctionne sur le principe du dépôt-vente. Vous pourrez donc y amener vos articles que vous n’utilisez plus et également trouver de belles pièces de marques reconnues à prix avantageux."
+        }
+      ],
+      "game": {
+        "type": "input",
+        "correctAnswer": "lea"
+      },
+
+      "buttons": [
+        {
+          "text": "J'ai maintenant tout ce qu'il me faut! Allons à l'Eglise Saint Maximin (10 sur la carte)",
+          "redirectId": ""
+        }
+      ]
+    },
 
 
     "scene_moderne_maximin": {
       "name": "Eglise Saint Maximin",
       "id": "scene_moderne_maximin",
-      "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Saint_Maximin_Metz_3.jpg/1024px-Saint_Maximin_Metz_3.jpg",
       "texts": [
         {
-          "text": "A faire"
+          "text": "Remontez à contre sens la rue Mazelle, en faisant attention aux voitures et avancez de quelques mètres jusqu’à l’église Saint-Maximin"
+        },
+        {
+          "text": "De quel style est le portail de l’édifice ? Vous pouvez lire la réponse à proximité de l’église)"
         }
       ],
       "buttons": [
         {
-          "text": "",
-          "redirectId": "scene2"
+          "text": "Gothique",
+          "redirectId": ""
         },
         {
-          "text": "",
-          "redirectId": "start"
+          "text": "Classique",
+          "redirectId": ""
+        },
+        {
+          "text": "Baroque",
+          "redirectId": "scene_moderne_maximin1"
         }
       ]
+    },
+
+    "scene_moderne_maximin1": {
+      "name": "Eglise Saint Maximin",
+      "visible": 0,
+      "id": "scene_moderne_maximin1",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Saint_Maximin_Metz_3.jpg/1024px-Saint_Maximin_Metz_3.jpg",
+      "texts": [
+        {
+          "text": "Nous avons réussi François! Nous sommes arrivés!"
+        },
+        {
+          "nickname": "François Mitterand",
+          "text": "Bien! Mais ça c’était la partie facile, il faut trouver notre passeur. Je sais que c’est un artiste dont le chef d’œuvre est à Saint Maxmin. "
+        }
+        ,{
+          "text": "Qu’attendons nous ?  Fouillons l'Eglise ? Et vous êtes maintenant bien déguisé, vous ne risquez rien ! Qui devons nous trouver ? "
+        },
+        {
+          "nickname": "François Mitterand",
+          "text": "Le créateur de ces vitraux! (_ _ _ _ # _ _ _ _ _ _ _)"
+        }
+        ,
+        {
+          "nickname": "Le saviez-vous?",
+          "text": "Jean Cocteau né le 5 juillet 1889 à Maisons-Laffitte et mort le 11 octobre 1963 à Milly-la-Forêt est un poète, peintre, dessinateur, dramaturge et cinéaste français. Élu à l'Académie française en 1955 et comptant parmi les artistes qui ont marqué le XXᵉ siècle."
+        }
+      ],
+      "game": {
+        "type": "input",
+        "correctAnswer": "jean cocteau"
+      },
+      "buttons": [
+
+      ]
     }
-
-
 
 
   }
