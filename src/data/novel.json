@@ -1791,19 +1791,12 @@
           "nickname": "Jean Cocteau",
           "text": "Pour vous servir! Je vous attendais M.Mitterand. Je peux vous aider à quitter la ville, mais avez vous collecté les vitraux que j'ai demandé?"
         }
+
       ],
       "buttons": [
         {
-          "text": "Gothique",
+          "text": "Scanner les vitraux sur cette page",
           "redirectId": ""
-        },
-        {
-          "text": "Classique",
-          "redirectId": ""
-        },
-        {
-          "text": "Baroque",
-          "redirectId": "scene_moderne_maximin1"
         }
       ]
     }
