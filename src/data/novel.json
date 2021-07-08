@@ -194,7 +194,7 @@
       "texts": [
         {
           "nickname": "Indice",
-          "text": "Bien joué! Et quel est sa taille avec la flèche? (un nombre entre 0 et 100)"
+          "text": "Bien joué! Et quel est sa taille en mètres avec la flèche? 33, 93, ou 333? "
         },
         {
           "nickname": "Le saviez-vous?",
@@ -1124,15 +1124,15 @@
     "scene_moderne_cathedrale": {
       "name": "Cathédrale",
       "id": "scene_moderne_cathedrale",
-      "image": "https://fr.wikipedia.org/wiki/H%C3%A9l%C3%A8ne_Studler#/media/Fichier:H%C3%A9l%C3%A8ne_Studler_1944.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/H%C3%A9l%C3%A8ne_Studler_1944.jpg",
       "texts": [
         {
           "text": "A l’intérieur de la cathédrale, vous rencontrer Sœur Hélène, qui veut d’abord s’assurer que vous êtes bien un vrai messin et pas un espion de la Gestapo.  Répondez à l'énigme pour prouver votre innocence et continuer l'aventure. "
         },
         {
           "nickname": "Sœur Hélène",
-          "updatedImage": "../../assets/locations/autel.png",
-          "text": "Qui sont les deux saints qui protègent la ville et la Cathédrale? \n\nPour trouver la réponse,, retrouvez cet autel dans ma Cathédrale. Il vous indiquera qui sont les deux saints qui protègent la ville et la Cathédrale!"
+          "updatedImage": "../../assets/locations/autel.PNG",
+          "text": "Qui sont les deux saints qui protègent la ville et la Cathédrale? Pour trouver la réponse, retrouvez cet autel dans ma Cathédrale. Si besoin, vous pouvez demander au personnel de la Cathédrale. ;)"
         }
       ],
       "buttons": [
@@ -1154,7 +1154,7 @@
     "scene_moderne_cathedrale2": {
       "visible": 0,
       "id": "scene_moderne_cathedrale2",
-      "image": "http://www.centre-bethanie.org/images/0_clement_plus.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/H%C3%A9l%C3%A8ne_Studler_1944.jpg",
       "texts": [
         {
           "nickname": "Sœur Hélène",
@@ -1170,38 +1170,57 @@
 
         {
           "nickname": "Sœur Hélène",
-          "updatedImage": "../../assets/locations/vitrail.png",
-          "text": "Dirigez vous près du Coeur et montez les marches. Observez les vitraux aux tons bleus de Marc Chagall, à l’entrée du déambulatoire. Ce sont là différentes scènes de l'Ancien Testament"
+          "text": "Dirigez vous près du Coeur et montez les marches du côté gauche (déambulatoire nord). Observez les vitraux aux tons bleus de Marc Chagall, à l’entrée du déambulatoire. Ce sont là différentes scènes de l'Ancien Testament"
         },
         {
           "nickname": "Sœur Hélène",
-          "updatedImage": "../../assets/locations/vitrail.png",
-          "text": "Il vous faut les remettre dans l'ordre de gauche à droite. Le numéro 1 est le vitrail le plus à gauche et le numéro 7 le plus à droite. Rentrez le code à 7 chiffre puis cliquez sur la flèche pour continuer"
+          "text": "Il vous faut les remettre dans l'ordre de gauche à droite. Résolver la puzzle avant de continuer"
         }
-        ,
+
+      ],
+      "buttons": [
+        {
+          "text": "Afficher le puzzle",
+          "redirectId": "https://puzzel.org/en/reorder/play?p=-MdwMJI2mYjT2rE9wzll"
+        },
+
+        {
+          "text": "C'est bon J'ai fait le puzzle! Je vous écoute!",
+          "redirectId": "scene_moderne_cathedrale2bis"
+        }
+
+      ]
+    },
+
+    "scene_moderne_cathedrale2bis": {
+      "visible": 0,
+      "id": "scene_moderne_cathedrale2bis",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/H%C3%A9l%C3%A8ne_Studler_1944.jpg",
+      "texts": [
         {
           "nickname": "Sœur Hélène",
-          "updatedImage": "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNTgzNDQwMzk3/marc-chagall-9243488-2-402.jpg",
-          "text": "« Tout à fait, retenez bien ce code, il vous sera très utile par la suite » Nous annonce Sœur Hélène."
+          "text": "« Tout à fait!  Chagall a accepté de faire les vitraux à condition de ne représenter que l'ancien Testament, étant de confession juive."
+        },
+        {
+          "nickname": "Sœur Hélène",
+          "updatedImage": "../../assets/locations/code.png",
+          "text": "Le puzzle que vous avez résolu est notre Clé Secrete. Mémorisez le, il vous sera demandé par nos espions pour vous identifier."
         }
+
       ],
       "buttons": [
       {
-          "text": "C'est noté! Je vous écoute!",
+          "text": "C'est noté!",
           "redirectId": "scene_moderne_cathedrale3"
         }
 
-      ],
-      "game": {
-        "type": "input",
-        "correctAnswer": "1537264"
-      }
+      ]
     },
 
     "scene_moderne_cathedrale3": {
-      "name": "Cathédrale",
-      "visible": 0,
-      "image": "https://fr.wikipedia.org/wiki/H%C3%A9l%C3%A8ne_Studler#/media/Fichier:H%C3%A9l%C3%A8ne_Studler_1944.jpg",
+      "name": "Cathédrale: François Mitterand",
+
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/H%C3%A9l%C3%A8ne_Studler_1944.jpg",
       "id": "scene_moderne_cathedrale3",
       "texts": [
         {"nickname": "Sœur Hélène",
@@ -1214,6 +1233,7 @@
           "text": "Jean Geiger, voici François Mitterand. Il est dorénavent sous votre responsabilité et vous devez le faire sortir de la ville sans que les agents de la Gestappo ne l’intercepte."
         },
         {"nickname": "François Mitterand",
+          "updatedImage": "https://cdn-s-www.republicain-lorrain.fr/images/1C4ABFB9-F0D8-44F5-8CEC-7FAF2987D93E/NW_raw/le-jeune-francois-mitterrand-etait-sergent-chef-au-sein-du-23-e-regiment-d-infanterie-coloniale-photo-er-1608086013.jpg",
           "text": "« Quoi ? Ma vie dépend de ce gringalet ? »"
         },
         {
@@ -1229,19 +1249,15 @@
       ],
       "buttons": [
         {
-          "text": "J'y suis! Numéro 4",
+          "text": "J'y suis! C'est le numéro 2",
           "redirectId": ""
         },
 
         {
-          "text": "J'y suis! Numéro 6",
+          "text": "J'y suis! C'est le numéro 6",
           "redirectId": "scene_moderne_ours"
-        },
-
-        {
-          "text": "J'y suis! Numéro 8",
-          "redirectId": ""
         }
+
       ]
     },
 
@@ -1359,7 +1375,7 @@
         },
         {
           "nickname": "François Mitterand",
-          "text": "Aucun Allemand en vue, cette zone est encore préservée. Mais il faut nous presser à l’interieur pour discter en sureté ."
+          "text": "Aucun Allemand en vue, cette zone est encore préservée. Mais il faut nous presser à l’interieur pour discuter en sureté ."
         }
         ,
         {

@@ -123,6 +123,7 @@ function Scene({ scene, nextScene, saves, settings, addSave }: ScenePropsType) {
         setTextIndex((textIndex) => (textIndex += 1));
         setButtonsVisible(true);
       }
+
     }
   };
 
@@ -159,7 +160,7 @@ function Scene({ scene, nextScene, saves, settings, addSave }: ScenePropsType) {
     <div className={styles.background} style={{ backgroundImage: `url(${backgroundImage || image})` }}>
       <div className={styles.content}>
         <div className={styles.buttons}>
-          {isButtonsVisible && (! game && textIndex == texts.length - 1) &&
+          {isButtonsVisible && (textIndex == texts.length - 1) &&
             buttons.map((button) => (
               <SceneButton
                 key={`${button.text}${button.redirectId}`}
