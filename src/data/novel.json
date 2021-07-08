@@ -120,7 +120,7 @@
           "updatedImage": "http://hellboy57.e-monsite.com/medias/images/p12807.jpg"
         }
         ,{
-          "text": "Pour ce faire, Saint Clément rend dans les différents commerces et patisserie de Metz : Obélix durant son passage à Divodurum, y a laissé quelques traces.",
+          "text": "Pour ce faire, Saint Clément se rend dans les différents commerces et patisserie de Metz : Obélix durant son passage à Divodurum, y a laissé quelques traces.",
           "updatedImage": "http://hellboy57.e-monsite.com/medias/images/p12807.jpg"
         },
 
@@ -193,40 +193,39 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg",
       "texts": [
         {
-          "nickname": "Indice",
-          "text": "Bien joué! Et quel est sa taille en mètres avec la flèche? 33, 93, ou 333? "
-        },
-        {
-          "nickname": "Le saviez-vous?",
-          "text": "Tout à fait! La Tour de Mutte avec une cloche civile qui servait à prévenir les citadins de potentielles attaques (88m de hauteur, 93m de hauteur avec la flèche). Rendez-vous au point (2) sur la carte pour continuer!"
+          "text": "Et quel est sa taille en mètres avec la flèche? 33, 93, ou 333? "
         }
 
       ],
 
-      "game": {
-        "type": "input",
-        "correctAnswer": "93"
-      },
       "buttons": [
         {
-          "text": "J'y suis!",
-          "redirectId": "scene_rome_market"
+          "text": "33m",
+          "redirectId": ""
         },
         {
-          "text": "M'aider à y aller!",
+          "text": "93m",
           "redirectId": "scene_rome_mute3"
+        },{
+          "text": "333m",
+          "redirectId": ""
         }
 
       ]
     },
 
-     "scene_rome_mute3": {
+    "scene_rome_mute3": {
       "id": "scene_rome_mute3",
       "visible": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg",
       "texts": [
+
         {
-          "text": "Finalement, il est bien nécessaire d’arpenter les rues de la ville pour trouver Obélix. A partir de la Cathédrale, en vous positionnant en face d’elle, nous vous invitions à aller à gauche et compter 88 pas pour arriver à votre prochaine destination."
+          "text": "Tout à fait! La Tour de Mutte avec une cloche civile qui servait à prévenir les citadins de potentielles attaques (88m de hauteur, 93m de hauteur avec la flèche)."
+        }
+      ,
+     {
+          "text": "Finalement, il est bien nécessaire d’arpenter les rues de la ville pour trouver Obélix. A partir de la Cathédrale, en vous positionnant en face d’elle, nous vous invitions à aller à gauche et compter 88 pas pour arriver à votre prochaine destination. Rendez-vous au point (2) sur la carte pour continuer!"
         }
       ]
       ,"buttons": [
@@ -235,9 +234,8 @@
           "redirectId": "scene_rome_market"
         }
 
-
-      ]}
-      ,
+      ]
+    },
     "scene_rome_market": {
       "id": "scene_rome_market",
       "name": "Marché couvert",
@@ -281,12 +279,7 @@
       "texts": [
         {
           "nickname": "Indice",
-          "text": "Bien joué! Souvenez vous de cette réponse. Elle vous aidera par la suite"
-        },
-        {
-          "nickname": "Le saviez-vous?",
-          "updatedImage": "http://charculor.fr/wp-content/uploads/2015/09/Fuseau-Lorrain-a-lancienne-PES.jpg",
-          "text": "Le fuseau lorrain est un saucisson moelleux et maigre embossé dans un boyau naturel et délicatement fumé au sapin. "
+          "text": "Bien joué! Souvenez vous de cette réponse. Elle vous aidera par la suite. Nous vous invitons à profiter du marché couvert pour découvrir d'autres spécialités"
         },
         {
           "text": "Saint Clément repus de ses spécialités salées a besoin de s’abreuver par une boisson chaude. "
@@ -337,7 +330,8 @@
       "image": "../../assets/locations/kawa-tea.PNG",
       "texts": [
         {
-          "text": "Petit indice, c’est a priori le nom du café le plus cher au monde, demandez à la gérante de la boutique Kawa Tea réponse et ses explications."
+          "text": "Petit indice, c’est a priori le nom du café le plus cher au monde, demandez à la gérante de la boutique Kawa Tea la réponse et ses explications."
+
         }
       ],
       "buttons": [
@@ -402,21 +396,24 @@
       "image": "../../assets/locations/plaque_chambre_cache.jpg",
       "texts": [
         {
-          "text": "Tiens, c’est étonnant que sous cette plaque se trouve quelque chose de vital pour l’homme. Mais à quoi correspond cette plaque ? Trouvez le mot qui a été caché sur cette image (_____)?"
+          "text": "Tiens, c’est étonnant que sous cette plaque se trouve quelque chose de vital pour l’homme. Mais à quoi correspond cette plaque ? Trouvez le mot qui a été caché sur cette image (_____)"
         },{
-          "nickname": "Indice",
-          "text": "Bien joué! La chose qu'on extrait de sous la plaque est un indice important! Rendez-vous au point (4) sur la carte pour continuer",
+          "text": "Bien joué! C'est bien un puit! A retenir, notre objet mystère est un mode de stockage un peu similaire! On y stocke la même chose",
           "updatedImage": "../../assets/locations/plaque_chambre.jpg"
         }
       ],
       "buttons": [
-
+      {
+          "text": "Rendez-vous au point (4) pour continuer",
+          "redirectId": "scene_rome_temple"
+        }
       ],
       "game": {
         "type": "input",
         "correctAnswer": "PUITS"
       }
     },
+
 
 
     "scene_rome_temple": {
@@ -429,7 +426,7 @@
         },
 
         {
-          "text": "Saurez-vous retrouver ce lieu ? Peut-être se cache-il là-bas avec Falbala. (_ _ _ _ _ # _ _ _ _)"
+          "text": "Saurez-vous retrouver ce lieu ? Peut-être se cache-il là-bas avec Falbala. C'est le TEMPLE (_ _ _ _)? "
         },
         {
           "text": "Bien joué! Malheureusement, Saint-Clément n’a toujours pas retrouvé Obé dans ce fabuleux cadre (profitez-en pour immortaliser cette belle vue). Il poursuit son aventure."
@@ -437,7 +434,7 @@
       ],
       "game": {
         "type": "input",
-        "correctAnswer": "Temple Neuf"
+        "correctAnswer": "NEUF"
       },
       "buttons": [
         {
@@ -477,12 +474,16 @@
           "text": "On n’a toujours pas retrouvé Obé dans ce fabuleux cadre. Saint-Clément poursuit donc son aventure. En quittant le Temple Neuf et au passage de son chemin, Saint-Clément découvrit la belle place de la Comédie où se trouve l’Opéra-Théâtre. Peut-être qu’Obé a décidé d’assister à une représentation ?"
         },
         {
-          "text": "Profitons-en pour mieux observer l’architecture et découvrir un nouvel indice pour notre objet.A partir de ce lien, nous vous invitons à réaliser le mot croisé pour trouver le mot mystère"
+          "text": "Profitons-en pour mieux observer l’architecture et découvrir un nouvel indice pour notre objet. A partir de ce lien, nous vous invitons à réaliser le mot croisé pour trouver le mot mystère"
+        }
+        ,
+        {
+          "text": " Le mot #6 du mot-croisé est un indice pour retrouver notre objet mystère, mémorisez-le!"
         }
       ],
       "buttons": [{
           "text": "Afficher le mot croisé",
-          "redirectId": "https://puzzel.org/fr/crossword/play?p=-MdZ5z-J8ohXzz520KZt"
+          "redirectId": "https://puzzel.org/fr/crossword/play?p=-Me209FPYHI6lN7rNQ5T"
         },
       {
           "text": "Continuer l'aventure ((6) sur la carte)",
@@ -501,7 +502,7 @@
       ],
       "buttons": [{
           "text": "Afficher le puzzle",
-          "redirectId": "https://puzzel.org/fr/jigsaw/play?p=-MY_Y9fvWQeBf0GJQ6W_"
+          "redirectId": "https://www.jigsawplanet.com/?rc=play&pid=3092608179e2"
         },
       {
           "text": "J'ai fait le puzzle, continuer l'aventure!",
@@ -515,21 +516,20 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
       "texts": [
         {
-          "text": "Maintenant que vous avez assemblé le Puzzle, que se cache-t-il derrière l'image? C'est un musée: (_ _ _ _ _ # _ _ # _ _ # _ _ _ _ # _'_ _"},
-        {
-          "text": "Bien joué! Vous pouvez continuer l'aventure!"
-          }
+          "text": "Maintenant que vous avez assemblé le Puzzle, que se cache-t-il derrière l'image? C'est un musée:"}
       ],
-      "game": {
-        "type": "input",
-        "correctAnswer": "musee de la cour d’or"
-      },
+
       "buttons": [{
-          "text": "Afficher le puzzle",
-          "redirectId": "https://puzzel.org/fr/jigsaw/play?p=-MY_Y9fvWQeBf0GJQ6W_"
+          "text": "Le Musée d'Orsay",
+          "redirectId": ""
         },
+       {
+          "text": "Le Musée des Anciennes reliques",
+          "redirectId": ""
+      }
+        ,
       {
-          "text": "Continuer l'aventure",
+          "text": "Le Musée de la Cour d'Or",
           "redirectId": "scene_rome_or2"
       }
       ]
@@ -541,13 +541,16 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
       "texts": [
         {
-          "text": "Avez-vous atteint le Musée de la Cour d’Or?"
+          "text": "Ce musée lui rappelant son village appelé « le village des fous ». Il pourrait retrouver un peu de chaleur et lui faire oublier le mal du pays."
+        },
+        {
+          "text": "Avez-vous atteint le Musée de la Cour d’Or? Pour y accéder, nous vous conseillons d’emprunter la petite marche le long du canal, suivez le chemin à découvrir avec ce nouveau puzzle"
         }
       ],
 
       "buttons": [{
-          "text": "Non, aidez-moi à me diriger? (Avec un jeu)",
-          "redirectId": "https://puzzel.org/fr/jigsaw/play?p=-MZ1qbRnMjKN4py4irFk "
+          "text": "Afficher le puzzle",
+          "redirectId": "https://www.jigsawplanet.com/?rc=play&pid=2715fa1dc9dc"
         },
       {
           "text": "C'est bon, j'y suis!",
@@ -566,48 +569,63 @@
           "text": "Le musée de la Cour d'Or renferme une partie du rempart et des thermes romains de la ville!"
         },
         {
-          "text": "Alors que Saint Clément analyse l’architecture du Musée, il entendit des bruits de sabots sur les pavés de la ville se dirigeant vers la droite en direction d’En Jurue, il décida de suivre ces sons."
+          "text": "Alors que Saint Clément analyse l’architecture du Musée, il entendit des bruits de sabots sur les pavés de la ville, il décida de suivre ces sons."
+
         }
         ,
         {
-          "text": "En suivant ces instructions, vous arrivez aux Arcades. Cliquez sur le point (7) sur la carte quand vous y êtes pour continuer!"
+          "text": "Mais ce sont des sangliers ! Rappelez-vous Obé et les sangliers ne font qu’un, dans l’estomac !"
+
+        },
+
+        {
+          "text": "Quelles grosses bêtes au centre-ville de Divodorum ! Bête ? Tiens ne serait-pas un synonyme de l’objet que nous recherchons ?"
+        }
+        ,
+        {"text": "Cherchez un synonyme d'être \"bête\". Ce sera un indice pour trouver notre objet mystère!"
+        }
+        ,
+        {
+          "text": "Nous vous invitons à rebrousser chemin et prendre la première rue sur votre gauche : Rue Taison. Vous arriverez sur le marquage (7) sur la carte."
         }
       ],
 
       "buttons": [
         {
-          "text": "C'est bon, j'y suis!",
-          "redirectId": "scene_rome_arcade"
+          "text": "J'y suis!",
+          "redirectId": "scene_rome_taison"
       }
       ]
     },
 
-    "scene_rome_arcade": {
-      "name": "Les arcades!",
-      "id": "scene_rome_arcade",
+    "scene_rome_or4": {
+      "name": "Musée de la Cour d'Or",
+      "id": "scene_rome_or4",
+      "visible": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
       "texts": [
+        {"nickname": "Le saviez-vous?",
+          "text": "Le musée de la Cour d'Or renferme une partie du rempart et des thermes romains de la ville!"
+        },
+        {
+          "text": "Alors que Saint Clément analyse l’architecture du Musée, il entendit des bruits de sabots sur les pavés de la ville, il décida de suivre ces sons."
+
+        }
+        ,
+        {
+          "text": "Mais ce sont des sangliers ! Rappelez-vous Obé et les sangliers ne font qu’un, dans l’estomac !"
+
+        },
 
         {
-          "text": "Saint Clément décida de suivre ces sons. Mais ce sont des sangliers! Rappelez-vous Obé et les sangliers ne font qu’un, dans l’estomac!"
+          "text": "Quelles grosses bêtes au centre-ville de Divodorum ! Bête ? Tiens ne serait-pas un synonyme de l’objet que nous recherchons ?"
+        }
+        ,
+        {"text": "Cherchez un synonyme d'être \"bête\". Ce sera un indice pour trouver notre objet mystère!"
         }
         ,
         {
-          "text": "Quelles grosses bêtes au centre-ville de Divodorum ! Bête ? Tiens ne serait-pas un synonyme de l’objet que nous recherchons ? "
-        },
-        {"nickname": "Le saviez-vous?",
-          "text": "Pour la petite histoire, saurez-vous deviner pourquoi il y a une arcade dans cette rue ? Cette arcade, dont la clé de voûte porte le millésime 1627, se trouvait à l’origine au bas de la rue d’Enfer."
-        },
-        {"nickname": "Le saviez-vous?",
-          "text": "Elle a été déplacée en Jurue en 1954, lors des travaux d’élargissement de la rue d’Enfer qui avaient entraîné la destruction de la maison Rabelais. On peut d’ailleurs encore voir les traces de son emplacement initial sur le bâtiment du 1, rue d’Enfer."
-        }
-        ,
-        {"nickname": "Le saviez-vous?",
-          "text": "L’arcade garde le souvenir d’une époque où la rue était fermée à ses deux extrémités, afin d’empêcher les brigands qui y habitaient d’aller courir la ville et inquiéter les bourgeois.\nOn peut voir sur le muret qui soutient l’arcade un cartouche mentionnant le millésime 1586."
-        }
-        ,
-        {
-          "text": "Nous vous invitons à rebrousser chemin et prendre la première rue sur votre gauche : Rue Taison. Vous arriverez sur le marquage (8) sur la carte."
+          "text": "Nous vous invitons à rebrousser chemin et prendre la première rue sur votre gauche : Rue Taison. Vous arriverez sur le marquage (7) sur la carte."
         }
       ],
 
@@ -622,10 +640,10 @@
 
     "scene_rome_taison": {
       "name": "Rue Taison",
-      "id": "scene_rome_taison",
+      "id": "scene_rome_taison1",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
       "texts": [
-        {"text": "Savez-vous pourquoi cette rue se nomme “Taison” ? Les 3 Mousquetaire sauront vous répondre, allez à leur rencontre!"
+        {"text": "Savez-vous pourquoi cette rue se nomme “Taison” ?"
         },
         {
           "text": "Selon la légende Messine, lors de la première évasion du Graoully qui terrorisait les habitants, on raconte que Saint Clément ayant pour mission de le capturer, "
@@ -678,7 +696,7 @@
         },
 
         {
-          "text": "Noir",
+          "text": "Kaki",
           "redirectId": "scene_rome_taison2"
         },
 
@@ -695,24 +713,20 @@
       "visible": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
       "texts": [
-        {"text": "Enfin, on a vu qu'elle permettait de garder ...."}
+        {"text": "Enfin, on a vu que l'objet qu'on cherche permettait de ...."}
       ],
 
       "buttons": [
         {
-          "text": "de l'eau",
+          "text": "stocker de l'eau",
           "redirectId": "scene_rome_taison3"
         },
 
         {
-          "text": "des armes",
+          "text": "fabriquer des armes",
           "redirectId": ""
         },
 
-        {
-          "text": "de la nourriture",
-          "redirectId": ""
-        }
       ]
     },
 
@@ -722,19 +736,34 @@
       "visible": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
       "texts": [
-        {"text": "Bravo! Vous avez bien tous les indices. N'oubliez pas qu'on cherche un mot de _ _ _ _ _ _ lettres et que ça peut faire référence à 'bête'"},
-      {"text": "C'est ça! Obélix nous a laissé sa gourde magique !!! Après avoir fait le plein d’énergie et de vitamines mystères, St Clément va pouvoir capturer le Graoully ! "}
+        {"text": "Bravo! Vous avez bien tous les indices. N'oubliez pas qu'on cherche un objet transportable qui peut faire référence à 'bête'"},
+
+        {"text": "Je pense que les Ames Galantes sauront vous aider à trouver cet objet, allez à leur rencontre!"}
 
       ],
 
-      "game": {
-        "type": "input",
-        "correctAnswer": "gourde"
-      },
 
       "buttons": [
         {
-          "text": "Conclure ce parcours (point 9)",
+          "text": "J'ai trouvé l'oubjet!",
+          "redirectId": "scene_rome_taison4"
+        }
+      ]
+    },
+
+    "scene_rome_taison4": {
+      "name": "Rue Taison4",
+      "id": "scene_rome_taison4",
+      "visible": 0,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "texts": [
+        {"text": "Oui! Obélix nous a laissé sa gourde magique !!! Après avoir fait le plein d’énergie et de vitamines mystères, nous allons capturer le Graoully "},
+      ],
+
+
+      "buttons": [
+        {
+          "text": "Conclure ce parcours (point 8)",
           "redirectId": "scene_rome_fournirue"
         }
       ]
@@ -746,14 +775,14 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
       "texts": [
         {"text": "En descendant la rue, Saint Clément a capturé le Graoully, il est déjà ligoté en bas de la rue Taison ! Le voyez –vous ? Divodorum libéré, peut enfin souffler !"},
-        {"text": "Reconnaissant de cette longue quête que Saint Clément a effectuée, une récompense est bien méritée : quoi de mieux que l’offrande d’Or Local ?!"},
-        {"text": "Rendez-vous à la boulangerie Saint Jean pour découvrir cet or. Descendez la rue Taison, tournez à droite et allez au bout de la Fournirue.  Quel est donc cet or local?"}
+        {"text": "Reconnaissant de cette longue quête que Saint Clément a effectuée, une récompense est bien méritée : quoi de mieux que de recevoir par de l’Or Local ?! "},
+        {"text": "Rendez-vous à la boulangerie Saint Jean pour découvrir cet or. Descendez la rue Taison, tournez à droite et allez au bout de la Fournirue."}
       ],
 
       "buttons": [
 
         {
-          "text": "De la Mirabelle de Lorraine bien sûr!",
+          "text": "J'y suis!",
           "redirectId": "scene_rome_fournirue2"
         }
       ]
@@ -765,6 +794,8 @@
       "visible": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
       "texts": [
+        {"text": "Vous êtes à la boulangerie Saint Jean. Vous y trouverez la Mirabelle de Lorraine !"},
+
         {"text": "L'aventure romaine est maintenant finie, vous pouvez revenir à la cathédrale pour démarrer un autre parcours!"}
 
       ],
@@ -773,8 +804,6 @@
 
       ]
     },
-
-
 
 
 
