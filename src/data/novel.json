@@ -722,6 +722,7 @@
 
     "scene_rome_taison4": {
       "name": "Rue Taison4",
+      "id": "scene_rome_taison4",
       "image": "../../assets/locations/taison.jpg",
       "visible": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
