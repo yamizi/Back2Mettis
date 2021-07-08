@@ -131,7 +131,13 @@
         {
           "nickname": "Le saviez-vous?",
           "text": "Saint-clément! Le fondateur de la Cathédrale de Metz, qui a l'origine s'appellait Divodurum Mediomatricorum et était à l'intersection des principales voies romaines."
-          ,"updatedImage": "http://hellboy57.e-monsite.com/medias/images/p12807.jpg"}
+          ,"updatedImage": "https://pbs.twimg.com/media/Dxqek8NXcAAorJ6?format=jpg&name=large"
+        },
+        {
+          "nickname": "Le saviez-vous?",
+          "text": "Obelix se rend à Metz, Divodurum en latin, dans l’album « Le tour de Gaule d’#Asterix », écrit par Goscinny et dessiné par Uderzo"
+          ,"updatedImage": "https://pbs.twimg.com/media/Dxqek8NXcAAorJ6?format=jpg&name=large"
+        }
       ],
       "buttons": [
         {
@@ -153,18 +159,19 @@
         }
         ,
         {
-          "text": "Quelle est donc cette tour?"
+          "text": "Quelle est donc cette tour? La tour de ",
+          "updatedImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tour_de_la_Mutte_%28f%C3%A8che%29_-_Cath%C3%A9drale_de_Metz_57.JPG/682px-Tour_de_la_Mutte_%28f%C3%A8che%29_-_Cath%C3%A9drale_de_Metz_57.JPG"
         }
       ],
       "buttons": [
         {
-          "text": "La Tour des Esprits",
+          "text": "L'Esprit",
           "redirectId": "scene_rome_mute1"
         },{
-          "text": "La Tour de Mutte",
+          "text": "La Mutte",
           "redirectId": "scene_rome_mute2"
         },{
-          "text": "la Tour au Diable",
+          "text": "Babylone",
           "redirectId": "scene_rome_mute1"
         }
       ]
@@ -173,7 +180,7 @@
     "scene_rome_mute1": {
       "visible": 0,
       "id": "scene_rome_mute1",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tour_de_la_Mutte_%28f%C3%A8che%29_-_Cath%C3%A9drale_de_Metz_57.JPG/682px-Tour_de_la_Mutte_%28f%C3%A8che%29_-_Cath%C3%A9drale_de_Metz_57.JPG",
       "texts": [
         {
           "text": "Non, ce n'est pas ça! La tour qu'on cherche se trouve là où vous êtes, à la Cathédrale de Saint Etienne."
@@ -190,7 +197,7 @@
     "scene_rome_mute2": {
       "id": "scene_rome_mute2",
       "visible": 0,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tour_de_la_Mutte_%28f%C3%A8che%29_-_Cath%C3%A9drale_de_Metz_57.JPG/682px-Tour_de_la_Mutte_%28f%C3%A8che%29_-_Cath%C3%A9drale_de_Metz_57.JPG",
       "texts": [
         {
           "text": "Et quel est sa taille en mètres avec la flèche? 33, 93, ou 333? "
@@ -217,7 +224,7 @@
     "scene_rome_mute3": {
       "id": "scene_rome_mute3",
       "visible": 0,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Metz_March_2019_%2832509957637%29.jpg/1280px-Metz_March_2019_%2832509957637%29.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tour_de_la_Mutte_%28f%C3%A8che%29_-_Cath%C3%A9drale_de_Metz_57.JPG/682px-Tour_de_la_Mutte_%28f%C3%A8che%29_-_Cath%C3%A9drale_de_Metz_57.JPG",
       "texts": [
 
         {
@@ -239,7 +246,7 @@
     "scene_rome_market": {
       "id": "scene_rome_market",
       "name": "Marché couvert",
-      "image": "../../assets/locations/mauricette.jpg",
+      "image": "https://metz.fr/lieux/images/gr_marchecouvert.jpg",
       "texts": [
         {
           "text": "Saint Clément se souvient très bien qu’en parlant d’Obé, tout le monde faisait référence à sa gourmandise légendaire, a priori c’est un bon vivant, il ne refuserait pas de casser la croute à toute heure de la journée."
@@ -327,7 +334,7 @@
     "scene_rome_kawa2": {
       "visible": 0,
       "id": "scene_rome_kawa2",
-      "image": "../../assets/locations/kawa-tea.PNG",
+      "image": "../../assets/locations/kawa_tea.jpg",
       "texts": [
         {
           "text": "Petit indice, c’est a priori le nom du café le plus cher au monde, demandez à la gérante de la boutique Kawa Tea la réponse et ses explications."
@@ -345,7 +352,7 @@
     "scene_rome_kawa1": {
       "visible": 0,
       "id": "scene_rome_kawa1",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Place_de_Chambre_-_Metz_57.JPG/1920px-Place_de_Chambre_-_Metz_57.JPG",
+      "image": "../../assets/locations/kawa_tea.jpg",
       "texts": [
         {
           "text": "De quoi Obelix raffole-t-il?"
@@ -443,7 +450,7 @@
         },
         {
           "text": "Continuer l'aventure ((5) sur la carte)",
-          "redirectId": "\"scene_rome_comedie\""
+          "redirectId": "scene_rome_comedie"
         }
 
       ]
@@ -468,7 +475,7 @@
     "scene_rome_comedie": {
       "name": "Place de la comédie",
       "id": "scene_rome_comedie",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "image": "../../assets/locations/comedie.jpg",
       "texts": [
         {
           "text": "On n’a toujours pas retrouvé Obé dans ce fabuleux cadre. Saint-Clément poursuit donc son aventure. En quittant le Temple Neuf et au passage de son chemin, Saint-Clément découvrit la belle place de la Comédie où se trouve l’Opéra-Théâtre. Peut-être qu’Obé a décidé d’assister à une représentation ?"
@@ -494,7 +501,7 @@
     "scene_rome_or": {
       "name": "Musée de la Cour d'Or",
       "id": "scene_rome_or",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "image": "../../assets/locations/comedie.jpg",
       "texts": [
         {
           "text": "Pour accéder à la prochaine étape, nous vous invitons à assembler les pièces du puzzle pour découvrir vers quel lieu il faut aller! Un lieu rempli d’histoires et d’anciennes reliques."
@@ -513,7 +520,8 @@
     "scene_rome_or1": {
       "name": "Musée de la Cour d'Or1",
       "id": "scene_rome_or1",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+
+      "image": "../../assets/locations/cour_dor_cache.jpg",
       "texts": [
         {
           "text": "Maintenant que vous avez assemblé le Puzzle, que se cache-t-il derrière l'image? C'est un musée:"}
@@ -538,7 +546,7 @@
       "name": "Musée de la Cour d'Or",
       "id": "scene_rome_or2",
       "visible": 0,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "image": "../../assets/locations/cour_dor_clean.jpg",
       "texts": [
         {
           "text": "Ce musée lui rappelant son village appelé « le village des fous ». Il pourrait retrouver un peu de chaleur et lui faire oublier le mal du pays."
@@ -563,46 +571,7 @@
       "name": "Musée de la Cour d'Or",
       "id": "scene_rome_or3",
       "visible": 0,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
-      "texts": [
-        {"nickname": "Le saviez-vous?",
-          "text": "Le musée de la Cour d'Or renferme une partie du rempart et des thermes romains de la ville!"
-        },
-        {
-          "text": "Alors que Saint Clément analyse l’architecture du Musée, il entendit des bruits de sabots sur les pavés de la ville, il décida de suivre ces sons."
-
-        }
-        ,
-        {
-          "text": "Mais ce sont des sangliers ! Rappelez-vous Obé et les sangliers ne font qu’un, dans l’estomac !"
-
-        },
-
-        {
-          "text": "Quelles grosses bêtes au centre-ville de Divodorum ! Bête ? Tiens ne serait-pas un synonyme de l’objet que nous recherchons ?"
-        }
-        ,
-        {"text": "Cherchez un synonyme d'être \"bête\". Ce sera un indice pour trouver notre objet mystère!"
-        }
-        ,
-        {
-          "text": "Nous vous invitons à rebrousser chemin et prendre la première rue sur votre gauche : Rue Taison. Vous arriverez sur le marquage (7) sur la carte."
-        }
-      ],
-
-      "buttons": [
-        {
-          "text": "J'y suis!",
-          "redirectId": "scene_rome_taison"
-      }
-      ]
-    },
-
-    "scene_rome_or4": {
-      "name": "Musée de la Cour d'Or",
-      "id": "scene_rome_or4",
-      "visible": 0,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "image": "../../assets/locations/cour_dor_clean.jpg",
       "texts": [
         {"nickname": "Le saviez-vous?",
           "text": "Le musée de la Cour d'Or renferme une partie du rempart et des thermes romains de la ville!"
@@ -641,7 +610,7 @@
     "scene_rome_taison": {
       "name": "Rue Taison",
       "id": "scene_rome_taison1",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "image": "../../assets/locations/taison.jpg",
       "texts": [
         {"text": "Savez-vous pourquoi cette rue se nomme “Taison” ?"
         },
@@ -684,7 +653,7 @@
       "name": "Rue Taison1",
       "id": "scene_rome_taison1",
       "visible": 0,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "image": "../../assets/locations/taison.jpg",
       "texts": [
         {"text": "Ensuite, une couleur!"}
       ],
@@ -711,7 +680,7 @@
       "name": "Rue Taison2",
       "id": "scene_rome_taison2",
       "visible": 0,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "image": "../../assets/locations/taison.jpg",
       "texts": [
         {"text": "Enfin, on a vu que l'objet qu'on cherche permettait de ...."}
       ],
@@ -725,7 +694,7 @@
         {
           "text": "fabriquer des armes",
           "redirectId": ""
-        },
+        }
 
       ]
     },
@@ -734,7 +703,7 @@
       "name": "Rue Taison3",
       "id": "scene_rome_taison3",
       "visible": 0,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "image": "../../assets/locations/ames_galantes.jpg",
       "texts": [
         {"text": "Bravo! Vous avez bien tous les indices. N'oubliez pas qu'on cherche un objet transportable qui peut faire référence à 'bête'"},
 
@@ -753,11 +722,11 @@
 
     "scene_rome_taison4": {
       "name": "Rue Taison4",
-      "id": "scene_rome_taison4",
+      "image": "../../assets/locations/taison.jpg",
       "visible": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
       "texts": [
-        {"text": "Oui! Obélix nous a laissé sa gourde magique !!! Après avoir fait le plein d’énergie et de vitamines mystères, nous allons capturer le Graoully "},
+        {"text": "Oui! Obélix nous a laissé sa gourde magique !!! Après avoir fait le plein d’énergie et de vitamines mystères, nous allons capturer le Graoully "}
       ],
 
 
@@ -772,11 +741,11 @@
     "scene_rome_fournirue": {
       "name": "En fournirue",
       "id": "scene_rome_fournirue",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "image": "https://assets.justacote.com/photos_entreprises/patisserie-jean-metz-1346157302.jpg",
       "texts": [
         {"text": "En descendant la rue, Saint Clément a capturé le Graoully, il est déjà ligoté en bas de la rue Taison ! Le voyez –vous ? Divodorum libéré, peut enfin souffler !"},
         {"text": "Reconnaissant de cette longue quête que Saint Clément a effectuée, une récompense est bien méritée : quoi de mieux que de recevoir par de l’Or Local ?! "},
-        {"text": "Rendez-vous à la boulangerie Saint Jean pour découvrir cet or. Descendez la rue Taison, tournez à droite et allez au bout de la Fournirue."}
+        {"text": "Rendez-vous à la Patisserie Jean pour découvrir cet or. Descendez la rue Taison, tournez à droite et allez au bout de la Fournirue."}
       ],
 
       "buttons": [
@@ -792,7 +761,7 @@
       "name": "En fournirue",
       "id": "scene_rome_fournirue2",
       "visible": 0,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+      "image": "https://assets.justacote.com/photos_entreprises/patisserie-jean-metz-1346157302.jpg",
       "texts": [
         {"text": "Vous êtes à la boulangerie Saint Jean. Vous y trouverez la Mirabelle de Lorraine !"},
 
@@ -807,26 +776,30 @@
 
 
 
-
     "scene_medieval_templier": {
       "name": "Chapelle des Templiers",
       "id": "scene_medieval_templier",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
+       "image": "../../assets/locations/arsenal.PNG",
       "texts": [
         {"text": "A l'époque médiéval, la ville de Metz était une place forte, dont les fortifications ont été longues de plus de 6000 m de long renforcé de 38 tours et 18 portes."},
       {"text": "C'est grâce à ses fortifications ainsi qu'a la vigilance des habitants que la ville n'a jamais été prise d'assaut. Rendez-vous au sommet de ces marches pour démarrer l'aventure."},
-        {"text": "Quel est le bâtiment situé devant vous , indiqué par (1) sur la carte? (_ _ _ _ _ _ _ _ # _ _ _ # _ _ _ _ _ _ _ _ _)"},
+        {"text": "Quel est le bâtiment situé devant vous, indiqué par (1) sur la carte? LA CHAPELLE DES ..."},
         {"text": "Bien joué! Vous êtes proche d'un autre bâtiment ancien, rendez-vous au point (2) pour continuer"}
       ],
 
-      "game": {
-        "type": "input",
-        "correctAnswer": "chapelle des templiers"
-      },
 
       "buttons": [
+
         {
-          "text": "J'y suis!",
+          "text": "GUERRIERS",
+          "redirectId": ""
+        },
+        {
+          "text": "TEINTURIERS",
+          "redirectId": ""
+        }
+        ,{
+          "text": "TEMPLIERS",
           "redirectId": "scene_medieval_stpierre"
         }
       ]
@@ -886,17 +859,15 @@
             {"text": "La beauté d'une cité attire forcement les convoitises. Mais, les habitants surveillent leur magnifique cité. Comme ce matin de 1473 ou un boulanger sauva la ville."},
             {"text": "Fatigué d'un long siège, le duc de Lorraine fait cacher ses hommes dans des tonneaux afin de les faire entrer dans la ville sur la charrette d'un marchand."},
             {"text": "Ils bloquent la porte Serpenoise. Le boulanger Harrelle, témoin de la scène vous envoie écrire un message pour alerter les gardes et protéger la ville."},
-            {"text": "Il vous charge de le transmettre."}
+            {"text": "Afin d’écrire le message, il faut trouver une plume devant le palais du gouverneur (point 3)."}
+
           ],
 
 
           "buttons": [
+
             {
-              "text": "Accéder  au puzzle",
-              "redirectId": "https://www.jigsawplanet.com/?rc=play&pid=239bc95aa66d "
-            },
-            {
-              "text": "C'est bon j'ai fini et je suis au point (3)",
+              "text": "C'est bon j'ai la plume'",
               "redirectId": "scene_medieval_gouverneur1"
             }
             ]
@@ -908,27 +879,23 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Palais_du_Gouverneur_Metz_08.JPG",
       "texts": [
         {
-          "text": "Bienvenue au Palais du Gouverneur. Appelé autrefois General-Kommando, ce batiment est une résidence édifiée à Metz, entre 1902 et 1905, pour servir de pied-à-terre à l’empereur Guillaume II."
+          "text": "Nous sommes au Palais du Gouverneur. Appelé autrefois General-Kommando, ce batiment est une résidence édifiée à Metz, entre 1902 et 1905, pour servir de pied-à-terre à l’empereur Guillaume II."
         },
         {
-          "text": "Observez bien la façade. Combien de blasons sont peints sur les fenetres de la façade?"
+          "text": "Profitez de ce magnifique décor et observez bien la façade. Combien de blasons sont peints sur les fenetres de la façade?"
         }
       ],
       "buttons": [
         {
-          "text": "10",
+          "text": "mois de 10",
           "redirectId": ""
         },
         {
-          "text": "18",
-          "redirectId": ""
-        },
-        {
-          "text": "34",
+          "text": "20-30",
           "redirectId": "scene_medieval_gouverneur2"
         },
         {
-          "text": "50",
+          "text": ">50",
           "redirectId": ""
         }
       ]
@@ -944,10 +911,6 @@
           "text": "Tout à fait! Et le blason de Metz est celui qui a son côté gauche blanc et son côté droit noir. Il est situé juste au-dessus de la porte d’entrée. De plus, Il existe encore un bout du mur romain d’antan dans le jardin du Palais."
         },
         {
-          "text": "A partir de quelle date ce batiment a-t-il été construit? La réponse se situe au sommet du fronton d’entrée (4 chiffres)."
-        }
-        ,
-        {
           "text": "Bien joué! Le message est écrit, il vous faut maintenant le porter au soldat les plus proches. Il est connu sous le nom de 'Camoufle'. Rdv au point (4) sur la carte!"
         }
       ],
@@ -960,62 +923,27 @@
       }
     },
 
-    "scene_medieval_camoufle": {
-      "name": "Tour Camoufle",
-      "id": "scene_medieval_camoufle",
-      "image": "https://www.tourisme-lorraine.fr/sitlorimg/1920/0/aHR0cHM6Ly93d3cuc2l0bG9yLmZyL3Bob3Rvcy84MzgvODM4MTQwMTYzXzQuanBn.jpg",
-      "texts": [
-        {
-          "nickname": "Gardes",
-          "text": "Halte là! Qui êtes vous?"
-        },
-        {
-          "nickname": "",
-          "text": "Je porte un message important du Palais du Gouverneur. Il me faut passer!"
-        },
-        {
-          "nickname": "Gardes",
-          "text": "A qui devez-vous le transmettre? (_ _ _ _ _ _ _ _)"
-        },
-        {
-          "nickname": "Jacob",
-          "text": "Je suis Jacob de Castel dit Camoufle merci pour ce message j'envoie mes hommes pour stopper l'ennemie. Jacob de Castel est un célèbre artileur de la ville. Son habileté etait telle qu'il fut soupçonné de faire usage de sorcellerie."
-        }
-      ],
-      "buttons": [
-        {
-          "text": "Continuer au prochain point (5)",
-          "redirectId": "scene_medieval_mangin"
-        }
-      ],
-      "game": {
-        "type": "input",
-        "correctAnswer": "camoufle"
-      }
-    },
 
     "scene_medieval_mangin": {
       "name": "Square Mangin",
       "id": "scene_medieval_mangin",
-      "image": "../../assets/locations/gare.PNG",
+      "image": "../../assets/locations/mangin.jpg",
       "texts": [
         {
-          "text": "L’ennemi nous a laisse un peu de répit. Ce long siège les a decouragé. Allons verifier qu'il ne sagit pas d'un autre subterfuge. "
-        },{
-          "text": "Nous sommes au Square Mangin, Metz a un monument d'inspiration?"
+          "text": "Observez les environs afin de recueillir de bonnes informations. Un commerce autour vous propose des spécialités d'un pays tres éloigné. Quel est ce pays ?"
         }
       ],
       "buttons": [
         {
-          "text": "Japonaise?",
+          "text": "Japon",
           "redirectId": "scene_medieval_mangin1"
         },
         {
-          "text": "Vietnamienne?",
+          "text": "Vietnam",
           "redirectId": ""
         },
         {
-          "text": "Chinoise?",
+          "text": "Pérou",
           "redirectId": ""
         }
       ]
@@ -1025,20 +953,20 @@
     "scene_medieval_mangin1": {
       "name": "Square Mangin",
       "id": "scene_medieval_mangin1",
-      "image": "../../assets/locations/gare.PNG",
+      "image": "../../assets/locations/mangin.jpg",
       "texts": [
         {
-          "text": "La ville de Metz dispose d'un rayonnement internationnal. Grace bien sur à sa proximité avec la frontière, mais egalement vers des pays plus lointain."
+          "text": "Pour vous récompenser je vais vous parler d'une délicieuse spécialité locale. Le Boulet de Metz. Mis au point par Léon Bohr, pâtissier de la ville cette gourmandise est un hommage à l'histoire militaire de la ville. "
         },{
-          "text": "Si vous êtes passé pres du plan d'eau vous aurez peut être apercu un portail rouge dans l'eau. ce portail est un torii. Il date de 1980, et marque symboliquement la frontiere entre le monde physique et spirituel."
+          "text": "Il s’agit d’un biscuit fourré d'une ganache, qui est ensuite enrobé de pâte d’amande chocolat puis de caramel, et enfin, recouvert d’éclats de noisettes grillées et d’une fine couche de chocolat noir ou de chocolat lait."
         }
         ,{
-          "text": "Chaque année la ville de Metz acceuille une foire internationnal ainsi que la convention geek \"Metz'torii\" dans laquelle le culture japonnaise a une grande place."
+          "text": "Vous n'aimez pas le chocolat, alors vous pouvez decouvrir, La brioche tressée de Metz (ou tordée), c'est une viennoiserie, jadis servie les jours de fêtes en Lorraine. Sa renommée est très largement associée à la ville de Metz, où elle est davantage connue sous le nom de whete."
         }
       ],
       "buttons": [
         {
-          "text": "Je me rends au point (6)",
+          "text": "Je me rends au point (5), rue Gambetta",
           "redirectId": "scene_medieval_gambetta"
         }
       ]
@@ -1048,10 +976,10 @@
     "scene_medieval_gambetta": {
       "name": "La Poste",
       "id": "scene_medieval_gambetta",
-      "image": "../../assets/locations/gare.PNG",
+      "image": "../../assets/locations/poste.jpg",
       "texts": [
         {
-          "text": "Profitons pour explorer un peu plus loin! Quel est-ce bâtiment? (_ _ # _ _ _ _ _)"
+          "text": "Profitons pour explorer un peu plus loin! Quel est-ce bâtiment? un mot en 5 lettres"
         },
         {
           "text": "Bien joué! La Neue Oberpostdirektion, direction des Postes, aujourd’hui hôtel des Postes, est un édifice de style néoroman, construit à Metz en 1905 par les autorités allemandes. actuellement fermé au public, il sert toujours pour la logistique."
@@ -1059,13 +987,13 @@
       ],
       "buttons": [
         {
-          "text": "Je finis le parcours au point (7)",
+          "text": "Je continue le parcours au point (6)",
           "redirectId": "scene_medieval_gare"
         }
       ],
       "game": {
         "type": "input",
-        "correctAnswer": "la poste"
+        "correctAnswer": "POSTE"
       }
     },
 
@@ -1089,7 +1017,7 @@
       ],
       "game": {
         "type": "input",
-        "correctAnswer": "metz"
+        "correctAnswer": "METZ"
       }
     },
 
@@ -1099,29 +1027,67 @@
       "image": "../../assets/locations/metz_gare.jpg",
       "texts": [
         {
-          "text": "Face à vous s'etend le sablon. En 1473 c'etait une plaine sur laquelle le duc de lorraine avait etablit son campement. Si vous ne voyez pas de chevalier, c'est que votre mission est réussie."
+          "text": "Face à vous s'etend le sablon. En 1473 c'etait une plaine sur laquelle le duc de lorraine avait etablit son campement."
         },
         {
-          "text": "Bravo, vous avez protégé la ville. Pour vous récompenser je vais vous parler d'une délicieuse spécialité locale. Le Boulet de Metz."
+          "text": "Nous avons sufisemment d'information sur l'ennemi. Ammenez vite le message à son destinataire pour alerter la garnison."
         },
         {
-          "text": "Mis au point par Léon Bohr, pâtissier de la ville cette gourmandise est un hommage à l'histoire militaire de la ville."
-        },{
-          "text": "Il s’agit d’un biscuit fourré d'une ganache, qui est ensuite enrobé de pâte d’amande chocolat puis de caramel, et enfin, recouvert d’éclats de noisettes grillées et d’une fine couche de chocolat noir ou de chocolat lait."
-        },
-        {
-          "text": "Vous n'aimez pas le chocolat, alors vous pouvez decouvrir, La brioche tressée de Metz (ou tordée), c'est une viennoiserie, jadis servie les jours de fêtes en Lorraine. Sa renommée est très largement associée à la ville de Metz, où elle est davantage connue sous le nom de whete."
-        },
-        {
-          "text": "Et si vous avez encore faim, La tarte au me’gin est une tarte au fromage blanc et à la crème fraîche originaire de la région de Messine. Miam, ça fait encore pleins de bonnes choses à decouvrir."
-        },
-
-        {"text": "L'aventure medievale est maintenant finie, vous pouvez revenir à la cathédrale pour démarrer un autre parcours!"}
-      ],
+          "text": "Vous devez vous rendre au lieu indiqué par la Plume que vous avez trouvé! Point (7)"
+        }
+],
       "buttons": [
 
       ]
 
+    },
+
+    "scene_medieval_camoufle": {
+      "name": "Tour Camoufle",
+      "id": "scene_medieval_camoufle",
+      "image": "https://www.tourisme-lorraine.fr/sitlorimg/1920/0/aHR0cHM6Ly93d3cuc2l0bG9yLmZyL3Bob3Rvcy84MzgvODM4MTQwMTYzXzQuanBn.jpg",
+      "texts": [
+        {
+          "nickname": "Gardes",
+          "text": "Halte là! Qui êtes vous?"
+        },
+        {
+          "nickname": "",
+          "text": "Je porte un message important du Palais du Gouverneur. Il me faut passer!"
+        },
+        {
+          "nickname": "Gardes",
+          "text": "A qui devez-vous le transmettre? (_ _ _ _ _ _ _ _) DE CASTEL"
+        },
+        {
+          "nickname": "JACOB",
+          "text": "Je suis Jacob de Castel dit Camoufle merci pour ce message j'envoie mes hommes pour stopper l'ennemie. Jacob de Castel est un célèbre artileur de la ville. Son habileté etait telle qu'il fut soupçonné de faire usage de sorcellerie."
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Finir l'aventure",
+          "redirectId": "scene_medieval_mangin"
+        }
+      ],
+      "game": {
+        "type": "input",
+        "correctAnswer": "camoufle"
+      }
+    },
+
+    "scene_medieval_camoufle1": {
+      "name": "Tour Camoufle",
+        "visible":0,
+      "id": "scene_medieval_camoufle",
+      "image": "https://www.tourisme-lorraine.fr/sitlorimg/1920/0/aHR0cHM6Ly93d3cuc2l0bG9yLmZyL3Bob3Rvcy84MzgvODM4MTQwMTYzXzQuanBn.jpg",
+      "texts": [
+
+        {"text": "Vous avez sauvé la ville! L'aventure medievale est maintenant finie, vous pouvez revenir à la porte serpenoise ou à la cathédrale pour démarrer un autre parcours."}
+      ],
+      "buttons": [
+
+      ]
     },
 
     "scene1_modern": {

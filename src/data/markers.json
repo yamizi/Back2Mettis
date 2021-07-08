@@ -121,7 +121,7 @@
 
 ,
   {
-    "label": "(4) Tour Camoufle",
+    "label": "(7) Tour Camoufle",
     "lat": 49.1118875946100,
     "lng":6.17335765687208,
     "type": "optional",
@@ -132,7 +132,7 @@
   ,
 
   {
-    "label": "(5) Square du général Mangin",
+    "label": "(4) Square du général Mangin",
     "lat": 49.110446052993495,
     "lng":6.174237131559153,
     "type": "optional",
@@ -142,7 +142,7 @@
   }
   ,
   {
-    "label": "(6) Rue gambetta",
+    "label": "(5) Rue gambetta",
     "lat": 49.10986898361681,
     "lng":6.17563767612056,
     "type": "optional",
@@ -152,7 +152,7 @@
   }
 ,
   {
-    "label": "(7) Gare de Metz",
+    "label": "(6) Gare de Metz",
     "lat": 49.1098865150516,
     "lng":6.17704019150249,
     "type": "optional",
