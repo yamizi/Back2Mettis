@@ -725,7 +725,6 @@
       "id": "scene_rome_taison4",
       "image": "../../assets/locations/taison.jpg",
       "visible": 0,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg/220px-Temple_Neuf_de_Metz_und_Pont_des_Roches.jpg",
       "texts": [
         {"text": "Oui! Obélix nous a laissé sa gourde magique !!! Après avoir fait le plein d’énergie et de vitamines mystères, nous allons capturer le Graoully "}
       ],
@@ -1041,7 +1040,7 @@
         {
           "text": "Vous devez vous rendre au lieu indiqué par la Plume que vous avez trouvé! Point (7)"
         }
-],
+      ],
       "buttons": [
 
       ]
@@ -1671,9 +1670,9 @@
       ]
     },
 
-    "scene_moderne_gournay1": {
+    "scene_moderne_gournay2": {
       "name": "Hotel de Gournay",
-      "id": "scene_moderne_gournay1",
+      "id": "scene_moderne_gournay2",
       "visible": 0,
       "image": "https://cdn-s-www.republicain-lorrain.fr/images/7295F0C4-5B2D-47FB-A8DF-8B15BB277034/NW_detail/title-1603541474.jpg",
       "texts": [
@@ -2003,8 +2002,6 @@
 
       ]
     },
-
-
 
 
  "scene_moderne_hauteseille": {
