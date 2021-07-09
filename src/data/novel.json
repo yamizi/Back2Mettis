@@ -1194,11 +1194,11 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/H%C3%A9l%C3%A8ne_Studler_1944.jpg",
       "texts": [
         {
-          "updatedImage": "https://cdn-s-www.republicain-lorrain.fr/images/E648CDAD-4375-4E5E-9788-5931875EE7EF/NW_raw/sur-le-grand-portail-ouest-(qui-donne-sur-la-place-jean-paul-ii)-des-scenes-bibliques-sont-sculptees-sous-les-douze-apotres-l-une-des-statues-represente-saint-etienne-reperable-a-sa-dalmatique-et-au-livre-photo-rl-karim-siari-1559323265.jpg",
+          "updatedImage": "../../assets/locations/saint_etienne.jpg",
           "nickname": "Sœur Hélène",
           "text": "Bien joué! Ces deux personnages sont emblématiques de la ville! Sur le grand portail Ouest (qui donne sur la place Jean Paul II), des scènes bibliques sont sculptées sous les douze apôtres."
         },{
-          "updatedImage": "https://cdn-s-www.republicain-lorrain.fr/images/E648CDAD-4375-4E5E-9788-5931875EE7EF/NW_raw/sur-le-grand-portail-ouest-(qui-donne-sur-la-place-jean-paul-ii)-des-scenes-bibliques-sont-sculptees-sous-les-douze-apotres-l-une-des-statues-represente-saint-etienne-reperable-a-sa-dalmatique-et-au-livre-photo-rl-karim-siari-1559323265.jpg",
+          "updatedImage": "../../assets/locations/saint_etienne.jpg",
           "nickname": "Sœur Hélène",
           "text": "L'une des statues représente saint Etienne, repérable à sa dalmatique et au livre. C'est l'architecte allemand Paul Tornow qui a inventé les motifs de ce portail, à partir de scènes médiévales."
         }
@@ -1221,7 +1221,7 @@
       "texts": [
         {
           "nickname": "Sœur Hélène",
-          "text": "Je parle je pale, mais laissez-moi me présenter l'ami. Je suis Hélène Studler, née en 1891 à Amiens et venue après l’armistice à l’hospice Saint-Nicolas de Metz."
+          "text": "Je parle je parle, mais laissez-moi me présenter l'ami. Je suis Hélène Studler, née en 1891 à Amiens et venue après l’armistice à l’hospice Saint-Nicolas de Metz."
         },{
           "nickname": "Sœur Hélène",
           "text": "A la veille de la guerre, j'étais déjà très populaire à Metz. Pendant les combats, en juin 1940, J'ai apporté soins, nourriture et réconfort aux prisonniers français cachés à Metz."
@@ -1343,7 +1343,7 @@
       "buttons": [
       {
           "text": "3 hommes, 2 femmes",
-          "redirectId": "scene_moderne_verlaine"
+          "redirectId": "scene_moderne_ruemaisontêtes1"
         },
         {
           "text": "3 femmes, 2 hommes",
@@ -1360,7 +1360,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Maisontetemetz.jpg",
       "texts": [
         {
-          "nickname": "Le saviez-vous?",
+
           "text": "Nous sommes en sécurité! La maison des Têtes de Metz a été construite en 15291 par un riche orfèvre, Jean Aubry, dont le beau-père Boissard pourrait être considéré comme l’ancêtre des archéologues messins."
         }
       ,{
@@ -1385,8 +1385,8 @@
       ],
       "buttons": [
       {
-          "text": "3 hommes, 2 femmes",
-          "redirectId": "scene_moderne_verlaine"
+          "text": "J'y suis!",
+          "redirectId": "scene_moderne_popwhite"
         }
 
       ],
@@ -1415,7 +1415,7 @@
       "buttons": [
       {
           "text": "Truffe",
-          "redirectId": "scene_moderne_popwhite2"
+          "redirectId": "scene_moderne_popwhite1"
         },
         {
           "text": "Morille",
@@ -1486,7 +1486,7 @@
       "name": "Place Saint Louis",
       "visible": 0,
       "id": "scene_moderne_stlouis1",
-      "image": "https://metz.fr/lieux/images/gr_placestlouis.jpg",
+      "image": "https://cdn-s-www.republicain-lorrain.fr/images/35D9DCF9-C004-4667-9353-DFDA5F0F27D7/NW_raw/on-peut-admirer-cette-main-sur-la-facade-du-numero-31-de-la-place-saint-louis-a-metz-photo-rl-1615188429.jpg",
       "texts": [
         {
           "nickname": "Le saviez-vous ? ",
@@ -1500,7 +1500,7 @@
           "nickname": "Camille",
           "text": "Mot de passe ? repete elle intransigeante"
         },{
-          "text": "on ça va bien tout ça on est pressé. C’est la vielle de la Cathédrale qui m’envoit."
+          "text": "Eeh oh! On est pressé! C’est la vielle de la Cathédrale qui m’envoit."
         },{
           "nickname": "Camille",
           "text": "Eh bien si c’est vraiment la vieille, elle t’a donné un code, non ? Aujourd'hui utilises les chiffres pairs!"
@@ -1564,7 +1564,7 @@
         {"text": "Un emplacement historique et majestueux, nous pouvons même ajouter que ce dernier à vu se développer le quartier car ce magasin existe depuis 1868, rien que ça "},
         {
           "nickname": "François Mitterand",
-          "text": "Ce fournisseur a bcp aidé l'Espoir Français! Je pense qu'il peut nous cacher au dernier étape quelques temps."
+          "text": "Ce fournisseur a bcp aidé l'Espoir Français! Je pense qu'il peut nous cacher au moins quelques temps."
         },
         {
           "nickname": "François Mitterand",
@@ -1719,19 +1719,19 @@
         },
         {
           "nickname": "François Mitterand",
-          "updatedImage": "https://fr.wikipedia.org/wiki/Citadelle_de_Metz#/media/Fichier:Braun_hogenberg_Metz_ca._1575.jpg",
+          "updatedImage": "https://upload.wikimedia.org/wikipedia/commons/9/95/Braun_hogenberg_Metz_ca._1575.jpg",
           "text": "Normalement il nous attend là où se trouvait l'ancienne citadelle de Metz. Le batiment en étoile sur cette image."
         },
         {
-          "updatedImage": "https://fr.wikipedia.org/wiki/Citadelle_de_Metz#/media/Fichier:Braun_hogenberg_Metz_ca._1575.jpg",
+          "updatedImage": "https://upload.wikimedia.org/wikipedia/commons/9/95/Braun_hogenberg_Metz_ca._1575.jpg",
           "text": "Pendant 300 ans, une citadelle était implantée sur les actuelles place de la République et Esplanade. "
         },
         {
-          "updatedImage": "https://fr.wikipedia.org/wiki/Citadelle_de_Metz#/media/Fichier:Braun_hogenberg_Metz_ca._1575.jpg",
+          "updatedImage": "https://upload.wikimedia.org/wikipedia/commons/9/95/Braun_hogenberg_Metz_ca._1575.jpg",
           "text": "Ce bâtiment, qui ressemble un peu  à une étoile, en bordure de ville, servait à renforcer les remparts de la ville."
         },
         {
-          "updatedImage": "https://fr.wikipedia.org/wiki/Citadelle_de_Metz#/media/Fichier:Braun_hogenberg_Metz_ca._1575.jpg",
+          "updatedImage": "https://upload.wikimedia.org/wikipedia/commons/9/95/Braun_hogenberg_Metz_ca._1575.jpg",
           "text": "Donc, il vous attend soit ici, soit à l'Esplanade (emplacement 8)!"
         },
         {
@@ -1744,7 +1744,7 @@
       "buttons": [
         {
           "text": "J'ai trouvé la statue",
-          "redirectId": "scene_moderne_republic"
+          "redirectId": "scene_moderne_jardin"
         }
       ]
     },
@@ -1752,7 +1752,7 @@
     "scene_moderne_jardin": {
       "name": "Jardin de l'esplanade",
       "id": "scene_moderne_jardin",
-      "image": "../../assets/locations/ney.jpg",
+      "image": "../../assets/locations/ney_cropped.jpg",
       "texts": [
 
         {"text": "Quel Maréchal est représenté par cette statue ?"}
@@ -1807,7 +1807,7 @@
       "image": "http://ekladata.com/GfEb38YBaoTEoHVlcF1sJJHkoSA.jpg",
       "texts": [
       {"text": "Je crois voir au loin des ennemis, ne restons pas là, allons nous cachez un instant dans le plan d'eau! Rdv au point (9)" },
-      {"text": "Vous entrez dans le majestueux plan d'eau de Metz ! Les escaliers montés en face de vous, vous trouverez a gauche le lac aux cygnes, ancienne fossé militaire de la citadelle de Metz." },
+      {"text": "Vous entrez dans le majestueux plan d'eau de Metz ! Vous trouverez a gauche le lac aux cygnes, ancienne fossé militaire de la citadelle de Metz." },
       {"text": "Le lac aux Cygnes, limité à l’est par les remparts médiévaux et agrémenté de la sculpture Vision antique de 1926, est connu pour accueillir le spectacle son et lumière." },
       {
         "nickname": "...",
@@ -1822,7 +1822,7 @@
         {
         "nickname": "Jean Cocteau",
         "updatedImage": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jean_Cocteau_b_Meurisse_1923.jpg",
-        "text": "Jean Cocteau, pour vous servir! Je suis votre passeur! https://metz.fr/actus/galeries/5845/200205_jean%20cocteau%20metz%20et%20moi-13.show.jpg"
+        "text": "Jean Cocteau, pour vous servir! Je suis votre passeur!"
       },
         {
 
@@ -1904,7 +1904,7 @@
       "buttons": [
         {
           "text": "J'ai réussi!",
-          "redirectId": ""
+          "redirectId": "scene_moderne_ours1"
         },
         {
           "text": "J'ai besoin d'aide!",
@@ -1960,11 +1960,11 @@
         },
         {
           "updatedImage": "https://assets.catawiki.nl/assets/2017/3/29/6/e/5/6e5d750e-14b8-11e7-9524-687890607ce9.jpg",
-          "text": "C'est probablement un indice laissé par nos agents! Il faut aller à l'endroit caché dans le message. "
+          "text": "C'est probablement un indice laissé par nos agents! "
         },
         {
           "updatedImage": "https://assets.catawiki.nl/assets/2017/3/29/6/e/5/6e5d750e-14b8-11e7-9524-687890607ce9.jpg",
-          "text": "Scannez le QR code à côté pour retrouver la cache secondaire!"
+          "text": "Scannez le QR code à côté pour retrouver le dernier indice!"
         },
         {
           "text": "Utilisez le code secret pour déchiffrer le dos des mosaiques!"
