@@ -161,6 +161,17 @@
     "scene": "scene_medieval_gare"
   },
 
+  ,
+  {
+    "label": "(8) Porte Serpennoise",
+    "lat": 49.1125390923235,
+    "lng":6.17095470874024,
+    "type": "optional",
+    "time": "moderne",
+    "id": "moderne_serpennoise",
+    "scene": "scene_moderne_serpennoise"
+  },
+
   {
     "label": "(1) Cathédrale",
     "lat": 49.119895,
@@ -172,40 +183,29 @@
 
   },
 
+
+
   {
-    "label": "(2) Rue aux Ourses",
-    "lat": 49.11845383254292,
-    "lng":6.172714269500092,
+    "label": "(2) Maison des têtes",
+    "lat": 49.11815904181836,
+    "lng":6.178091631112652,
     "type": "optional",
     "time": "moderne",
-    "id": "moderne_ours",
-    "scene": "scene_moderne_ours"
-
+    "id": "moderne_ruemaisontêtes",
+    "scene": "scene_moderne_ruemaisontêtes"
+  },
+  {
+    "label": "(3) Pop white concept store ",
+    "lat": 49.11802957285351,
+    "lng": 6.178835944115205,
+    "type": "optional",
+    "time": "moderne",
+    "id": "moderne_popwhite",
+    "scene": "scene_moderne_popwhite"
   },
 
-  {
-    "label": "(3) Maison Paul Verlaine",
-    "lat": 49.1172294,
-    "lng":6.1717513,
-    "type": "main",
-    "time": "moderne",
-    "id": "moderne_verlaine",
-    "scene": "scene_moderne_verlaine"
-  }
 
-  ,
-  {
-    "label": "(4) Place Saint Louis",
-    "lat": 49.11652443451928,
-    "lng":6.178863009932113,
-    "type": "optional",
-    "time": "moderne",
-    "id": "moderne_stlouis",
-    "scene": "scene_moderne_stlouis"
-  }
-
-  ,
-  {
+   {
     "label": "(5) Epicerie Fine Saint Louis",
     "lat": 49.11675187838378,
     "lng": 6.1792950346979785,
@@ -215,58 +215,84 @@
     "scene": "scene_moderne_epiceriestlouis"
   }
   ,
-  {
-    "label": "(6) Ameublement Saint Louis",
-    "lat": 49.116828634111535,
-    "lng":6.180276084911461,
-    "type": "optional",
-    "time": "moderne",
-    "id": "moderne_ameublementstlouis",
-    "scene": "scene_moderne_ameublementstlouis"
-  }
-,
-  {
-    "label": "(7) Haute Seille",
-    "lat": 49.11601997682804,
-    "lng":6.181077397319243,
-    "type": "optional",
-    "time": "moderne",
-    "id": "moderne_hauteseille",
-    "scene": "scene_moderne_hauteseille"
-  },
-
 
   {
-    "label": "(8) Place des Charons",
-    "lat": 49.115853144415595,
-    "lng": 6.182015984867629,
-    "type": "optional",
-    "time": "moderne",
-    "id": "moderne_placecharons",
-    "scene": "scene_moderne_placecharons"
-  },
-
-
-  {
-    "label": "(9) Rue Mazelle",
-    "lat": 49.11625359212925,
-    "lng":6.183036566589921,
-    "type": "optional",
-    "time": "moderne",
-    "id": "moderne_ruemazelle",
-    "scene": "scene_moderne_ruemazelle"
-  },
-
-  {
-    "label": "(10) Eglise Saint Maximin",
-    "lat": 49.1157743337876,
-    "lng":6.18367133430020,
+    "label": "(4) Place Saint Louis",
+    "lat": 49.11652443451928,
+    "lng":6.178863009932113,
     "type": "main",
     "time": "moderne",
-    "id": "moderne_maximin",
-    "scene": "scene_moderne_maximin"
+    "id": "moderne_stlouis",
+    "scene": "scene_moderne_stlouis"
+  }
+  ,
+
+  {
+    "label": "(6) Hotel de Gournay",
+    "lat": 49.11567106410937,
+    "lng":6.1779458847035675,
+    "type": "optional",
+    "time": "moderne",
+    "id": "moderne_gournay",
+    "scene": "scene_moderne_gournay"
+  },
+
+
+  {
+    "label": "(7) Place de la Republique",
+    "lat": 49.11543231731628,
+    "lng":6.1737402277657445,
+    "type": "optional",
+    "time": "moderne",
+    "id": "moderne_republic",
+    "scene": "scene_moderne_republic"
   }
 
+,
+  {
+    "label": "(8) Jardin de l'esplanade de Metz",
+    "lat": 49.11603897720266,
+    "lng":6.170317573436234,
+    "type": "optional",
+    "time": "moderne",
+    "id": "moderne_jardin",
+    "scene": "scene_moderne_jardin"
+  }
+,
+
+
+  {
+    "label": "(9) Le lac aux cygnes",
+    "lat": 49.11642469073153,
+    "lng":6.167955981900921,
+    "type": "main",
+    "time": "moderne",
+    "id": "moderne_cygnes",
+    "scene": "scene_moderne_cygnes"
+  },
+
+
+
+   {
+    "label": "(10) Maison Paul Verlaine",
+    "lat": 49.1172294,
+    "lng":6.1717513,
+    "type": "optional",
+    "time": "moderne",
+    "id": "moderne_verlaine",
+    "scene": "scene_moderne_verlaine"
+  },
+
+  {
+    "label": "(11) Rue aux Ourses",
+    "lat": 49.11845383254292,
+    "lng":6.172714269500092,
+    "type": "optional",
+    "time": "moderne",
+    "id": "moderne_ours",
+    "scene": "scene_moderne_ours"
+
+  }
 
 
 ]

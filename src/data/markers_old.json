@@ -204,8 +204,17 @@
     "time": "moderne",
     "id": "moderne_maisontete",
     "scene": "scene_maisontete"
-  }
+  },
 
+  {
+    "label": "(10) Tour des Vigneron",
+    "lat": 49.1173986355816,
+    "lng":6.168804034363825,
+    "type": "optional",
+    "time": "moderne",
+    "id": "moderne_vigneron",
+    "scene": "scene_moderne_vigneron"
+  }
 ]
 }
 

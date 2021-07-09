@@ -784,8 +784,39 @@
       "texts": [
         {"text": "A l'époque médiéval, la ville de Metz était une place forte, dont les fortifications ont été longues de plus de 6000 m de long renforcé de 38 tours et 18 portes."},
       {"text": "C'est grâce à ses fortifications ainsi qu'a la vigilance des habitants que la ville n'a jamais été prise d'assaut. Rendez-vous au sommet de ces marches pour démarrer l'aventure."},
-        {"text": "Quel est le bâtiment situé devant vous, indiqué par (1) sur la carte? LA CHAPELLE DES ..."},
-        {"text": "Bien joué! Vous êtes proche d'un autre bâtiment ancien, rendez-vous au point (2) pour continuer"}
+        {"text": "Quel est le bâtiment situé devant vous, indiqué par (1) sur la carte? LA CHAPELLE DES ..."}
+      ],
+
+
+      "buttons": [
+
+        {
+          "text": "GUERRIERS",
+          "redirectId": ""
+        },
+        {
+          "text": "TEINTURIERS",
+          "redirectId": ""
+        }
+        ,{
+          "text": "TEMPLIERS",
+          "redirectId": "scene_medieval_templier1"
+        }
+      ]
+    },
+
+    "scene_medieval_templier1": {
+      "name": "Chapelle des Templiers",
+      "id": "scene_medieval_templier1",
+       "image": "https://files.structurae.net/files/photos/64/metz_templiers01.jpg",
+      "texts": [
+         {"text": "Bien joué! Vous êtes face au dernier vestige de la commanderie des Templiers de Metz. Sa forme octogonale est caractéristique des édifices des Templiers."},
+        {
+          "text": "Puis sera finalement détruite en 1904 par le maréchal de Vieilleville afin de laisser place à la construction d'une citadelle."
+        },
+        {
+          "text": "Seul la chapelle subsistera jusqu'à nos jours. Vous êtes proche d'un autre bâtiment ancien, rendez-vous au point (2) pour continuer."
+        }
       ],
 
 
@@ -812,10 +843,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Metz_Saint_Pierre_R02.jpg/1024px-Metz_Saint_Pierre_R02.jpg",
       "texts": [
         {"text": "Vous êtes devant l’église Saint-Pierre-aux-Nonnains. Cette église de la fin du 4 ieme siècle est une des plus vielle du monde et la plus vielle de France"},
-        {"text": "Profitez de ce cadre magnifique pour résoudre cette ce puzzle."},
-        {
-          "text": "Bien joué! Vous êtes face au dernier vestige de la commanderie des Templiers de Metz. Sa forme octogonale est caractéristique des édifices des Templiers. Puis sera finalement détruite en 1904 par le maréchal de Vieilleville afin de laisser place à la construction d'une citadelle. Seul la chapelle subsistera jusqu'à nos jours."
-        }
+        {"text": "Profitez de ce cadre magnifique pour résoudre cette ce puzzle."}
+
       ],
 
 
@@ -825,27 +854,7 @@
           "redirectId": "https://www.jigsawplanet.com/?rc=play&pid=239bc95aa66d "
         },
         {
-          "text": "C'est bon j'ai fini.",
-          "redirectId": "scene_medieval_stpierre2"
-        }
-      ]
-    },
-
-    "scene_medieval_stpierre2": {
-      "name": "Saint-Pierre-aux-Nonnains",
-      "visible": 0,
-      "id": "scene_medieval_stpierre2",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Metz_Saint_Pierre_R02.jpg/1024px-Metz_Saint_Pierre_R02.jpg",
-      "texts": [
-        {
-          "text": "Bien joué! Vous êtes face au dernier vestige de la commanderie des Templiers de Metz. Sa forme octogonale est caractéristique des édifices des Templiers. Puis sera finalement détruite en 1904 par le maréchal de Vieilleville afin de laisser place à la construction d'une citadelle. Seul la chapelle subsistera jusqu'à nos jours."
-        }
-      ],
-
-
-      "buttons": [
-        {
-          "text": "Continuer!",
+          "text": "C'est bon j'ai fini. Aller au point (3)",
           "redirectId": "scene_medieval_gouverneur"
         }
       ]
@@ -912,16 +921,12 @@
           "text": "Tout à fait! Et le blason de Metz est celui qui a son côté gauche blanc et son côté droit noir. Il est situé juste au-dessus de la porte d’entrée. De plus, Il existe encore un bout du mur romain d’antan dans le jardin du Palais."
         },
         {
-          "text": "Bien joué! Le message est écrit, il vous faut maintenant le porter au soldat les plus proches. Il est connu sous le nom de 'Camoufle'. Rdv au point (4) sur la carte!"
+          "text": "Rdv au point (4) sur la carte!"
         }
       ],
       "buttons": [
       ]
-      ,
-      "game": {
-        "type": "input",
-        "correctAnswer": "1902"
-      }
+
     },
 
 
@@ -1058,22 +1063,22 @@
         },
         {
           "nickname": "Gardes",
-          "text": "A qui devez-vous le transmettre? (_ _ _ _ _ _ _ _) DE CASTEL"
+          "text": "A qui devez-vous le transmettre? (_ _ _ _ _) DE CASTEL"
         },
         {
-          "nickname": "JACOB",
-          "text": "Je suis Jacob de Castel dit Camoufle merci pour ce message j'envoie mes hommes pour stopper l'ennemie. Jacob de Castel est un célèbre artileur de la ville. Son habileté etait telle qu'il fut soupçonné de faire usage de sorcellerie."
+          "nickname": "Jacob de Castel",
+          "text": "Je suis Jacob de Castel dit Camoufle. Merci pour ce message j'envoie mes hommes pour stopper l'ennemi. Jacob de Castel est un célèbre artileur de la ville. Son habileté était telle qu'il fut soupçonné de faire usage de sorcellerie."
         }
       ],
       "buttons": [
         {
           "text": "Finir l'aventure",
-          "redirectId": "scene_medieval_mangin"
+          "redirectId": "scene_medieval_camoufle1"
         }
       ],
       "game": {
         "type": "input",
-        "correctAnswer": "camoufle"
+        "correctAnswer": "JACOB"
       }
     },
 
@@ -1084,7 +1089,44 @@
       "image": "https://www.tourisme-lorraine.fr/sitlorimg/1920/0/aHR0cHM6Ly93d3cuc2l0bG9yLmZyL3Bob3Rvcy84MzgvODM4MTQwMTYzXzQuanBn.jpg",
       "texts": [
 
-        {"text": "Vous avez sauvé la ville! L'aventure medievale est maintenant finie, vous pouvez revenir à la porte serpenoise ou à la cathédrale pour démarrer un autre parcours."}
+        {"text": "Bravo, mission réussie. Vous avez sauvé la ville. Retournons à la porte serpenoise (8)."}
+      ],
+      "buttons": [
+
+      ]
+    },
+
+    "scene_moderne_serpennoise": {
+      "name": "Porte Serpenoise",
+      "id": "scene_moderne_serpennoise",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Porte_Serpenoise_01.jpg",
+      "texts": [
+
+        {"text": "Grâce à vous le calme est revenu, fatigué de cet échec le duc de lorraine abandonne le siège. A votre avis de quelle hauteur est la porte serpenoise?"}
+      ],
+      "buttons": [
+        {
+          "text": "5m",
+          "redirectId": ""
+        },
+        {
+          "text": "12m",
+          "redirectId": "scene_moderne_serpennoise2"
+        },{
+          "text": "25m",
+          "redirectId": ""
+        }
+      ]
+    },
+    "scene_moderne_serpennoise2": {
+      "name": "Porte Serpenoise",
+      "visible": 0,
+      "id": "scene_moderne_serpennoise2",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Porte_Serpenoise_01.jpg",
+      "texts": [
+      {"text": "Bien joué! Cette porte est le temoin symbolique associé à plusieurs événements historique de la ville de Metz.."},
+      {"text": "Le 31 octobre 1870, les troupes prussiennes y entrent après la défaite de Napoléon III à Sedan."},
+        {"text": "Le 19 novembre 1918, les troupes alliées font leur entrée par la porte Serpenoise pour la libération de Metz.. Aujourd'hui c'est à vous d'y passer. Bravo vous avez terminé. "}
       ],
       "buttons": [
 
@@ -1123,7 +1165,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/H%C3%A9l%C3%A8ne_Studler_1944.jpg",
       "texts": [
         {
-          "text": "A l’intérieur de la cathédrale, vous rencontrer Sœur Hélène, qui veut d’abord s’assurer que vous êtes bien un vrai messin et pas un espion de la Gestapo.  Répondez à l'énigme pour prouver votre innocence et continuer l'aventure. "
+          "text": "A l’intérieur de la cathédrale, vous rencontrer Sœur Hélène, qui veut d’abord s’assurer que vous êtes bien un vrai messin et pas un espion de la Gestapo.  Répondez à l'énigme pour continuer l'aventure. "
         },
         {
           "nickname": "Sœur Hélène",
@@ -1134,7 +1176,7 @@
       "buttons": [
         {
           "text": "Saint Etienne & Saint Paul",
-          "redirectId": "scene_moderne_cathedrale2"
+          "redirectId": "scene_moderne_cathedralebis"
         },
         {
           "text": "Saint Etienne & Saint Clément",
@@ -1147,6 +1189,32 @@
       ]
     },
 
+    "scene_moderne_cathedralebis": {
+      "name": "Cathédrale",
+      "id": "scene_moderne_cathedralebis",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/H%C3%A9l%C3%A8ne_Studler_1944.jpg",
+      "texts": [
+        {
+          "updatedImage": "https://cdn-s-www.republicain-lorrain.fr/images/E648CDAD-4375-4E5E-9788-5931875EE7EF/NW_raw/sur-le-grand-portail-ouest-(qui-donne-sur-la-place-jean-paul-ii)-des-scenes-bibliques-sont-sculptees-sous-les-douze-apotres-l-une-des-statues-represente-saint-etienne-reperable-a-sa-dalmatique-et-au-livre-photo-rl-karim-siari-1559323265.jpg",
+          "nickname": "Sœur Hélène",
+          "text": "Bien joué! Ces deux personnages sont emblématiques de la ville! Sur le grand portail Ouest (qui donne sur la place Jean Paul II), des scènes bibliques sont sculptées sous les douze apôtres."
+        },{
+          "updatedImage": "https://cdn-s-www.republicain-lorrain.fr/images/E648CDAD-4375-4E5E-9788-5931875EE7EF/NW_raw/sur-le-grand-portail-ouest-(qui-donne-sur-la-place-jean-paul-ii)-des-scenes-bibliques-sont-sculptees-sous-les-douze-apotres-l-une-des-statues-represente-saint-etienne-reperable-a-sa-dalmatique-et-au-livre-photo-rl-karim-siari-1559323265.jpg",
+          "nickname": "Sœur Hélène",
+          "text": "L'une des statues représente saint Etienne, repérable à sa dalmatique et au livre. C'est l'architecte allemand Paul Tornow qui a inventé les motifs de ce portail, à partir de scènes médiévales."
+        }
+
+      ],
+      "buttons": [
+
+        {
+          "text": "Mais qui êtes vous au fait?",
+          "redirectId": "scene_moderne_cathedrale2"
+        }
+      ]
+    },
+
+
     "scene_moderne_cathedrale2": {
       "visible": 0,
       "id": "scene_moderne_cathedrale2",
@@ -1154,19 +1222,26 @@
       "texts": [
         {
           "nickname": "Sœur Hélène",
-          "text": "Bien joué! Laissez-moi me présenter l'ami. Je suis Hélène Studler, née en 1891 à Amiens et venue après l’armistice à l’hospice Saint-Nicolas de Metz. A la veille de la guerre, j'étais déjà très populaire à Metz."
+          "text": "Je parle je pale, mais laissez-moi me présenter l'ami. Je suis Hélène Studler, née en 1891 à Amiens et venue après l’armistice à l’hospice Saint-Nicolas de Metz."
         },{
           "nickname": "Sœur Hélène",
-          "text": "Pendant les combats, en juin 1940, J'ai apporté soins, nourriture et réconfort aux prisonniers français cachés à Metz. Puis dès juillet de la même année, J'ai mis en place une des plus importantes filières de passage d’évadés et de réfractaires lorrains."
+          "text": "A la veille de la guerre, j'étais déjà très populaire à Metz. Pendant les combats, en juin 1940, J'ai apporté soins, nourriture et réconfort aux prisonniers français cachés à Metz."
+        },{
+          "nickname": "Sœur Hélène",
+          "text": "Puis dès juillet de la même année, J'ai mis en place une des plus importantes filières de passage d’évadés et de réfractaires lorrains."
         },
         {
           "nickname": "Sœur Hélène",
-          "text": "Camarade Geiger. Vous êtes bien des nôtres. Mais êtes-vous assez habile et rusé pour réussir la mission ? Prouvez-moi votre valeur en résolvant la prochaine énigme » Vous répond Sœur Hélène."
+          "text": "Camarade Geiger. Vous êtes bien des nôtres. Mais êtes-vous assez habile pour réussir la mission ? Prouvez-moi votre valeur en résolvant la prochaine énigme ."
         },
 
         {
           "nickname": "Sœur Hélène",
-          "text": "Dirigez vous près du Coeur et montez les marches du côté gauche (déambulatoire nord). Observez les vitraux aux tons bleus de Marc Chagall, à l’entrée du déambulatoire. Ce sont là différentes scènes de l'Ancien Testament"
+          "text": "Dirigez vous près du Coeur et montez les marches du côté gauche (déambulatoire nord)."
+        },
+        {
+          "nickname": "Sœur Hélène",
+          "text": "Observez les vitraux aux tons bleus de Marc Chagall, à l’entrée du déambulatoire. Ce sont là différentes scènes de l'Ancien Testament"
         },
         {
           "nickname": "Sœur Hélène",
@@ -1195,7 +1270,7 @@
       "texts": [
         {
           "nickname": "Sœur Hélène",
-          "text": "« Tout à fait!  Chagall a accepté de faire les vitraux à condition de ne représenter que l'ancien Testament, étant de confession juive."
+          "text": "Chagall a accepté de faire les vitraux à condition de ne représenter que l'ancien Testament, étant de confession juive."
         },
         {
           "nickname": "Sœur Hélène",
@@ -1230,175 +1305,154 @@
         },
         {"nickname": "François Mitterand",
           "updatedImage": "https://cdn-s-www.republicain-lorrain.fr/images/1C4ABFB9-F0D8-44F5-8CEC-7FAF2987D93E/NW_raw/le-jeune-francois-mitterrand-etait-sergent-chef-au-sein-du-23-e-regiment-d-infanterie-coloniale-photo-er-1608086013.jpg",
-          "text": "« Quoi ? Ma vie dépend de ce gringalet ? »"
+          "text": "Quoi ? Ma vie dépend de ce gringalet ?"
         },
         {
           "nickname": "Sœur Hélène",
-          "updatedImage": "../../assets/locations/rue_ours.PNG",
-          "text": "Ne vous inquiétez pas, nous avons des renforts dans toute la ville. M. Geiger, vous n’êtes pas seul. Nos agents vous attendent dans cette maison située sur la Rue aux Ours."
-        },
+
+          "text": "Ne vous inquiétez pas, nous avons des renforts dans toute la ville. Ils vous attendent à la Maison des Têtes."
+        }
+
+        ,
         {
           "nickname": "Sœur Hélène",
-          "updatedImage": "../../assets/locations/rue_ours.PNG",
-          "text": "Votre première étape est donc de retrouver le numéro de ce batiment, rue aux Ourses. Il doit être pas loin du marqueur (2) sur la carte."
+
+          "text": "Longez la place d'Armes jusqu'à la rue Fournirue, tournez à gauche. C'est tout droit!"
         }
       ],
       "buttons": [
-        {
-          "text": "J'y suis! C'est le numéro 2",
-          "redirectId": ""
-        },
 
         {
-          "text": "J'y suis! C'est le numéro 6",
-          "redirectId": "scene_moderne_ours"
+          "text": "J'y suis!",
+          "redirectId": "scene_moderne_ruemaisontêtes"
         }
 
       ]
     },
 
-
-    "scene_moderne_ours": {
-      "id": "scene_moderne_ours",
-      "image": "../../assets/locations/rue_ours.PNG",
+    "scene_moderne_ruemaisontêtes": {
+      "id": "scene_moderne_ruemaisontêtes",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Maisontetemetz.jpg",
       "texts": [
 
         {
-          "nickname": "Le saviez-vous ?",
-        "text": "La forme « ours » est une altération de l'ancien mot oues, c'est-à-dire « oies », qui est dû aux nombreux rôtisseurs installés autrefois dans cette rue."
+          "nickname": "François Mitterand",
+        "text": "Les têtes du batiment nous indiquent si la zone est surveillée ou si nous sommes en sécurité. Quelles têtes voyez-vous?"
         }
-        ,
-        {
-        "text": "Malheureusement la maison est dans un état déplorable. La porte est défoncée et des agents de la Gestapo rodent autour. Ils semblent attendre qqun. La mission aurait-elle déjà fuitée ?"
-        }
-        ,
-        {
-          "text": "Vous remarquez pas loin du batiment une affiche de l’Espoir Français. Approchez vous de l'affiche!"
-        },
-        {
-          "text": "C'est probablement un indice laissé par nos agents! Il faut aller à l'endroit caché dans le message. "
-        },
-        {
-          "text": "Scannez le QR code à côté pour retrouver la cache secondaire!"
-        },
-        {
-          "text": "'L’Espoir demeure dans la maison natale du poète le plus célèbre de Metz' A qui se refère cette énigme?"
-        }
+
       ],
       "buttons": [
       {
-          "text": "Je sais de qui on parle!",
+          "text": "3 hommes, 2 femmes",
           "redirectId": "scene_moderne_verlaine"
         },
         {
-          "text": "Non, j'ai besoin de plus d'indices?",
-          "redirectId": "scene_moderne_verlaine1"
+          "text": "3 femmes, 2 hommes",
+          "redirectId": ""
+        }
+
+
+      ]
+    },
+
+    "scene_moderne_ruemaisontêtes1": {
+      "id": "scene_moderne_ruemaisontêtes1",
+      "visible": 0,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Maisontetemetz.jpg",
+      "texts": [
+        {
+          "nickname": "Le saviez-vous?",
+          "text": "Nous sommes en sécurité! La maison des Têtes de Metz a été construite en 15291 par un riche orfèvre, Jean Aubry, dont le beau-père Boissard pourrait être considéré comme l’ancêtre des archéologues messins."
+        }
+      ,{
+          "nickname": "Le saviez-vous?",
+          "text": "Elle se nomme ainsi du fait des cinq têtes sculptées dans la pierre, trois hommes et deux femmes, dont on ignore l’identité, probablement des personnages célèbres de l’histoire messine."
+        }
+      ,{
+          "nickname": "Le saviez-vous?",
+          "text": "Ces têtes sont des copies, les originaux étant visibles au musée de la cour d'or pour quatre d’entre elles, tandis que la cinquième est au musée des beaux-arts de Boston."
+        }
+      ,
+        {
+          "nickname": "François Mitterand",
+          "text": "Nous sommes en sécurité, je pense! On devrait trouver un indice à proximité! Un QR code peut être?"
+        },
+        {
+          "nickname": "François Mitterand",
+          "text": "Il nous faut un déguisement, et je pense qu'on nous dit de chercher cette boutique 'Pop White Store', elle ne doit pas être loin."
         }
 
 
       ],
-      "game": {
+      "buttons": [
+      {
+          "text": "3 hommes, 2 femmes",
+          "redirectId": "scene_moderne_verlaine"
+        }
+
+      ],
+        "game": {
         "type": "qrcode",
-        "correctAnswer": "L’Espoir demeure dans la maison natale du poète le plus célèbre de Metz"
+        "correctAnswer": "POP WHITE STORE"
       }
     },
 
-    "scene_moderne_verlaine1": {
-      "visible": 0,
-      "name": "Maison Paul Verlaine",
-      "id": "scene_moderne_verlaine1",
-      "image": "../../assets/locations/poemes_saturniens.jpg",
+    "scene_moderne_popwhite": {
+      "id": "scene_moderne_popwhite",
+      "image": "../../assets/locations/popwhite.jpg",
       "texts": [
+
         {
-          "text": "A qui doit-on ce recueil de poésie?"
+          "nickname": "François Mitterand",
+        "text": "Le Pop white concept store c’est de la décoration, une épicerie fine, des coffrets cadeaux, de la presse, des pop box à offrir ou à s’offrir, et c’est également une salle pour se restaurer à l’étage!"
+        },
+
+        {
+          "nickname": "François Mitterand",
+          "text": "Saurez-vous retrouver le champignon qui fait la spécialité de la cantine?"
         }
+
       ],
       "buttons": [
-        {
-          "text": "Paul Verlaine",
-          "redirectId": "scene_moderne_verlaine"
-        },{
-          "text": "Victor Hugo",
-          "redirectId": ""
+      {
+          "text": "Truffe",
+          "redirectId": "scene_moderne_popwhite2"
         },
         {
-          "text": "Charles Baudelaire",
+          "text": "Morille",
           "redirectId": ""
         }
+,
+        {
+          "text": "Je n'ai pas le temps!",
+          "redirectId": "scene_moderne_stlouis"
+        }
+
       ]
     },
 
-    "scene_moderne_verlaine": {
-      "id": "scene_moderne_verlaine",
-      "image": "https://img-4.linternaute.com/_8mi-u4VF8TK4UO94hNZBwyjcxs=/1240x/smart/c2d147ca8eb44b8cb637cd345c82dfd2/ccmcms-linternaute/10994886.jpg",
+    "scene_moderne_popwhite1": {
+      "id": "scene_moderne_popwhite1",
+      "image": "../../assets/locations/popwhite.jpg",
       "texts": [
 
         {
-          "text": "Vous arrivez à la maison de Paul Verlaine (point 3)!"
-        },
-        {
-          "nickname": "Le saviez-vous?",
-          "text": "Paul Verlaine est un écrivain et poète français né à Metz le 30 mars 18443 et mort à Paris le 8 janvier 1896. Sa maison natale est toujours accesible Rue Haute Pierre."
+          "nickname": "François Mitterand",
+          "text": "Le Pop white concept store c’est de la décoration, une épicerie fine, des coffrets cadeaux, de la presse, des pop box à offrir ou à s’offrir, et c’est également une salle pour se restaurer à l’étage!"
         },
 
         {
-          "text": "Qu'est il accroché au dessus de la porte de cette maison?"
+          "updatedImage": "../../assets/locations/mosaique3.PNG",
+          "text": "Claire, la gérante vous remet cette mosaique! Prenez une capture d'écran ou mémorisez là. Elle vous sera très utile."
         }
+
       ],
       "buttons": [
+
         {
-          "text": "Une fleur de Lys",
-          "redirectId": ""
-        },
-        {
-          "text": "Une tête de dragon",
-          "redirectId": ""
-        },
-        {
-          "text": "Une tête de femme",
-          "redirectId": "scene_moderne_verlaine3"
+          "text": "C'est noté, continuons!",
+          "redirectId": "scene_moderne_stlouis"
         }
-      ]
-    },
-    "scene_moderne_verlaine3": {
-      "visible": 0,
-      "id": "scene_moderne_verlaine3",
-      "image": "../../assets/locations/maison_verlaine.PNG",
-      "texts": [
-        {
-          "nickname": "François Mitterand",
-          "text": "Bien joué! Vous avez trouvé! Nous sommes maintenant en lieu sûr."
-        },
-        {
-          "nickname": "François Mitterand",
-          "text": "Aucun Allemand en vue, cette zone est encore préservée. Mais il faut nous presser à l’interieur pour discuter en sureté ."
-        }
-        ,
-        {
-          "updatedImage": "../../assets/locations/mosaique1.PNG",
-          "text": "Vous trouvez cette mosaique dans la maison! Prenez une photo ou une capture d'écran. Elle vous sera utile plus tard!"
-        },
-        {
-          "text": "« Et je dois faire quoi ? » Vous demandez poliment. François vous regarde ahuri et répond « ah lala, il faut tout leur expliquer à ces jeunes. Je dois m’évader, j’ai donc besoin de …. »  "
-        },
-        {
-          "text": "-D’un déquisement !"
-        },
-        {
-          "nickname": "François Mitterand",
-          "text": "Tout à fait, d’un déguisement, et… "
-        },
-        {
-          "text": "Des provisions !"
-        },{
-          "nickname": "François Mitterand",
-          "text": "C’est ça. Nous devons donc passer par une Epicerie, une boutique de vêtements, et bien sûr notre passeur. Le passeur est à l’Eglise Saint Maximin. "
-        },
-        {
-          "text": "Parfait ! Allons y alors ! Je connais des gens à la Place Saint Louis. [RDV Place Saint Louis, point (4) sur la carte]"
-        }
-      ],
-      "buttons": [
 
       ]
     },
@@ -1409,6 +1463,8 @@
       "image": "https://metz.fr/lieux/images/gr_placestlouis.jpg",
       "texts": [
         {
+          "text": "Continuons Place Saint Louis. C'est l'indication (4). Tournez à droite sur En Fournirue, puis de nouveau à droite."
+        },{
           "text": "On se passe des messages au numéro 31. C'est là qu'on en saura plus."
         },
         {
@@ -1422,7 +1478,7 @@
         },
         {
           "text": "Gauche",
-          "redirectId": "scene_moderne_stloui1"
+          "redirectId": "scene_moderne_stlouis1"
         }
       ]
     },
@@ -1448,7 +1504,7 @@
           "text": "on ça va bien tout ça on est pressé. C’est la vielle de la Cathédrale qui m’envoit."
         },{
           "nickname": "Camille",
-          "text": "Eh bien si c’est vraiment la vieille, elle t’a donné un code à 7 chiffres, non ? "
+          "text": "Eh bien si c’est vraiment la vieille, elle t’a donné un code, non ? Aujourd'hui utilises les chiffres pairs!"
         },
         {
           "updatedImage": "../../assets/locations/mosaique2.PNG",
@@ -1457,7 +1513,7 @@
       ],
       "game": {
         "type": "input",
-        "correctAnswer": "1537264"
+        "correctAnswer": "CMT"
       },
       "buttons": [
         {
@@ -1479,8 +1535,8 @@
         {"nickname": "François Mitterand",
           "text": "Monsieur Vatry, le gérant de la boutique, est un ami! Il pourra nous fournir en provisions d'excellente qualité!"},
 
-        {"updatedImage": "../../assets/locations/epicerie.jpg",
-          "text": "Quel est le nom de la friandise cachée par '?' Fouillez le magasin pour la trouver! (_ _ _ _ _ _ _ _ _ # _ _ _ _ _ _ _ _)"},
+        {"updatedImage": "../../assets/locations/epicerie_hide.jpg",
+          "text": "Quel est le nom de la friandise cachée par '?' sur l'image. Fouillez le magasin pour la trouver! (_ _ _ _ _ _ _ _ _ # LORRAINE)"},
 
         {
           "nickname": "François Mitterand",
@@ -1489,7 +1545,7 @@
       ],
       "game": {
         "type": "input",
-        "correctAnswer": "briquette lorraine"
+        "correctAnswer": "BRIQUETTE"
       },
       "buttons": [
 
@@ -1547,22 +1603,409 @@
         },
         {
           "nickname": "François Mitterand",
-          "text": "Continuons sans plus attendre, vous avez la boutique d'ameublement Saint Louis en face de vous ? Alors continuez à droite, suivez la rue Haute Seille sur quelques metres."
+          "text": "Continuons sans plus attendre, vous avez la boutique d'ameublement Saint Louis en face de vous ? Alors, remontez vers le Rue de la Tête d'Or."
         },
 
         {
           "nickname": "François Mitterand",
-          "text": "Ralentissons un peu dans la rue des hautes seilles et ouvrez l’oeil pour répondre à la prochaine énigme! Nous allons au point (6) sur la carte."
+          "text": "Tournez à gauche rue de Chèvre, puis tournez de nouveau à gauche. Nous arriverons à l'Hotel de Gournay, indiqué par un (6)"
         }
       ],
       "buttons": [
 
         {
           "text": "J'y suis",
-          "redirectId": "scene_moderne_hauteseille"
+          "redirectId": "scene_moderne_gournay"
         }
       ]
     },
+
+    "scene_moderne_gournay": {
+      "name": "Hotel de Gournay",
+      "id": "scene_moderne_gournay",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Metz_-_h%C3%B4tel_de_Gournay_%281%29.JPG",
+      "texts": [
+
+        {"text": "Ce bâtiment datant du XVIIIe siècle a été l’hôtel particulier de la famille de Gournay, célèbre famille messine."},
+        {"text": "Trois parties de ce bâtiment sont inscrites à l’inventaire des monuments historiques : les deux escaliers et le porche."},
+        {"text": "À l’arrière du bâtiment, un magnifique parc clôturé se poursuit jusqu’à l’église Saint-Martin."},
+        {
+          "nickname": "François Mitterand",
+          "text": "Je pense qu'il faut fouiller ici! On devrait trouver un indice pour la suite...."
+        }
+      ],
+      "buttons": [
+        {
+          "text": "J'ai trouvé l'indice, continuer",
+          "redirectId": "scene_moderne_gournay1"
+        }
+      ]
+    },
+
+    "scene_moderne_gournay1": {
+      "name": "Hotel de Gournay",
+      "id": "scene_moderne_gournay1",
+      "visible": 0,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Metz_-_h%C3%B4tel_de_Gournay_%281%29.JPG",
+      "texts": [
+
+        {
+          "nickname": "François Mitterand",
+          "text": "C'est une lampe bleue! Elle permet d'afficher les messages invisibles!"
+        },
+        {
+          "nickname": "Le saviez-vous?",
+          "text": "Vous êtes sur la rue du Grand Cerf. L'une des Rues Gourmandes de la Ville! Savez-vous d'où vient ce nom?"
+        }
+
+      ],
+      "buttons": [
+        {
+          "text": "Je veux savoir",
+          "redirectId": "scene_moderne_gournay2"
+        },
+        {
+          "text": "Non, continuer l'aventure (point 7)",
+          "redirectId": "scene_moderne_republic"
+        }
+      ]
+    },
+
+    "scene_moderne_gournay1": {
+      "name": "Hotel de Gournay",
+      "id": "scene_moderne_gournay1",
+      "visible": 0,
+      "image": "https://cdn-s-www.republicain-lorrain.fr/images/7295F0C4-5B2D-47FB-A8DF-8B15BB277034/NW_detail/title-1603541474.jpg",
+      "texts": [
+
+        {
+          "text": "Voici un magnifique cerf, avec ses bois, à côté d’un arbuste. Il est situé évidemment… rue du Grand-Cerf. Sur la façade du n° 4-6."
+        },
+        {
+          "text": "Ce qui est intéressant, c’est que la sculpture n’est pas ancienne. Ni médiévale, ni impériale. Elle est signée de l’artiste André Forfert (1938-2012)."
+        },
+        {
+          "text": "Bien évidemment, et contrairement à ce qui est indiqué sur le panneau d’information patrimoniale situé devant l’Hôtel de Gournay,"
+        },
+        {
+          "text": "la rue du Grand-Cerf ne tient pas son nom de cette sculpture, mais plutôt d’une ancienne hôtellerie qui était située à l’emplacement de l’actuel numéro 15 de la rue."
+        }
+
+      ],
+      "buttons": [
+
+        {
+          "text": "Continuer l'aventure (point 7)",
+          "redirectId": "scene_moderne_republic"
+        }
+      ]
+    },
+
+    "scene_moderne_republic": {
+      "name": "Place de la république",
+      "id": "scene_moderne_gournay",
+      "image": "https://metz.fr/lieux/images/gr_republique.jpg",
+      "texts": [
+
+        {"text": "La place de la République est la plus grande place du centre-ville de Metz en Moselle."},
+        {"text": "Pour y arriver, continuez la rue du Grand Cerf puis à gauche rue des Parmentiers."},
+        {"text": "A l'intersection avec la Rue du Coetlosquet, tournez à droite."},
+
+        {
+          "nickname": "François Mitterand",
+          "text": "Eeh bien! C'est magnifique! La place de la République est bien la plus grande place du centre-ville de Metz!"
+        },
+        {
+          "text": "Certes, ça ne nous aide pas sur comment vous aider à fuir! Comment trouver votre passeur?"
+        },
+        {
+          "nickname": "François Mitterand",
+          "updatedImage": "https://fr.wikipedia.org/wiki/Citadelle_de_Metz#/media/Fichier:Braun_hogenberg_Metz_ca._1575.jpg",
+          "text": "Normalement il nous attend là où se trouvait l'ancienne citadelle de Metz. Le batiment en étoile sur cette image."
+        },
+        {
+          "updatedImage": "https://fr.wikipedia.org/wiki/Citadelle_de_Metz#/media/Fichier:Braun_hogenberg_Metz_ca._1575.jpg",
+          "text": "Pendant 300 ans, une citadelle était implantée sur les actuelles place de la République et Esplanade. "
+        },
+        {
+          "updatedImage": "https://fr.wikipedia.org/wiki/Citadelle_de_Metz#/media/Fichier:Braun_hogenberg_Metz_ca._1575.jpg",
+          "text": "Ce bâtiment, qui ressemble un peu  à une étoile, en bordure de ville, servait à renforcer les remparts de la ville."
+        },
+        {
+          "updatedImage": "https://fr.wikipedia.org/wiki/Citadelle_de_Metz#/media/Fichier:Braun_hogenberg_Metz_ca._1575.jpg",
+          "text": "Donc, il vous attend soit ici, soit à l'Esplanade (emplacement 8)!"
+        },
+        {
+          "nickname": "François Mitterand",
+          "updatedImage": "../../assets/locations/ney_cropped.jpg",
+          "text": "Il m'a dit de chercher cette statue!"
+        }
+
+      ],
+      "buttons": [
+        {
+          "text": "J'ai trouvé la statue",
+          "redirectId": "scene_moderne_republic"
+        }
+      ]
+    },
+
+    "scene_moderne_jardin": {
+      "name": "Jardin de l'esplanade",
+      "id": "scene_moderne_jardin",
+      "image": "../../assets/locations/ney.jpg",
+      "texts": [
+
+        {"text": "Quel Maréchal est représenté par cette statue ?"}
+
+      ],
+      "buttons": [
+        {
+          "text": "Joffre",
+          "redirectId": ""
+        },
+        {
+          "text": "Ney",
+          "redirectId": "scene_moderne_jardin1"
+        },
+        {
+          "text": "Foch",
+          "redirectId": ""
+        }
+      ]
+    },
+
+    "scene_moderne_jardin1": {
+      "name": "Jardin de l'esplanade",
+      "id": "scene_moderne_jardin1",
+      "visible":0,
+      "image": "../../assets/locations/ney.jpg",
+      "texts": [
+
+        {"text": "Venez François, continuons notre quète, nous devons traverser cette esplanade où nous serons à découvert, restons discret."},
+
+        {
+          "nickname": "Le saviez-vous?",
+          "updatedImage": "https://www.jardinez.com/parc/pj/57esplanademetz.jpg",
+          "text": "Ce jardin à la française s'étend sur une surface de 9200 m² où se côtoient tilleuls, marronniers et entre 50 000 et 60 000 plantes annuelles. Un bassin circulaire, aménagé d'un jet d'eau, anime le centre du jardin."
+        }
+      ,
+        {"text": "Sous la statue, vous trouvez un message. Il dit '15 45 su3s 2a2h5 2h57 l5 la2 d5 2ygn5s"},
+        {"text": "C'est un message codé, mais je pense que nous avons la clé."}
+
+      ],
+      "buttons": [
+        {
+          "text": "Je sais où je dois me rendre!",
+          "redirectId": "scene_moderne_cygnes"
+        }
+      ]
+    },
+
+    "scene_moderne_cygnes": {
+      "name": "Le lac aux cygnes",
+      "id": "scene_moderne_cygnes",
+      "image": "http://ekladata.com/GfEb38YBaoTEoHVlcF1sJJHkoSA.jpg",
+      "texts": [
+      {"text": "Je crois voir au loin des ennemis, ne restons pas là, allons nous cachez un instant dans le plan d'eau! Rdv au point (9)" },
+      {"text": "Vous entrez dans le majestueux plan d'eau de Metz ! Les escaliers montés en face de vous, vous trouverez a gauche le lac aux cygnes, ancienne fossé militaire de la citadelle de Metz." },
+      {"text": "Le lac aux Cygnes, limité à l’est par les remparts médiévaux et agrémenté de la sculpture Vision antique de 1926, est connu pour accueillir le spectacle son et lumière." },
+      {
+        "nickname": "...",
+        "updatedImage": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jean_Cocteau_b_Meurisse_1923.jpg",
+        "text": "Eh bien eh bien! Vous avez pris votre temps! Je vous attends depuis une heure M. Mitterand!"
+      },
+        {
+        "nickname": "François Mitterand",
+        "updatedImage": "https://cdn-s-www.republicain-lorrain.fr/images/1C4ABFB9-F0D8-44F5-8CEC-7FAF2987D93E/NW_raw/le-jeune-francois-mitterrand-etait-sergent-chef-au-sein-du-23-e-regiment-d-infanterie-coloniale-photo-er-1608086013.jpg",
+        "text": "Mais! Mais je vous connais, vous êtes..."
+      },
+        {
+        "nickname": "Jean Cocteau",
+        "updatedImage": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jean_Cocteau_b_Meurisse_1923.jpg",
+        "text": "Jean Cocteau, pour vous servir! Je suis votre passeur! https://metz.fr/actus/galeries/5845/200205_jean%20cocteau%20metz%20et%20moi-13.show.jpg"
+      },
+        {
+
+        "text": "Le fameux poète, peintre, dessinateur, dramaturge et cinéaste français! Mais quel est votre lien avec Metz?"
+      },{
+        "nickname": "Jean Cocteau",
+        "updatedImage": "https://metz.fr/actus/galeries/5845/200205_jean%20cocteau%20metz%20et%20moi-13.show.jpg",
+        "text": "Metz est une ville qui m'est très chère! J'ai conçu les vitraux de l'église Saint-Maximin à Metz. Des vitraux considérés aujourd'hui parmi les plus beaux de France!"
+      },
+        {
+        "nickname": "François Mitterand",
+        "updatedImage": "https://cdn-s-www.republicain-lorrain.fr/images/1C4ABFB9-F0D8-44F5-8CEC-7FAF2987D93E/NW_raw/le-jeune-francois-mitterrand-etait-sergent-chef-au-sein-du-23-e-regiment-d-infanterie-coloniale-photo-er-1608086013.jpg",
+        "text": "J'arrive donc à la fin de mon périple messin. Merci beaucoup l'ami de m'avoir mené à bon port!"
+      },
+        {
+        "nickname": "Jean Cocteau",
+        "updatedImage": "https://metz.fr/actus/galeries/5845/200205_jean%20cocteau%20metz%20et%20moi-13.show.jpg",
+        "text": "Vous travaillez pour la veille de la Cathédrale, non? Pourriez vous lui ramener ce livre? Paul Verlaine est votre clé!"
+      }
+      ],
+      "buttons": [
+        {
+          "text": "D'accord!",
+          "redirectId": "scene_moderne_verlaine"
+        }
+      ]
+    },
+
+    "scene_moderne_verlaine": {
+      "id": "scene_moderne_verlaine",
+      "image": "https://img-4.linternaute.com/_8mi-u4VF8TK4UO94hNZBwyjcxs=/1240x/smart/c2d147ca8eb44b8cb637cd345c82dfd2/ccmcms-linternaute/10994886.jpg",
+      "texts": [
+
+        {
+          "text": "Vous arrivez à la maison de Paul Verlaine (point 10)!"
+        },
+        {
+          "nickname": "Le saviez-vous?",
+          "text": "Paul Verlaine est un écrivain et poète français né à Metz le 30 mars 18443 et mort à Paris le 8 janvier 1896. Sa maison natale est toujours accesible Rue Haute Pierre."
+        },
+
+        {
+          "text": "Qu'est il accroché au dessus de la porte de cette maison?"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Une fleur de Lys",
+          "redirectId": ""
+        },
+        {
+          "text": "Une tête de dragon",
+          "redirectId": ""
+        },
+        {
+          "text": "Une tête de femme",
+          "redirectId": "scene_moderne_verlaine1"
+        }
+      ]
+    },
+
+    "scene_moderne_verlaine1": {
+      "visible": 0,
+      "id": "scene_moderne_verlaine1",
+      "image": "../../assets/locations/maison_verlaine.PNG",
+      "texts": [
+        {
+          "text": "Bien joué! Vous avez trouvé! Je suis en lieu sûr."
+        },
+        {
+          "text": "Aucun Allemand en vue, cette zone est encore préservée. Mais il faut me presser à l’interieur ."
+        }
+        ,
+        {
+          "updatedImage": "../../assets/locations/mosaique1.PNG",
+          "text": "Vous trouvez cette mosaique dans la maison! Prenez une photo ou une capture d'écran. Vous avez maintenant tout ce qu'il faut pour ouvrir le livre!"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "J'ai réussi!",
+          "redirectId": ""
+        },
+        {
+          "text": "J'ai besoin d'aide!",
+          "redirectId": "scene_moderne_verlaine2"
+        }
+      ]
+    },
+
+    "scene_moderne_verlaine2": {
+      "visible": 0,
+      "id": "scene_moderne_verlaine2",
+      "image": "../../assets/locations/rue_ours.PNG",
+      "texts": [
+        {
+          "text": "Je sais que nos agents sont postés dans cette maison située sur la Rue de l’Ours (Point 11). Quel est le numéro?"
+        },
+        {
+          "text": "Exactement! Vous êtes au bon endroit!"
+        }
+
+
+      ],
+      "buttons": [
+
+        {
+          "text": "Continuer",
+          "redirectId": "scene_moderne_ours"
+        }
+      ],
+      "game": {
+        "type": "input",
+        "correctAnswer": "6"
+      }
+    },
+
+    "scene_moderne_ours": {
+      "id": "scene_moderne_ours",
+      "image": "../../assets/locations/rue_ours.PNG",
+      "texts": [
+
+        {
+          "nickname": "Le saviez-vous ?",
+        "text": "La forme « ours » est une altération de l'ancien mot oues, c'est-à-dire « oies », qui est dû aux nombreux rôtisseurs installés autrefois dans cette rue."
+        }
+        ,
+        {
+        "text": "Malheureusement la maison est dans un état déplorable. La porte est défoncée et des agents de la Gestapo rodent autour. Ils semblent attendre qqun. La mission aurait-elle déjà fuitée ?"
+        }
+        ,
+        {
+          "updatedImage": "https://assets.catawiki.nl/assets/2017/3/29/6/e/5/6e5d750e-14b8-11e7-9524-687890607ce9.jpg",
+          "text": "Vous remarquez pas loin du batiment une affiche de l’Espoir Français. Approchez vous de l'affiche!"
+        },
+        {
+          "updatedImage": "https://assets.catawiki.nl/assets/2017/3/29/6/e/5/6e5d750e-14b8-11e7-9524-687890607ce9.jpg",
+          "text": "C'est probablement un indice laissé par nos agents! Il faut aller à l'endroit caché dans le message. "
+        },
+        {
+          "updatedImage": "https://assets.catawiki.nl/assets/2017/3/29/6/e/5/6e5d750e-14b8-11e7-9524-687890607ce9.jpg",
+          "text": "Scannez le QR code à côté pour retrouver la cache secondaire!"
+        },
+        {
+          "text": "Utilisez le code secret pour déchiffrer le dos des mosaiques!"
+        }
+      ],
+      "buttons": [
+      {
+          "text": "C'est bon j'ai réussi! J'ai ouvert le livre! Je le ramène à Sœur Hélène",
+          "redirectId": "scene_moderne_ours1"
+        }
+
+
+      ],
+      "game": {
+        "type": "qrcode",
+        "correctAnswer": "Camoufle"
+      }
+    },
+
+    "scene_moderne_ours1": {
+      "visible": 0,
+      "id": "scene_moderne_ours1",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/H%C3%A9l%C3%A8ne_Studler_1944.jpg",
+      "texts": [
+        {
+          "nickname": "Sœur Hélène",
+          "text": "Le Jade des Raspoutines! ça vaut des millions de francs! Voilà de quoi financer toutes nos manoeuvres contre les nazis!"
+        },
+        {
+          "text": "Et c'est ainsi que s'achève l'aventure Contemporaire! Grace à vous la resistance va survivre jusqu'à la libération de la France!"
+        }
+      ],
+      "buttons": [
+
+
+      ]
+    },
+
+
+
 
  "scene_moderne_hauteseille": {
       "name": "Rue Haute Seille",
@@ -1809,7 +2252,7 @@
       "buttons": [
         {
           "text": "Scanner les vitraux sur cette page",
-          "redirectId": ""
+          "redirectId": "6 1 5 T J E"
         }
       ]
     }
