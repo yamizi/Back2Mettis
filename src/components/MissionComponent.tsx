@@ -362,30 +362,6 @@ class MissionComponent extends Component<MapProps> {
 
                 <div>
 
-                    <div>
-                        <IonHeader>
-                        <IonToolbar>
-                          <IonTitle >Missions communautaires</IonTitle>
-                        </IonToolbar>
-                      </IonHeader>
-
-                      <IonList>
-                         {Object.values(this.state.community_missions).map((item:SceneType) =>
-                             <div key={item.id} >
-                         {item.visible==1 && item.userId==0 &&
-                            <IonItem href={"javascript: void(0)"} onClick={() => this.displayCommunityMission(item)}>
-                                <IonLabel>{item.name?item.name+" ("+item.id+")":item.id} {this.state.detailMission}</IonLabel>
-                                {this.state.detailMission==item.id &&
-                                <span>{item}</span>
-
-                                }
-                            </IonItem>
-                        }
-                        </div>
-
-                    )}
-                      </IonList>
-                    </div>
 
                     <div>
                         <IonHeader>
@@ -408,13 +384,6 @@ class MissionComponent extends Component<MapProps> {
                       </IonList>
                     </div>
 
-                    <IonFab vertical="top" horizontal="end" slot="fixed" style={{"marginTop":'-5px'}}>
-
-                        <IonFabButton onClick={this.newBtnClick} >
-                            <IonIcon icon={addOutline}></IonIcon>
-                          </IonFabButton>
-
-                    </IonFab>
 
                 </div>
             </div>
