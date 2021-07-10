@@ -112,15 +112,7 @@ const App: React.FC = () => (
             <IonIcon icon={appsOutline} />
             <IonLabel>Missions</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3" disabled={true}>
-            <IonIcon icon={trophyOutline} />
-            <IonLabel>Inventaire</IonLabel>
-          </IonTabButton>
 
-          <IonTabButton tab="tab4" href="/tab4" disabled={true}>
-            <IonIcon icon={settingsOutline} />
-            <IonLabel>Réglages</IonLabel>
-          </IonTabButton>
 
         </IonTabBar>
       </IonTabs>
