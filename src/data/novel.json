@@ -1852,6 +1852,7 @@
     },
 
     "scene_moderne_verlaine": {
+      "name": "Maison Paul Verlaine",
       "id": "scene_moderne_verlaine",
       "image": "https://img-4.linternaute.com/_8mi-u4VF8TK4UO94hNZBwyjcxs=/1240x/smart/c2d147ca8eb44b8cb637cd345c82dfd2/ccmcms-linternaute/10994886.jpg",
       "texts": [
@@ -1941,6 +1942,7 @@
     },
 
     "scene_moderne_ours": {
+      "name": "Rue aux Ours",
       "id": "scene_moderne_ours",
       "image": "../../assets/locations/rue_ours.PNG",
       "texts": [
@@ -1982,6 +1984,27 @@
         "type": "qrcode",
         "correctAnswer": "Camoufle"
       }
+    },
+
+    "scene_moderne_ours0": {
+      "id": "scene_moderne_ours0",
+      "name": "Rue ours (solution)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/H%C3%A9l%C3%A8ne_Studler_1944.jpg",
+      "texts": [
+        {
+          "nickname": "Sœur Hélène",
+          "text": "Les mosaiques trouvées sont T, J et E !"
+        },
+        {
+          "nickname": "Sœur Hélène",
+          "text": "En utilisant le système de code, cela donne 615"
+        }
+
+      ],
+      "buttons": [
+
+
+      ]
     },
 
     "scene_moderne_ours1": {
