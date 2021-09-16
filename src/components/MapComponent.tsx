@@ -20,7 +20,7 @@ import keys from '../data/keys.json';
 const { Geolocation, Toast } = Plugins;
 
 const APIKEY = { key: keys.MAP }
-const initialLatLng = {lat: 49.1152282, lng: 6.179302}
+const initialLatLng = {lat: 49.61323222584585,"lng":  6.1379620753422}
 const defaultZoom = 16
 const url = "https://journals.openedition.org/gallia/docannexe/image/1508/img-9.jpg"
 const imageBounds = {
@@ -156,7 +156,7 @@ class MapComponent extends Component<MapProps> {
     initMarkers = (map:any) => {
 
       markers.push(new google.maps.Marker({
-          position: new google.maps.LatLng(49.1142282, 6.179502),
+          position: new google.maps.LatLng(49.62369326053645, 6.148730571629905),
           icon: MarkersServices.getMarkerIcon("info"),
           map: map
         }))
@@ -193,7 +193,7 @@ class MapComponent extends Component<MapProps> {
       myMap = map
 
       this.initMarkers(map);
-      this.flipOverlay("rome")
+      this.flipOverlay("moderne")
 
     };
 
@@ -264,25 +264,6 @@ class MapComponent extends Component<MapProps> {
         >
 
         </GoogleMapReact>
-        <IonFab vertical="bottom" horizontal="end" slot="fixed" style={{"marginBottom":'50px'}}>
-
-            <IonFabList side="top">
-                <IonFabButton onClick={() => this.flipOverlay("rome")} data-desc="Epoque romaine">
-                  <IonIcon icon={logoVimeo} />
-
-                </IonFabButton>
-                <IonFabButton onClick={() => this.flipOverlay("medieval")}  data-desc="Epoque medievale">
-                  <IonIcon icon={logoChrome} />
-                </IonFabButton>
-                <IonFabButton onClick={() => this.flipOverlay("moderne")}  data-desc="Epoque moderne">
-                  <IonIcon icon={logoReact} />
-                </IonFabButton>
-              </IonFabList>
-                <IonFabButton >
-                <IonIcon icon={hourglassOutline} />
-              </IonFabButton>
-
-        </IonFab>
 
           <IonFab vertical="bottom" horizontal="start" slot="fixed" style={{"marginBottom":'50px'}}>
 
